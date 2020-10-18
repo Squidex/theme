@@ -21,9 +21,9 @@ Icons are managed with icomoon: https://icomoon.io/app/#/select
 
 ### How it works:
 
-1. Toggle the hamburger menu and go to "Manage projects"
-2. Import the project using the `app/theme/icomoon/selection.json` file.
-3. Update the project by selecting the icons we need.
+1. Toggle the hamburger menu and go to `Manage projects`: https://icomoon.io/app/#/projects.
+2. Import the `app/theme/icomoon/selection.json` file as a new project. Unfortunately it does not have a name.
+3. Update the project by selecting or importing the icons we need.
 4. Generate the font from the project and replace all files in the `app/theme/icomoon` folder.
 
 ### About it icons:
