@@ -47,6 +47,12 @@
         .table-items-row-details::before {
             right: 80px !important;
         }
+
+        .form-bubble {
+            display: block;
+            max-height: 100px;
+            min-height: 100px;
+        }
     </style>
 </head>
 
@@ -560,9 +566,27 @@
                         </ul>
                     </div>
 
+                    <div class="form-bubble">
+                        <div class="form-alert form-alert-error">
+                            <p>Validation error.</p>
+    
+                            <ul>
+                                <li>An user with the same email aready exists.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="bs-component">
+                                <div class="form-group">
+                                    <label>Form Dark</label>
+
+                                    <input type="email" class="form-control form-control-dark" placeholder="Enter email" autocomplete="off">
+
+                                    <small class="text-muted form-text">We will never share your email with anyone else.</small>
+                                </div>
+
                                 <div class="form-group">
                                     <label>Email address</label>
 
