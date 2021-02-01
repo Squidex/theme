@@ -21,7 +21,7 @@ body {
 
 // Common style for user email.
 .user-email {
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-style: italic;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .cdk-drag-preview {
-    opacity: .7;
+    opacity: 0.7;
 
     &.table-drag {
         background: $color-dark-foreground;
@@ -70,12 +70,12 @@ body {
 }
 
 .cdk-drag-animating {
-    transition: transform 250ms cubic-bezier(0, 0, .2, 1);
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
 }
 
 .cdk-drop-list-dragging {
     * {
-        transition: transform 250ms cubic-bezier(0, 0, .2, 1);
+        transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
     }
 
     .cdk-drag-placeholder {
@@ -103,8 +103,177 @@ body {
 }
 
 //
+// Badges
+//
+
+.btn-with-icon,
+.btn-with-shortcut {
+    align-items: center;
+    display: flex;
+
+    .badge {
+        background: $color-white-lighten;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-left: 0.8rem;
+    }
+
+    .icon {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-right: 0.8rem;
+    }
+}
+
+//
+// Badges
+//
+
+.badge-round {
+    color: $color-text;
+    font-size: 0.846rem;
+    font-weight: 600;
+    height: 1.692rem;
+    line-height: 1.692rem;
+    padding: 0;
+    width: 1.692rem;
+}
+
+//
+// Navbar Top
+//
+
+.header-rules {
+    background: $color-white;
+    width: 100%;
+
+    h2 {
+        font-size: 1.385rem;
+        line-height: 1.692rem;
+        margin: 0 0.5rem 0 0;
+    }
+}
+
+.header-top {
+    background: $color-white;
+    width: 100%;
+
+    select {
+        border-color: $color-border-dark;
+        border-radius: 3px;
+        color: $color-text;
+    }
+
+    .breadcrumb {
+        border: 0;
+
+        .breadcrumb-item {
+            align-items: center;
+        }
+
+        a {
+            color: $color-text;
+        }
+    }
+
+    form {
+        position: relative;
+
+        input {
+            padding-left: 28px;
+        }
+
+        i {
+            color: $color-border-dark;
+            left: 10px;
+            position: absolute;
+        }
+    }
+
+    .upload-count {
+        & > * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .icon {
+            color: $color-border-dark;
+            font-size: 1.5rem;
+        }
+    }
+
+    .dropdown {
+        align-items: center;
+        display: flex;
+
+        .avatar {
+            height: 32px;
+            width: 32px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .icon-caret-down {
+            transition: 0.3s;
+        }
+
+        &.show {
+            .icon-caret-down {
+                transform: rotate(180deg);
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+//
 // Profile picture in circle
 //
+.avatar {
+    height: 32px;
+    width: 32px;
+}
+
+.left-sidebar {
+    background: $color-theme-blue;
+    color: $color-white;
+    font-size: 0.81rem;
+    height: 580px;
+    position: relative;
+    width: 80px;
+}
+
+.left-sidebar-item-list {
+    width: 100%;
+
+    &.bottom-0 {
+        bottom: 0;
+    }
+
+    .left-sidebar-item {
+        background: $color-theme-blue;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background: $color-theme-blue-darker;
+            transition: 0.3s;
+        }
+
+        span {
+            display: inline-block;
+            margin: 0.8rem auto 0;
+        }
+    }
+
+    .left-sidebar-icon {
+        margin: 0 auto;
+        width: 20px;
+    }
+}
+
 .user-picture {
     & {
         @include circle(2rem);
@@ -124,10 +293,10 @@ body {
 //
 .item-published {
     & {
-        @include circle(.5rem);
+        @include circle(0.5rem);
         background: $color-theme-green;
         border: 0;
-        margin-left: .4rem;
+        margin-left: 0.4rem;
     }
 
     &.unpublished {
@@ -211,7 +380,7 @@ body {
 .sorting {
     &,
     & > * {
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 

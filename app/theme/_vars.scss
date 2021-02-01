@@ -23,6 +23,7 @@ $color-extern-twitter-icon:     #1681bf;
 
 $color-theme-blue:          #3389ff;
 $color-theme-blue-dark:     #297ff6;
+$color-theme-blue-darker:   #206fd6;
 $color-theme-blue-lighter:  #65a6ff;
 $color-theme-blue-light:    #9ebeea;
 $color-theme-blue-lightest: #d9e8fc;
@@ -38,6 +39,7 @@ $color-theme-error-dark:    #c00;
 
 $color-black:   #000;
 $color-white:   #fff;
+$color-white-lighten:       #ffffff55;
 
 $color-theme-info:          #5bc0de;
 
@@ -113,3 +115,9 @@ $asset-header:              12rem;
 $asset-image:               12rem;
 $asset-footer:              7rem;
 $asset-background:          url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAIAAAC1nk4lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEuMWMqnEsAAACbSURBVGhD7c6hDQAxAMPA33+m7vYlJh7AoFKOBMbfyfyZRRsPgUUbD4FFGw+BRRsPgUUbD4FFGw+BRRsPgUUbD4FFGw+BRRsPgUUbD4FFGw+BRRsPgUUbD4E3o9kA7YFFGw+BRRsPgUUbD4FFGw+BRRsPgUUbD4FFGw+BRRsPgUUbD4FFGw+BRRsPgUUbD4FFGw+BRRsPgQejz7nPYYKl8IqSfgAAAABJRU5ErkJggg==');
+
+$breadcrumb-divider:                quote('>');
+$breadcrumb-margin-bottom:          0 !important;
+$breadcrumb-active-color:           $color-border-dark !default;
+$breadcrumb-link-color:             $color-border-darker;
+
