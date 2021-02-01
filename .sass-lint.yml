@@ -19,6 +19,9 @@ rules:
     -
       max-depth: 4
 
+  leading-zero:
+    - 0
+
 leading-underscore: false
 
 files:
