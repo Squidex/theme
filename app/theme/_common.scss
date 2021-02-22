@@ -13,6 +13,11 @@ body {
     &.white {
         background: $color-dark-foreground;
     }
+
+    // grey background
+    .bs-section-grey {
+        background: $color-background;
+    }
 }
 
 * {
@@ -152,6 +157,102 @@ body {
         line-height: 1.692rem;
         margin: 0 0.5rem 0 0;
     }
+
+    select {
+        color: $color-grey-dark;
+    }
+
+    input {
+        &::placeholder {
+            color: $color-grey-dark;
+        }
+    }
+
+    &.main-tab-bar {
+
+        li {
+            a {
+                color: $color-grey-dark;
+            }
+        }
+
+        .active {
+            border-bottom: 2px solid $color-theme-blue;
+            color: $color-black;
+        }
+
+        .publish {
+            .nav-title {
+                padding-left: 10px;
+
+                .publish-icon {
+                    background: $color-theme-green;
+                    border-radius: 100px;
+                    content: '';
+                    display: inline-block;
+                    height: 8px;
+                    top: 50px;
+                    transform: translateY(-50%);
+                    width: 8px;
+                }
+            }
+        }
+    }
+
+    .tab-expanded-list {
+        li {
+            .active {
+                border-bottom: 2px solid $color-theme-blue;
+                color: $color-black;
+            }
+        }
+    }
+
+    & .tab-bars-modal-view {
+        .tab-expanded-list {
+            li {
+                &:first-child {
+                    a {
+                        padding-left: 0; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sub-tab-bar {
+    .nav-link {
+        background: $color-grey;
+        border-radius: 24px;
+        color: $color-black;
+
+        &.active {
+            background-color: $color-theme-blue-lightest;
+            color: $color-theme-blue-darker;
+        }
+    }
+}
+
+.expandable-tab {
+    &::before {
+        border: 1px dashed $color-grey;
+        bottom: -30px;
+        content: '';
+        height: 25px;
+        left: 30px;
+        position: absolute;
+    }
+
+    &::after {
+        border: 1px dashed $color-grey;
+        bottom: -30px;
+        content: '';
+        height: 1px;
+        left: 30px;
+        position: absolute;
+        width: 40px;
+    }
 }
 
 .header-top {
@@ -229,6 +330,65 @@ body {
 }
 
 //
+// Button section
+//
+.custom-btn-outline-secondary {
+    border-color: $color-border-grey;
+    color: $color-grey-dark;
+}
+
+.button-section {
+    .bs-component {
+        margin-bottom: 50px;
+    }
+}
+
+.btn {
+    font-size: 14px;
+
+    &.btn-circle {
+        border-radius: 100px;
+        height: 40px;
+        padding: 0;
+        width: 40px;
+    }
+
+    &.btn-grey {
+        background: $color-grey-dark;
+        color: $color-white;
+    }
+
+    &.btn-rounded {
+        border-radius: 50px;
+    }
+
+    &.btn-light-green {
+        background: $color-green-lighter;
+        color: $color-theme-green;
+    }
+}
+
+//
+// Input Fields section
+//
+.input-field-section {
+    .badge {
+        background: $color-grey;
+        color: $color-black;
+
+        .close {
+            color: inherit;
+            font-size: inherit;
+            margin-right: -$badge-padding-x;
+            padding-left: $badge-padding-x;
+            padding-right: $badge-padding-x;
+            text-shadow: none;
+        }
+
+    }
+}
+
+//
 // Profile picture in circle
 //
 .avatar {
@@ -260,6 +420,10 @@ body {
         &:hover {
             background: $color-theme-blue-darker;
             transition: 0.3s;
+        }
+
+        &.active {
+            background: $color-theme-blue-darker;
         }
 
         span {
@@ -434,5 +598,16 @@ i {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+
+//
+// @Media min-width: 1200
+//
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1450px;
     }
 }

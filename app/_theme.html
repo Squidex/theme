@@ -216,6 +216,65 @@
                         </nav>
                     </div>
                 </div>
+
+                <div class="row bs-component">
+                    <div class="col-lg-12">
+                        <nav class="navbar header-rules d-flex">
+                            <!-- <img src="./app/images/profile-picture.png" /> -->
+
+                            <div class="input-group w-50 flex-grow-1 mr-1">
+                                <input type="text" class="form-control" placeholder="Search for content in " aria-label="Recipient's username with two button addons">
+                                <button class="btn custom-btn-outline-secondary border-left-0 " type="button"><i class="icon icon-star-empty"></i></button>
+                                <button class="btn custom-btn-outline-secondary rounded-right border-left-0" type="button"><i class="icon icon-reset mr-1"></i></button>
+                            </div>
+
+                            <div>
+                                <i class="icon icon-bell ml-1 mr-1"></i>
+                                <i class="icon icon-reset mr-1"></i>
+                            </div>
+                            <div class="dropdown pl-3">
+                                <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
+                                    <i class="icon icon-plus"></i> New
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row bs-component">
+                    <div class="col-lg-12">
+                        <nav class="navbar header-rules d-flex">
+                            <!-- <img src="./app/images/profile-picture.png" /> -->
+                                <div class="mr-4">
+                                    <h2>Assets</h2>
+                                </div>
+                                <div class="flex-fill mr-4">
+                                    <select class="form-control">
+                                        <option value="" selected="" disabled=""># Search by tags</option>
+                                        <option value="">A</option>
+                                        <option value="">B</option>
+                                        <option value="">C</option>
+                                    </select>
+                                </div>
+                                <div class="flex-fill mr-4">
+                                    <input type="text" class="form-control" placeholder="Search for content in " aria-label="Recipient's username with two button addons">
+                                </div>
+
+                                <div class="mr-4">
+                                    <i class="icon icon-bell ml-1 mr-1"></i>
+                                    <i class="icon icon-reset mr-1"></i>
+                                </div>
+
+                                <div class="mr-0">
+                                    <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
+                                        <i class="icon icon-plus"></i> New
+                                        <span class="badge text-white">N</span>
+                                    </button>
+                                </div>
+                            </nav>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -240,80 +299,209 @@
         <div class="bs-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-2">
                         <h1 class="bs-section-title">Sidebar</h1>
-                    </div>
-                </div>
-
-                <div class="row bs-component">
-                    <div class="col-lg-4">
-                        <div class="left-sidebar">
-                            <div class="left-sidebar-item-list">
-                                <div class="left-sidebar-item">
-                                    <div class="py-3 text-center">
-                                        <div class="left-sidebar-icon">
-                                            <img class="w-100" src="./app/images/icons/dashboard.svg" />
+                        <div class="row bs-component">
+                            <div class="col-lg-4">
+                                <div class="left-sidebar">
+                                    <div class="left-sidebar-item-list">
+                                        <div class="left-sidebar-item">
+                                            <div class="py-3 text-center">
+                                                <div class="left-sidebar-icon">
+                                                    <img class="w-100" src="./app/images/icons/dashboard.svg" />
+                                                </div>
+                                                <span>Dashboard</span>
+                                            </div>
                                         </div>
-                                        <span>Dashboard</span>
-                                    </div>
-                                </div>
-                                <div class="left-sidebar-item">
-                                    <div class="py-3 text-center">
-                                        <div class="left-sidebar-icon">
-                                            <img class="w-100" src="./app/images/icons/schemas.svg" />
+                                        <div class="left-sidebar-item active">
+                                            <div class="py-3 text-center">
+                                                <div class="left-sidebar-icon">
+                                                    <img class="w-100" src="./app/images/icons/schemas.svg" />
+                                                </div>
+                                                <span>Schemas</span>
+                                            </div>
                                         </div>
-                                        <span>Schemas</span>
-                                    </div>
-                                </div>
-                                <div class="left-sidebar-item">
-                                    <div class="py-3 text-center">
-                                        <div class="left-sidebar-icon">
-                                            <img class="w-100" src="./app/images/icons/content.svg" />
+                                        <div class="left-sidebar-item">
+                                            <div class="py-3 text-center">
+                                                <div class="left-sidebar-icon">
+                                                    <img class="w-100" src="./app/images/icons/content.svg" />
+                                                </div>
+                                                <span>Content</span>
+                                            </div>
                                         </div>
-                                        <span>Content</span>
-                                    </div>
-                                </div>
-                                <div class="left-sidebar-item">
-                                    <div class="py-3 text-center">
-                                        <div class="left-sidebar-icon">
-                                            <img class="w-100" src="./app/images/icons/assets.svg" />
+                                        <div class="left-sidebar-item">
+                                            <div class="py-3 text-center">
+                                                <div class="left-sidebar-icon">
+                                                    <img class="w-100" src="./app/images/icons/assets.svg" />
+                                                </div>
+                                                <span>Assets</span>
+                                            </div>
                                         </div>
-                                        <span>Assets</span>
-                                    </div>
-                                </div>
-                                <div class="left-sidebar-item">
-                                    <div class="py-3 text-center">
-                                        <div class="left-sidebar-icon">
-                                            <img class="w-100" src="./app/images/icons/api.svg" />
-                                        </div>
-                                        <span>API</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="left-sidebar-item-list bottom-0 mb-4 position-absolute">
-                                <div class="left-sidebar-item">
-                                    <div class="py-3 text-center">
-                                        <div class="left-sidebar-icon">
-                                            <img class="w-100" src="./app/images/icons/help.svg" />
+                                        <div class="left-sidebar-item">
+                                            <div class="py-3 text-center">
+                                                <div class="left-sidebar-icon">
+                                                    <img class="w-100" src="./app/images/icons/api.svg" />
+                                                </div>
+                                                <span>API</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="left-sidebar-item">
-                                    <div class="py-3 text-center">
-                                        <div class="left-sidebar-icon">
-                                            <img class="w-100" src="./app/images/icons/settings.svg" />
+        
+                                    <div class="left-sidebar-item-list bottom-0 mb-4 position-absolute">
+                                        <div class="left-sidebar-item">
+                                            <div class="py-3 text-center">
+                                                <div class="left-sidebar-icon">
+                                                    <img class="w-100" src="./app/images/icons/help.svg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="left-sidebar-item">
+                                            <div class="py-3 text-center">
+                                                <div class="left-sidebar-icon">
+                                                    <img class="w-100" src="./app/images/icons/settings.svg" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-10">
+                        <h1 class="bs-section-title">Tab Bar</h1>
+                        <div class="row bs-component">
+                            <div class="col-lg-12">
+                                <h3>Main</h3>
+                                <nav class="navbar header-rules d-flex main-tab-bar">
+                                    <!-- <img src="./app/images/profile-picture.png" /> -->
+                                    <div class="input-group w-50 flex-grow-1 mr-1 publish">
+                                        <h2 class="nav-title"><span class="publish-icon mr-2"></span>Schema 2</h2>
+                                        <p>Content <span class="badge">5</span></p>
+                                    </div>
+        
+                                    <div class="mr-2">
+                                        <small><em>Published 1 day ago</em></small>
+                                    </div>
+                                    <div class="dropdown pl-3 border rounded show mr-2">
+                                        <span>Status</span>
+                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Publish</button>
+                                        <div class="dropdown-menu">
+                                            <a href="#" class="dropdown-item">Action</a>
+                                            <a href="#" class="dropdown-item">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="#" class="dropdown-item">Separated link</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn custom-btn-outline-secondary mr-1"><i class="icon icon-plus"></i></button>
+                                        <button class="btn custom-btn-outline-secondary"><i class="icon icon-reset"></i></button>
+                                    </div>
+                                    <div class="tab-bars">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Active</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link active" href="#">Link</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="#">Disabled</a>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="row bs-component pt-4">
+                            <div class="col-lg-12">
+                                <h3>Sub Tabs</h3>
+                                <div class="sub-tab-bar">
+                                    <ul class="nav">
+                                        <li class="nav-item mr-2">
+                                          <a class="nav-link" href="#">Query</a>
+                                        </li>
+                                        <li class="nav-item mr-2">
+                                          <a class="nav-link active" href="#">Create</a>
+                                        </li>
+                                        <li class="nav-item mr-2">
+                                          <a class="nav-link" href="#">Change</a>
+                                        </li>
+                                        <li class="nav-item mr-2">
+                                            <a class="nav-link" href="#">Delete</a>
+                                        </li>
+                                        <li class="nav-item mr-2">
+                                            <a class="nav-link" href="#">Update</a>
+                                        </li>
+                                      </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row bs-component pt-4">
+                            <div class="col-lg-12">
+                                <h3>Tabs in Expanded List Item</h3>
+                                <div class="tab-bars header-rules p-4">
+                                    <div class="bg-light d-flex p-2">
+                                        <div class="tab-expanded-list flex-grow-1">
+                                            <ul class="nav">
+                                                <li class="nav-item">
+                                                <a class="nav-link text-decent" href="#">Common</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                <a class="nav-link text-decent active" href="#">Validation</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                <a class="nav-link text-decent" href="#">Editing</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn btn-light">Cancel</button>
+                                            <button class="btn btn-primary">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row bs-component pt-4">
+                            <div class="col-lg-12">
+                                <h3>Tabs in Modal View</h3>
+                                <div class="tab-bars-modal-view header-rules p-4">
+                                    <h4 class="d-inline">My transparent file.png</h4>
+                                    <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <div class="d-flex pt-2 pl-0 pr-0 border-bottom pb-0">
+                                        <div class="tab-expanded-list flex-grow-1">
+                                            <ul class="nav">
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-decent active" href="#">Metadata</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-decent" href="#">Image</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-decent" href="#">Focus Point</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-decent" href="#">History</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-primary">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="bs-section bs-section-white">
+        <div class="bs-section bs-section-white button-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -321,199 +509,900 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-7">
-                        <p class="bs-component">
-                            <button type="button" class="btn btn-primary">Primary</button>
-                            <button type="button" class="btn btn-secondary">Secondary</button>
-                            <button type="button" class="btn btn-success">Success</button>
-                            <button type="button" class="btn btn-info">Info</button>
-                            <button type="button" class="btn btn-warning">Warning</button>
-                            <button type="button" class="btn btn-danger">Danger</button>
-
-                            <a class="btn btn-link">Link</a>
-                        </p>
-
-                        <p class="bs-component">
-                            <button type="button" class="btn btn-text-primary">Primary</button>
-                            <button type="button" class="btn btn-text-secondary">Secondary</button>
-                            <button type="button" class="btn btn-text-success">Success</button>
-                            <button type="button" class="btn btn-text-info">Info</button>
-                            <button type="button" class="btn btn-text-warning">Warning</button>
-                            <button type="button" class="btn btn-text-danger">Danger</button>
-                            <button type="button" class="btn btn-text-secondary2">Secondary2</button>
-                        </p>
-
-                        <p class="bs-component">
-                            <button type="button" class="btn btn-primary disabled">Primary</button>
-                            <button type="button" class="btn btn-secondary disabled">Secondary</button>
-                            <button type="button" class="btn btn-success disabled">Success</button>
-                            <button type="button" class="btn btn-info disabled">Info</button>
-                            <button type="button" class="btn btn-warning disabled">Warning</button>
-                            <button type="button" class="btn btn-danger disabled">Danger</button>
-                        </p>
-
-                        <p class="bs-component">
-                            <button type="button" class="btn btn-outline-primary">Primary</button>
-                            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                            <button type="button" class="btn btn-outline-success">Success</button>
-                            <button type="button" class="btn btn-outline-info">Info</button>
-                            <button type="button" class="btn btn-outline-warning">Warning</button>
-                            <button type="button" class="btn btn-outline-danger">Danger</button>
-                        </p>
-
-                        <div class="bs-component">
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-primary">Primary</button>
-
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-primary dropdown-toggle"></button>
+                <div class="text-center bs-section-grey p-4">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Left Nav Button
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="bs-component">
+                                        <button class="btn btn-success"><i class="icon icon-plus"></i></button>
+                                    </p>
                                 </div>
                             </div>
 
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-success">Success</button>
-
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-success dropdown-toggle"></button>
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Secondary Icon Buttons
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="bs-component">
+                                        <button class="btn custom-btn-outline-secondary mr-1"><i class="icon icon-plus"></i></button>
+                                        <button class="btn custom-btn-outline-secondary mr-1"><i class="icon icon-plus"></i></button>
+                                        <button class="btn custom-btn-outline-secondary mr-1"><i class="icon icon-plus"></i></button>
+                                        <button class="btn custom-btn-outline-secondary mr-1"><i class="icon icon-plus"></i></button>
+                                    </p>
                                 </div>
                             </div>
 
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-info">Info</button>
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-info dropdown-toggle"></button>
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Collapsible
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="bs-component">
+                                        <button type="button" class="btn btn-success btn-circle btn-lg"><i class="icon icon-plus"></i></button>
+                                    </p>
                                 </div>
                             </div>
 
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-danger">Danger</button>
-
-                                <div class="btn-group" role="group">
-                                    <button type="button" class="btn btn-danger dropdown-toggle"></button>
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Floating button
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bs-component">
+                                        <p>
+                                            <button type="button" class="btn btn-success btn-circle btn-lg"><i class="icon icon-plus"></i></button>
+                                            <button type="button" class="btn btn-grey btn-circle btn-lg"><i class="icon icon-plus"></i></button>
+                                        </p>
+                                        <p>
+                                            <button type="button" class="btn btn-success btn-rounded btn-lg"><i class="icon icon-plus"></i> Add Field</button>
+                                        </p>
+                                        <p>
+                                            <button type="button" class="btn btn-grey btn-rounded btn-lg"><i class="icon icon-plus"></i> Add Field</button>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Iconic
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="bs-component">
+                                        <i class="icon icon-plus"></i> <i class="icon icon-reset"></i>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Primary with Options
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class = "btn-group">
+                                        <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
+                                           Primary 
+                                           <span class = "caret"></span>
+                                        </button>
+                                        
+                                        <ul class = "dropdown-menu d-block mt-2" role = "menu">
+                                           <li class="dropdown-item">Action</li>
+                                           <li class="dropdown-item">Another action</li>
+                                           <li class="dropdown-item active">Something else here</li>
+                                           
+                                           <li class = "divider"></li>
+                                           <li class="dropdown-item">Separated link</li>
+                                        </ul>
+                                        
+                                     </div>
+                                </div>
+                            </div>
+    
                         </div>
+    
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Expandable List Actions
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="bs-component">
+                                        <button class="btn btn-primary-outline">Cancel</button>
+                                        <button class="btn btn-success">Save</button>
+                                    </p>
+                                </div>
+                            </div>
 
-                        <div class="bs-component">
-                            <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                            <button type="button" class="btn btn-primary">Default button</button>
-                            <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                        </div>
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Textual / Links
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="bs-component">
+                                        <a href="#">Logs</a>
+                                    </p>
+                                </div>
+                            </div>
 
-                        <div class="bs-component">
-                            <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
-                                <i class="icon icon-plus"></i> Button with Icon and Shortcut Key
-                                <span class="badge text-white">N</span>
-                            </button>
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Primary
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="bs-component">
+                                        <button class="btn btn-success">Create</button>
+                                        <button class="btn btn-primary">Save</button>
+                                        <button type="button" class="btn rounded bg-white text-success border"><i class="icon icon-plus"></i> Add Nested Field</button>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Secondary
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bs-component">
+                                        <p>
+                                            <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
+                                                <i class="icon icon-plus"></i> New Rule
+                                                <span class="badge text-white">N</span>
+                                            </button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Buttons with drop
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="bs-component">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Dropdown button
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" href="#">Action</a>
+                                              <a class="dropdown-item" href="#">Another action</a>
+                                              <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                          </div>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
+                                        Primary with Options
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class = "btn-group">
+                                        <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
+                                           Primary 
+                                           <span class = "caret"></span>
+                                        </button>
+                                        
+                                        <ul class = "dropdown-menu" role = "menu">
+                                           <li><a href = "#">Action</a></li>
+                                           <li><a href = "#">Another action</a></li>
+                                           <li><a href = "#">Something else here</a></li>
+                                           
+                                           <li class = "divider"></li>
+                                           <li><a href = "#">Separated link</a></li>
+                                        </ul>
+                                        
+                                     </div>
+                                </div>
+                            </div>
+    
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="col-lg-5">
-                        <p class="bs-component">
-                            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                        </p>
 
-                        <div class="bs-component" style="margin-bottom: 15px">
-                            <div class="btn-group" data-toggle="buttons">
-                                <button type="button" class="btn btn-toggle btn-primary">Active</button>
-                                <button type="button" class="btn btn-toggle">Inactive</button>
+        <div class="bs-section bs-section-white input-field-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="bs-section-title">Text Fields</h1>
+                    </div>
+                </div>
+
+                <div class="text-center bs-section-grey p-4">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <form>
+                                <fieldset>
+
+                                    <div class="row">
+                                        <div class="col-lg-4 border-right">
+                                            <p class="bs-component">
+                                                Default
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="bs-component">
+                                                <div class="form-group row">
+                                                    <label for="inputName" class="col-sm-3 col-form-label">Name</label>
+                                                    <div class="col-sm-9">
+                                                      <input type="password" class="form-control" id="inputName" placeholder="Field name">
+                                                      <small class="text-muted form-text text-left">Field name in API response</small>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-4 border-right">
+                                            <p class="bs-component">
+                                                Field with Text Action
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="bs-component">
+                                                <div class="form-group row">
+                                                    <label for="inputName" class="col-sm-3 col-form-label">Name</label>
+                                                    <div class="col-sm-9">
+                                                      <input type="password" class="form-control" id="inputName" placeholder="Field name">
+                                                      <small class="text-muted form-text text-left">Field name in API response</small>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-4 border-right">
+                                            <p class="bs-component">
+                                                Tag Area
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="bs-component">
+                                                <div class="form-group row">
+                                                    <label for="inputTags" class="col-sm-3 col-form-label">Tags</label>
+                                                    <div class="col-sm-9">
+                                                      <input type="text" class="form-control" id="inputTags" data-role="tagsinput" placeholder="Field tags">
+                                                      <small class="text-muted form-text text-left">Field name in API response</small>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-4 border-right">
+                                            <p class="bs-component">
+                                                In-active
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="bs-component">
+                                                <div class="form-group row">
+                                                    <label for="inputSecret" class="col-sm-3 col-form-label">Client Secret</label>
+                                                    <div class="col-sm-9">
+                                                      <input type="text" class="form-control" id="inputSecret" value="qcaowvypkdh3bcyg8nmtkpaagemwkf9gsbqnphvgv…ckx" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-4 border-right">
+                                            <p class="bs-component">
+                                                Dropdown
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="bs-component">
+                                                <div class="form-group row">
+                                                    <label for="inputSecret" class="col-sm-3 col-form-label">Role</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-select form-control" aria-label="Editor">
+                                                            <option selected>Editor</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                          </select>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-lg-4 border-right">
+                                            <p class="bs-component">
+                                                Removable Tag
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="bs-component">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-9">
+                                                        <span class="badge badge-primary">
+                                                            tag2
+                                                            <button type="button" class="close" aria-label="Dismiss">
+                                                              <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                          </span>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-4 border-right">
+                                            <p class="bs-component">
+                                                Listing Chip
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="bs-component">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-9">
+                                                        <span class="badge badge-primary rounded p-2">
+                                                            Clients: 0
+                                                          </span>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-4 border-right">
+                                            <p class="bs-component">
+                                                Tag
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="bs-component">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-9">
+                                                        <span class="badge badge-primary rounded">
+                                                            image/large
+                                                          </span>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-4 border-right">
+                                            <p class="bs-component">
+                                                Status Label
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="bs-component">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-9">
+                                                        <span class="btn btn-light-green btn-rounded">
+                                                            Enabled
+                                                          </span>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <form>
+                                <fieldset>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="bs-component">
+                                                <div class="form-group has-search">
+                                                    <span class="fa fa-search form-control-feedback"></span>
+                                                    <input type="text" class="form-control" placeholder="Quick Nav (Press )">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="bs-component">
+                                                <nav class="d-flex">
+                                                    <div class="input-group w-50 flex-grow-1 mr-1">
+                                                        <input type="text" class="form-control" placeholder="Search for content in " aria-label="Recipient's username with two button addons">
+                                                        <button class="btn bg-white border-left-0 border" type="button"><i class="icon icon-star-empty"></i></button>
+                                                        <button class="btn bg-white border-left-0 border" type="button"><i class="icon icon-reset mr-1"></i></button>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="bs-component">
+                                                <div class="form-group has-search">
+                                                    <select class="selectpicker form-control" data-live-search="true" aria-placeholder="# Search by tags">
+                                                        <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                                        <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                                        <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="bs-component">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        owner
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button class="btn bg-white border btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        owner
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bs-section bs-section-white input-field-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="bs-section-title">List Items</h1>
+                    </div>
+                </div>
+
+            <div class="text-center bs-section-grey p-4">
+                <p>Checkboxes and Actions</p>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row bs-component">
+                            <div class="col-lg-10 m-auto">
+                                <nav class="navbar header-top d-flex">
+                                    <div class="form-checkbox-group">
+                                        <input type="checkbox" class="form-checkbox" value="">
+                                    </div>
+                                    <div class="flex-fill">Wrist Watch</div>
+                                    <div class="flex-fill">Men Watch White or Black</div>
+                                    <div class="flex-fill">
+                                        29 minutes ago
+                                        <span class="badge rounded ml-1">Me</span>
+                                    </div>
+                                    <div class="dropdown border-left pl-3">
+                                        <div class="avatar rounded-circle mr-1">
+                                            <img src="./app/images/profile-picture.png" />
+                                        </div>
+                                        <i
+                                            class="icon icon-caret-down ml-2"
+                                            id="dropdownMenuButton"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        ></i>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item dropdown-item-delete" href="#">Separated link</a>
+                                        </div>
+                                    </div>
+                                </nav>
                             </div>
                         </div>
 
-                        <div class="bs-component" style="margin-bottom: 15px">
-                            <div class="btn-group" data-toggle="buttons">
-                                <button type="button" class="btn btn-toggle btn-warning">Active</button>
-                                <button type="button" class="btn btn-toggle">Inactive</button>
+                        <div class="row bs-component">
+                            <div class="col-lg-10 m-auto">
+                                <nav class="navbar header-top d-flex">
+                                    <div class="form-checkbox-group">
+                                        <input type="checkbox" class="form-checkbox" value="">
+                                    </div>
+                                    <div class="flex-fill">Snapback Cap</div>
+                                    <div class="flex-fill">Add Description</div>
+                                    <div class="flex-fill">
+                                        Thu, 6:20 PM
+                                        <span class="badge rounded ml-1">Adam</span>
+                                    </div>
+                                    <div class="flex-fill">
+                                        <div class="dropdown border-left pl-3">
+                                            <div class="avatar rounded-circle mr-1">
+                                                <img src="./app/images/profile-picture.png" />
+                                            </div>
+                                            <i
+                                                class="icon icon-caret-down ml-2"
+                                                id="dropdownMenuButton"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                            ></i>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item dropdown-item-delete" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-fill">
+                                        Thu, 6:20 PM
+                                    </div>
+                                </nav>
                             </div>
                         </div>
 
-                        <div class="bs-component" style="margin-bottom: 15px">
-                            <div class="btn-group" data-toggle="buttons">
-                                <button type="button" class="btn btn-toggle btn-danger">Active</button>
-                                <button type="button" class="btn btn-toggle">Inactive</button>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="bs-component" style="margin-bottom: 15px">
-                            <div class="btn-group" data-toggle="buttons">
-                                <button type="button" class="btn btn-toggle btn-success">Active</button>
-                                <button type="button" class="btn btn-toggle">Inactive</button>
-                            </div>
-                        </div>
-
-                        <div class="bs-component" style="margin-bottom: 15px">
-                            <div class="btn-group" data-toggle="buttons">
-                                <button type="button" class="btn btn-toggle btn-info">Active</button>
-                                <button type="button" class="btn btn-toggle">Inactive</button>
-                            </div>
-                        </div>
-
-                        <div class="bs-component" style="margin-bottom: 15px">
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-primary active">
-                                    <input type="checkbox" checked /> Checkbox 1
-                                </label>
-                                <label class="btn btn-primary"> <input type="checkbox" /> Checkbox 2 </label>
-                                <label class="btn btn-primary"> <input type="checkbox" /> Checkbox 3 </label>
-                            </div>
-                        </div>
-
-                        <div class="bs-component" style="margin-bottom: 15px">
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-primary active">
-                                    <input type="radio" name="options" checked />
-                                    Radio 1
-                                </label>
-                                <label class="btn btn-primary"> <input type="radio" name="options" /> Radio 2 </label>
-                                <label class="btn btn-primary"> <input type="radio" name="options" /> Radio 3 </label>
-                            </div>
-                        </div>
-
-                        <div class="bs-component">
-                            <div class="btn-group-vertical" data-toggle="buttons">
-                                <button type="button" class="btn btn-primary">Top</button>
-                                <button type="button" class="btn btn-primary">Middle</button>
-                                <button type="button" class="btn btn-primary">Buttom</button>
-                            </div>
-                        </div>
-
-                        <div class="bs-component" style="margin-bottom: 15px">
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">Left</button>
-                                <button type="button" class="btn btn-secondary">Middle</button>
-                                <button type="button" class="btn btn-secondary">Right</button>
-                            </div>
-                        </div>
-
-                        <div class="bs-component" style="margin-bottom: 15px">
-                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                                <div class="btn-group" role="group" aria-label="First group">
-                                    <button type="button" class="btn btn-secondary">1</button>
-                                    <button type="button" class="btn btn-secondary">2</button>
-                                    <button type="button" class="btn btn-secondary">3</button>
-                                    <button type="button" class="btn btn-secondary">4</button>
+            <div class="text-center bs-section-grey p-4">
+                <p>List Item with thumbnail</p>
+                <div class="row bs-component">
+                    <div class="col-lg-10 m-auto">
+                        <nav class="navbar header-top d-flex">
+                            <div class="flex-fill">
+                                <div class="avatar rounded-circle mr-4 float-left">
+                                    <img src="./app/images/profile-picture.png" width="48" height="48" />
                                 </div>
-
-                                &nbsp;
-
-                                <div class="btn-group" role="group" aria-label="Second group">
-                                    <button type="button" class="btn btn-secondary">5</button>
-                                    <button type="button" class="btn btn-secondary">6</button>
-                                    <button type="button" class="btn btn-secondary">7</button>
+                                <div class="float-left border-left pl-4">
+                                    <p class="mb-0">My File.jpg</p>
+                                    <small>48 x 48</small> 
                                 </div>
+                            </div>
+                            <div class="flex-fill">
+                                <span class="badge rounded ml-1">Image</span>
+                                <span class="badge rounded ml-1">image/large</span>
+                                <span class="badge rounded ml-1">Type/jpg</span>
+                                <a href="#" class="link"><small>+3 more</small></a>
+                            </div>
+                            <div class="flex-fill">1.3 mb</div>
+                            <div class="flex-fill">
+                                <div class="dropdown border-left pl-3">
+                                    <div class="avatar rounded-circle mr-1">
+                                        <img src="./app/images/profile-picture.png" />
+                                    </div>
+                                    <span>Modified 1 day ago</span>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item dropdown-item-delete" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                                &nbsp;
+                            <div class="nav-actions">
+                                <button class="btn custom-btn-outline-secondary mr-1"><i class="icon icon-plus"></i></button>
+                                <button class="btn custom-btn-outline-secondary"><i class="icon icon-reset"></i></button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
 
-                                <div class="btn-group" role="group" aria-label="Third group">
-                                    <button type="button" class="btn btn-secondary">8</button>
+            <div class="text-center bs-section-grey p-4">
+                <p>Expandable</p>
+                <div class="row bs-component">
+                    <div class="col-lg-8 m-auto">
+                        <nav class="navbar header-top expandable-tab">
+                            <div class="d-flex justify-content-start">
+                                <div class="collapse-icon">
+                                    <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                                        <img src="./app/images/icons/collapsiable-icon.svg" />
+                                    </button>
+                                </div>
+                                <div class="px-3">
+                                    <span class="border-bottom border-3">A</span> 
+                                </div>
+                                <div>
+                                    <p class="mb-0 pl-2">Name <span class="badge badge-pill badge-secondary badge-round">3</span></p> 
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-end">
+                                <div class="collapse-icon">
+                                    <button type="button" class="btn btn-grey btn-circle"><i class="icon icon-plus"></i></button>
+                                </div>
+                                <div class="enabled-btn mx-2">
+                                    <button class="btn btn-light-green btn-rounded">
+                                        Enabled
+                                    </button>
+                                </div>
+                                <div class="settings">
+                                    <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
+                                        <i class="icon-settings"></i>
+                                    </button>
+                                </div>
+                              </div>
+                        </nav>
+                        <div class="row">
+                            <div class="col-lg-11 mt-2 ml-auto">
+                                <div class="tab-bars header-rules">
+                                    <nav class="navbar header-top">
+                                        <div class="d-flex justify-content-start">
+                                            <div class="collapse-icon">
+                                                <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                                                    <img src="./app/images/icons/collapsiable-icon.svg" />
+                                                </button>
+                                            </div>
+                                            <div class="px-3">
+                                                <span class="border-bottom border-3">A</span> 
+                                            </div>
+                                            <div>
+                                                <p class="mb-0 pl-2">First Name</p> 
+                                            </div>
+                                          </div>
+                                          <div class="d-flex justify-content-end">
+                                            <div class="enabled-btn mx-2">
+                                                <button class="btn btn-light-green btn-rounded">
+                                                    Enabled
+                                                </button>
+                                            </div>
+                                            <div class="settings">
+                                                <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
+                                                    <i class="icon-settings"></i>
+                                                </button>
+                                            </div>
+                                          </div>
+                                    </nav>
+                                    <div class="bg-light d-flex p-2">
+                                        <div class="tab-expanded-list flex-grow-1">
+                                            <ul class="nav">
+                                                <li class="nav-item">
+                                                <a class="nav-link text-decent" href="#">Common</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                <a class="nav-link text-decent" href="#">Validation</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                <a class="nav-link text-decent active" href="#">Editing</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="px-2">
+                                            <button class="btn btn btn-light">Cancel</button>
+                                            <button class="btn btn-primary">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-lg-12 row p-4">
+                                            <label for="inputName" class="col-sm-3 col-form-label text-center">Editor URL</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" class="form-control" id="inputName" placeholder="Field name">
+                                                <small class="text-muted form-text text-left"><i class="icon-info-outline"></i> Field name in API response</small>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="text-center bs-section-grey p-4">
+                <p>Collapsible Component with Sublists</p>
+                <div class="row bs-component">
+                    <div class="col-lg-10 text-left m-auto">
+                        <p><button type="button" class="btn btn-grey btn-circle btn-lg"><i class="icon icon-plus"></i></button>
+                            <a class="collapse-btn ml-2" data-toggle="collapse" href="#collapseList" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                My Collapsible UI Component
+                            </a>
+                        </p>
+                        <div class="collapse-hide rounded border" id="collapseList">
+                            <div class="my-list rounded bg-white p-2">
+                                <div class="d-flex">
+                                    <div class="mr-auto p-2"><h5>My List</h5></div>
+                                    <div class="p-2"><div class="languages">All Languages</div></div>
+                                    <div class="p-2">
+                                        <div class="form-group">
+                                            <select class="form-control p-0 h-auto" id="sel1">
+                                              <option>ak-GH</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                            </select>
+                                          </div>
+                                    </div>
+                                    <div class="p-1"><button class="btn p-0"><i class="icon-info-outline"></i> Reset</button></div>
+                                </div>
+                                <div class="tab-bars header-rules">
+                                    <nav class="navbar header-top border rounded">
+                                        <div class="d-flex justify-content-start">
+                                            <div class="collapse-icon">
+                                                <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                                                    <img src="./app/images/icons/collapsiable-icon.svg" />
+                                                </button>
+                                            </div>
+                                            <div class="px-3">
+                                                <span class="border-bottom border-3">A</span> 
+                                            </div>
+                                            <div>
+                                                <p class="mb-0 pl-2">My Expanded list item</p> 
+                                            </div>
+                                          </div>
+                                          <div class="d-flex justify-content-end">
+                                            <div class="enabled-btn mx-2">
+                                                <button class="btn btn-light-green btn-rounded">
+                                                    Enabled
+                                                </button>
+                                            </div>
+                                            <div class="settings">
+                                                <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
+                                                    <i class="icon-settings"></i>
+                                                </button>
+                                            </div>
+                                          </div>
+                                    </nav>
+                                    <div class="form-group">
+                                        <div class="col-lg-12 row p-4">
+                                            <div class="form-group col-lg-12">
+                                                <label>List Item Field A</label>
+                                                <input type="password" class="form-control" id="inputName" placeholder="Field name">
+                                                <small class="text-muted form-text text-left">You can only use letters, numbers and dashes and not more than 40 characters.</small>
+                                            </div>
+                                            <div class="form-group col-lg-12">
+                                                <label>Phone <span class="text-muted">(Required)</span></label>
+                                                <input type="phone" class="form-control" id="inputPassword" placeholder="Field name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
+                                                <i class="icon icon-plus"></i> Add Item
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </div>
+
+
+    <div class="text-center bs-section-grey p-4">
+        <p>Custom List Item for Rules</p>
+        <div class="row bs-component">
+            <div class="col-lg-6 m-auto">
+                        <div class="tab-bars header-rules">
+                            <nav class="navbar header-top">
+                                <div class="d-flex justify-content-start">
+                                    <div class="p-1">
+                                        My Rule A
+                                    </div>
+                                  </div>
+                                  <div class="d-flex justify-content-end">
+                                    <div class="text-muted mr-2">
+                                        <small><em>Published 1 day ago</em></small>
+                                    </div>
+                                    <div class="settings">
+                                        <button type="button" class="btn table-items-edit-button mr-1">
+                                            <i class="icon-down">---</i>
+                                        </button>
+                                    </div>
+                                  </div>
+                            </nav>
+                            <div class="bg-light d-flex justify-content-between border-top border-bottom mx-3 p-3">
+                                <div class="d-flex">
+                                    <span class="pr-3 mt-2">if</span>
+                                    <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
+                                        <i class="icon icon-plus"></i> 
+                                        <span class="border-left pl-3">Asset changed</span>
+                                    </button>
+                                    <span class="px-3 mt-2">then</span>
+                                    <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
+                                        <i class="icon icon-plus"></i> 
+                                        <span class="border-left pl-3">Create Content</span>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <div>
+                                        <button class="btn btn btn-light">Cancel</button>
+                                        <button class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="log-status d-flex justify-content-between p-3">
+                                <div class="d-flex justify-content-start">
+                                    <div class="succeeded pr-5 border-right">
+                                        Succeeded <span class="badge badge-pill badge-secondary rounded">02</span>
+                                    </div>
+                                    <div class="failed px-5 border-right">
+                                        Failed <span class="badge badge-pill badge-secondary rounded">02</span> 
+                                    </div>
+                                    <div class="executed pl-5">
+                                        Executed <span class="badge badge-pill badge-secondary rounded">02</span> 
+                                    </div>
+                                </div>
+                                  <div class="d-flex justify-content-end">
+                                    <div class="logs">
+                                        <a class="link">
+                                            Logs
+                                        </a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    
 
         <div class="bs-section bs-section-white">
             <div class="container">
@@ -730,345 +1619,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="bs-section bs-section-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="bs-section-title">Forms</h1>
-                    </div>
-                </div>
-
-                <form>
-                    <fieldset>
-                        <legend>Legend</legend>
-
-                        <div class="form-alert form-alert-error">
-                            <p>Validation error.</p>
-
-                            <ul>
-                                <li>An user with the same email aready exists.</li>
-                            </ul>
-                        </div>
-
-                        <div class="form-bubble">
-                            <div class="form-alert form-alert-error">
-                                <p>Validation error.</p>
-
-                                <ul>
-                                    <li>An user with the same email aready exists.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="bs-component">
-                                    <div class="form-group">
-                                        <label>Form Dark</label>
-
-                                        <input
-                                            type="email"
-                                            class="form-control form-control-dark"
-                                            placeholder="Enter email"
-                                            autocomplete="off"
-                                        />
-
-                                        <small class="text-muted form-text"
-                                            >We will never share your email with anyone else.</small
-                                        >
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Email address</label>
-
-                                        <input
-                                            type="email"
-                                            class="form-control"
-                                            placeholder="Enter email"
-                                            autocomplete="off"
-                                        />
-
-                                        <small class="text-muted form-text"
-                                            >We will never share your email with anyone else.</small
-                                        >
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Underlined</label>
-
-                                        <input
-                                            type="text"
-                                            class="form-control form-underlined"
-                                            placeholder="Enter text"
-                                            autocomplete="false"
-                                        />
-
-                                        <small class="text-muted form-text">Input with just an underlined.</small>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Password</label>
-
-                                        <input
-                                            type="password"
-                                            class="form-control"
-                                            placeholder="Password"
-                                            autocomplete="false"
-                                        />
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Example custom select</label>
-
-                                        <select class="custom-select">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Example custom multiple select</label>
-
-                                        <select multiple class="custom-select">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Example textarea</label>
-
-                                        <textarea class="form-control" rows="3"></textarea>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Custom File input</label>
-
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="customFile" />
-
-                                            <label class="custom-file-label" for="customFile">Choose file</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>File input</label>
-
-                                        <input type="file" class="form-control-file" />
-                                    </div>
-
-                                    <div class="form-group">
-                                        <h2>Custom Radio buttons</h2>
-
-                                        <div class="custom-control custom-radio">
-                                            <input
-                                                type="radio"
-                                                id="customRadio1"
-                                                name="customRadio"
-                                                class="custom-control-input"
-                                            />
-                                            <label class="custom-control-label" for="customRadio1">Option 1</label>
-                                        </div>
-
-                                        <div class="custom-control custom-radio">
-                                            <input
-                                                type="radio"
-                                                id="customRadio2"
-                                                name="customRadio"
-                                                class="custom-control-input"
-                                            />
-                                            <label class="custom-control-label" for="customRadio2">Option 2</label>
-                                        </div>
-
-                                        <div class="custom-control custom-radio">
-                                            <input
-                                                type="radio"
-                                                id="customRadio3"
-                                                name="customRadio"
-                                                class="custom-control-input"
-                                                disabled
-                                            />
-                                            <label class="custom-control-label" for="customRadio3"
-                                                >Option 3 (disabled)</label
-                                            >
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <h2>Custom Checkboxes</h2>
-
-                                        <div class="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                id="customCheckbox1"
-                                                name="customRadio"
-                                                class="custom-control-input"
-                                            />
-                                            <label class="custom-control-label" for="customCheckbox1">Option 1</label>
-                                        </div>
-
-                                        <div class="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                id="customCheckbox2"
-                                                name="customRadio"
-                                                class="custom-control-input"
-                                            />
-                                            <label class="custom-control-label" for="customCheckbox2">Option 2</label>
-                                        </div>
-
-                                        <div class="custom-control custom-checkbox">
-                                            <input
-                                                type="checkbox"
-                                                id="customCheckbox3"
-                                                name="customRadio"
-                                                class="custom-control-input"
-                                                disabled
-                                            />
-                                            <label class="custom-control-label" for="customCheckbox3"
-                                                >Option 3 (disabled)</label
-                                            >
-                                        </div>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-lg-offset-1">
-                                <form class="bs-component">
-                                    <div class="form-group">
-                                        <label>Disabled input</label>
-
-                                        <input
-                                            class="form-control"
-                                            type="text"
-                                            placeholder="Disabled input here..."
-                                            disabled
-                                        />
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Disabled underlined input</label>
-
-                                        <input
-                                            class="form-control form-underlined"
-                                            type="text"
-                                            placeholder="Disabled input here..."
-                                            disabled
-                                        />
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Readonly input</label>
-
-                                        <input
-                                            class="form-control"
-                                            type="text"
-                                            placeholder="Disabled input here..."
-                                            readonly
-                                        />
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Readonly underlined input</label>
-
-                                        <input
-                                            class="form-control form-underlined"
-                                            type="text"
-                                            placeholder="Disabled input here..."
-                                            readonly
-                                        />
-                                    </div>
-
-                                    <div class="form-group has-success">
-                                        <label>Input with success</label>
-
-                                        <input type="text" class="form-control is-valid" />
-
-                                        <div class="valid-feedback">Success! You've done it.</div>
-                                    </div>
-
-                                    <div class="form-group has-warning">
-                                        <label>Input with warning</label>
-
-                                        <input type="text" class="form-control is-invalid" />
-
-                                        <div class="invalid-feedback">Shucks, try again.</div>
-                                    </div>
-
-                                    <div class="form-group has-warning">
-                                        <label>Input with error</label>
-
-                                        <div class="errors-container">
-                                            <div class="errors">You have entered an invalid value.</div>
-                                        </div>
-
-                                        <input type="text" class="form-control is-invalid" />
-                                    </div>
-
-                                    <div class="form-group has-warning">
-                                        <label>Input with hint</label>
-
-                                        <input type="text" class="form-control" />
-
-                                        <div class="alert alert-hint mt-2">
-                                            <i class="icon-info-outline"></i>
-                                            The app name cannot be changed later.
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Large input</label>
-
-                                        <input class="form-control form-control-lg" type="text" />
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Default input</label>
-
-                                        <input type="text" class="form-control" />
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Small input</label>
-
-                                        <input class="form-control form-control-sm" type="text" />
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Input addons</label>
-
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text">$</span>
-                                            </div>
-
-                                            <input
-                                                type="text"
-                                                class="form-control"
-                                                aria-label="Amount (to the nearest dollar)"
-                                            />
-
-                                            <div class="input-group-append">
-                                                <span class="input-group-text">.00</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
             </div>
         </div>
 

@@ -3,6 +3,7 @@ $color-background:          #eef1f4;
 $color-border:              #e4e7e9;
 $color-border-dark:         #b3bbbf;
 $color-border-darker:       darken($color-border, 3%);
+$color-border-grey:         #dedfe3;
 
 $color-title:               #000;
 $color-text:                #373a3c;
@@ -39,7 +40,10 @@ $color-theme-error-dark:    #c00;
 
 $color-black:   #000;
 $color-white:   #fff;
-$color-white-lighten:       #ffffff55;
+$color-grey:   #dedfe3;
+$color-grey-dark:   #9da1b6;
+$color-white-lighten:   #ffffff55;
+$color-green-lighter:  #d6eadd;
 
 $color-theme-info:          #5bc0de;
 
@@ -120,4 +124,3 @@ $breadcrumb-divider:                quote('>');
 $breadcrumb-margin-bottom:          0 !important;
 $breadcrumb-active-color:           $color-border-dark !default;
 $breadcrumb-link-color:             $color-border-darker;
-
