@@ -43,6 +43,15 @@ body {
     cursor: move;
 }
 
+
+//
+// Background Colors
+//
+.bg-light-blue {
+    background: $color-theme-blue-lightest;
+}
+
+
 //
 // Rich editor icon. Must be placed here, because element is not created by angular.
 //

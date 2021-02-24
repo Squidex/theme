@@ -596,12 +596,12 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class = "btn-group">
+                                    <div class = "btn-group d-block">
                                         <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
                                            Primary 
                                            <span class = "caret"></span>
                                         </button>
-                                        <div class="dropdown-menu d-block mt-2 dropdown-with-options">
+                                        <div class="dropdown-menu d-block mt-2 dropdown-with-options position-relative">
                                             <small class="text-muted d-block px-4 py-2">NEW</small>
                                             <ul class = "dropdown p-0" role = "menu">
                                                 <li class="dropdown-item"><i class="icon icon-plus p-1"></i> File Upload</li>
@@ -689,9 +689,9 @@
                                             <button class="btn" type="button">
                                               ...
                                             </button>
-                                            <div class="dropdown-menu d-block mt-2 dropdown-with-options">
+                                            <div class="dropdown-menu d-block mt-2 dropdown-with-options position-relative">
                                                 <small class="text-muted d-block px-4 py-2">Update Status</small>
-                                                <ul class = "dropdown p-0 dropdown-with-status" role = "menu">
+                                                <ul class = "dropdown p-0 dropdown-with-status position-relative" role = "menu">
                                                     <li class="dropdown-item"><i class="status status-publish p-1"></i> Publish</li>
                                                     <li class="dropdown-item active"><i class="status status-draft p-1"></i> Draft</li>
                                                     <li class="dropdown-item"><i class="status status-archive p-1"></i> Archive</li>
@@ -1312,119 +1312,116 @@
                 </div>
             </div>
 
-        </div>
-    </div>
-
-
-    <div class="text-center bs-section-grey p-4">
-        <p>Custom List Item for Rules</p>
-        <div class="row bs-component">
-            <div class="col-lg-6 m-auto">
-                        <div class="tab-bars header-rules">
-                            <nav class="navbar header-top">
-                                <div class="d-flex justify-content-start">
-                                    <div class="p-1">
-                                        My Rule A
+            <div class="text-center bs-section-grey p-4">
+                <p>Custom List Item for Rules</p>
+                <div class="row bs-component">
+                    <div class="col-lg-6 m-auto">
+                                <div class="tab-bars header-rules">
+                                    <nav class="navbar header-top">
+                                        <div class="d-flex justify-content-start">
+                                            <div class="p-1">
+                                                My Rule A
+                                            </div>
+                                          </div>
+                                          <div class="d-flex justify-content-end">
+                                            <div class="text-muted mr-2">
+                                                <small><em>Published 1 day ago</em></small>
+                                            </div>
+                                            <div class="settings">
+                                                <button type="button" class="btn table-items-edit-button mr-1">
+                                                    <i class="icon-down">---</i>
+                                                </button>
+                                            </div>
+                                          </div>
+                                    </nav>
+                                    <div class="bg-light d-flex justify-content-between border-top border-bottom mx-3 p-3">
+                                        <div class="d-flex">
+                                            <span class="pr-3 mt-2">if</span>
+                                            <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
+                                                <i class="icon icon-plus"></i> 
+                                                <span class="border-left pl-3">Asset changed</span>
+                                            </button>
+                                            <span class="px-3 mt-2">then</span>
+                                            <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
+                                                <i class="icon icon-plus"></i> 
+                                                <span class="border-left pl-3">Create Content</span>
+                                            </button>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <div>
+                                                <button class="btn btn btn-light">Cancel</button>
+                                                <button class="btn btn-primary">Save</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="d-flex justify-content-end">
-                                    <div class="text-muted mr-2">
-                                        <small><em>Published 1 day ago</em></small>
+                                    <div class="log-status d-flex justify-content-between p-3">
+                                        <div class="d-flex justify-content-start">
+                                            <div class="succeeded pr-5 border-right">
+                                                Succeeded <span class="badge badge-pill badge-secondary rounded">02</span>
+                                            </div>
+                                            <div class="failed px-5 border-right">
+                                                Failed <span class="badge badge-pill badge-secondary rounded">02</span> 
+                                            </div>
+                                            <div class="executed pl-5">
+                                                Executed <span class="badge badge-pill badge-secondary rounded">02</span> 
+                                            </div>
+                                        </div>
+                                          <div class="d-flex justify-content-end">
+                                            <div class="logs">
+                                                <a class="link">
+                                                    Logs
+                                                </a>
+                                            </div>
+                                          </div>
                                     </div>
-                                    <div class="settings">
-                                        <button type="button" class="btn table-items-edit-button mr-1">
-                                            <i class="icon-down">---</i>
-                                        </button>
-                                    </div>
-                                  </div>
-                            </nav>
-                            <div class="bg-light d-flex justify-content-between border-top border-bottom mx-3 p-3">
-                                <div class="d-flex">
-                                    <span class="pr-3 mt-2">if</span>
-                                    <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
-                                        <i class="icon icon-plus"></i> 
-                                        <span class="border-left pl-3">Asset changed</span>
-                                    </button>
-                                    <span class="px-3 mt-2">then</span>
-                                    <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
-                                        <i class="icon icon-plus"></i> 
-                                        <span class="border-left pl-3">Create Content</span>
-                                    </button>
                                 </div>
-                                <div class="d-flex justify-content-end">
-                                    <div>
-                                        <button class="btn btn btn-light">Cancel</button>
-                                        <button class="btn btn-primary">Save</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="log-status d-flex justify-content-between p-3">
-                                <div class="d-flex justify-content-start">
-                                    <div class="succeeded pr-5 border-right">
-                                        Succeeded <span class="badge badge-pill badge-secondary rounded">02</span>
-                                    </div>
-                                    <div class="failed px-5 border-right">
-                                        Failed <span class="badge badge-pill badge-secondary rounded">02</span> 
-                                    </div>
-                                    <div class="executed pl-5">
-                                        Executed <span class="badge badge-pill badge-secondary rounded">02</span> 
-                                    </div>
-                                </div>
-                                  <div class="d-flex justify-content-end">
-                                    <div class="logs">
-                                        <a class="link">
-                                            Logs
-                                        </a>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-
-    <div class="text-center bs-section-grey p-4">
-        <p>Extendable list item with text area</p>
-        <div class="row bs-component">
-            <div class="col-lg-6 text-left m-auto">
-                <div class="row">
-                    <div class="col-lg-12 mt-2 ml-auto">
-                        <div class="tab-bars header-rules">
-                            <nav class="navbar header-top d-flex">
-                                <div class="flex-fill">
-                                    <button class="btn btn-light-green btn-rounded">
-                                        Success
-                                    </button>
-                                </div>
-                                <div class="flex-fill">Manual</div>
-                                <div class="flex-fill">Ignore</div>
-                                <div class="flex-fill">
-                                    29 minutes ago
-                                    <span class="badge rounded ml-1">Me</span>
-                                </div>
-                                <div class="pl-3">
-                                    <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
-                                        <i class="icon-settings"></i>
-                                    </button>
-                                </div>
-                            </nav>
-                            <div class="bg-light d-flex p-2 border-bottom">
-                                <div class="tab-expanded-list flex-grow-1">
-                                    <ul class="nav">
-                                        <li class="nav-item">
-                                        <a class="nav-link text-decent" href="#">Last Invocation</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="px-2">
-                                    <button class="btn btn-success">Enqueue</button>
-                                </div>
-                            </div>
-                            <div class="form-group p-3">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <textarea type="password" class="form-control bs-section-grey" id="exampleFormControlTextarea1" rows="6">Ignored</textarea>
+            <div class="text-center bs-section-grey p-4">
+                <p>Extendable list item with text area</p>
+                <div class="row bs-component">
+                    <div class="col-lg-6 text-left m-auto">
+                        <div class="row">
+                            <div class="col-lg-12 mt-2 ml-auto">
+                                <div class="tab-bars header-rules">
+                                    <nav class="navbar header-top d-flex">
+                                        <div class="flex-fill">
+                                            <button class="btn btn-light-green btn-rounded">
+                                                Success
+                                            </button>
+                                        </div>
+                                        <div class="flex-fill">Manual</div>
+                                        <div class="flex-fill">Ignore</div>
+                                        <div class="flex-fill">
+                                            29 minutes ago
+                                            <span class="badge rounded ml-1">Me</span>
+                                        </div>
+                                        <div class="pl-3">
+                                            <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
+                                                <i class="icon-settings"></i>
+                                            </button>
+                                        </div>
+                                    </nav>
+                                    <div class="bg-light d-flex p-2 border-bottom">
+                                        <div class="tab-expanded-list flex-grow-1">
+                                            <ul class="nav">
+                                                <li class="nav-item">
+                                                <a class="nav-link text-decent" href="#">Last Invocation</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="px-2">
+                                            <button class="btn btn-success">Enqueue</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group p-3">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <textarea type="password" class="form-control bs-section-grey" id="exampleFormControlTextarea1" rows="6">Ignored</textarea>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1432,32 +1429,297 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="text-center bs-section-grey p-4">
-        <p>Section Headers with components and actions</p>
-        <div class="row bs-component">
-            <div class="col-lg-5 text-left m-auto p-4">
-                <div class="section-headers header-rules p-3">
-                    <h4>Add new contributors</h4>
-                    <div class="d-flex flex-row">
-                        <div class="d-flex flex-grow-1 mr-2 form-group">
-                            <input type="text" class="form-control" placeholder="Find existing user or invite by email" aria-label="Find existing user or invite by email">
-                        </div>
-                        <div class="flex-grow-2 form-group mr-2">
-                            <select id="inputState" class="form-control">
-                                <option selected>Choose...</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-                        <div class="flex-grow-3">
-                            <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
-                                <i class="icon icon-plus"></i> Add Contributor
-                            </button>
+            
+            <div class="text-center bs-section-grey p-4">
+                <p>Section Headers with components and actions</p>
+                <div class="row bs-component">
+                    <div class="col-lg-5 text-left m-auto p-4">
+                        <div class="section-headers header-rules p-3">
+                            <h4>Add new contributors</h4>
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-grow-1 mr-2 form-group">
+                                    <input type="text" class="form-control" placeholder="Find existing user or invite by email" aria-label="Find existing user or invite by email">
+                                </div>
+                                <div class="flex-grow-2 form-group mr-2">
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="flex-grow-3">
+                                    <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
+                                        <i class="icon icon-plus"></i> Add Contributor
+                                    </button>
+                                </div>
+                            </div>
+                            <span class="text-muted">Big team? <a href="#">Add multiple contributors</a></span>
                         </div>
                     </div>
-                    <span class="text-muted">Big team? <a href="#">Add multiple contributors</a></span>
+                </div>
+            </div>
+        
+        
+            <div class="text-center bs-section-grey p-4">
+                <p>Card View</p>
+                <div class="row bs-component">
+                    <div class="col-lg-12 text-left m-auto p-4">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="card rounded border">
+                                    <img class="card-img-top rounded-right rounded-left" src="./app/images/default-png.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-1">My File.png</h5>
+                                        <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                        <p>
+                                          <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
+                                          <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
+                                          <span class="badge badge-secondary text-muted rounded mb-1 mr-1">Type/png</span>
+                                          <small><span class="text-primary">+3 more</span></small>
+                                        </p>
+                                    </div>
+                                  </div>                          
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="card rounded border">
+                                    <img class="card-img-top rounded-right rounded-left" src="./app/images/img_avatar.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-1 text-truncate">Lorem ipsum dolor sit amet</h5>
+                                        <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                        <p>
+                                          <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
+                                          <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
+                                        </p>
+                                    </div>
+                                  </div>                          
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="card rounded border">
+                                    <img class="card-img-top rounded-right rounded-left" src="./app/images/web-summit.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-1">My File.jpg</h5>
+                                        <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                        <p>
+                                          <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
+                                          <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
+                                          <span class="badge badge-secondary text-muted rounded mb-1 mr-1">Type/png</span>
+                                          <small><span class="text-primary">+3 more</span></small>
+                                        </p>
+                                    </div>
+                                  </div>                          
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="card rounded border">
+                                    <div class="card-header text-center pb-0 pt-4 rounded border-bottom-0">
+                                        <h5>Basic</h5>
+                                        <p class="mb-0">150K API Calls</p>
+                                        <button class="btn btn-primary my-3">$19 / month</button>
+                                        <p>Or pay per year</p>
+                                        <p class="text-primary mb-0">$190 / year</p>
+                                        <hr>
+                                    </div>
+                                    <div class="card-body pt-1">
+                                        <h5 class="card-title mb-2 text-muted">Includes</h5>
+                                        <ul class="list-unstyled p-0">
+                                            <li class="pb-1"><i class="fa fa-check" aria-hidden="true"></i> <strong>150k</strong> API Calls</li>
+                                            <li class="pb-1"><i class="fa fa-check" aria-hidden="true"></i> <strong>5.0 GB</strong> Storage</li>
+                                            <li class="pb-1"><i class="fa fa-check" aria-hidden="true"></i> <strong>10</strong> Contributors</li>
+                                        </ul>
+                                    </div>
+                                  </div>                          
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="card rounded border">
+                                    <img class="card-img-top rounded-right rounded-left" src="./app/images/default-png.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-1">My File.png</h5>
+                                        <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                        <p>
+                                          <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
+                                          <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
+                                          <span class="badge badge-secondary text-muted rounded mb-1 mr-1">Type/png</span>
+                                          <small><span class="text-primary">+3 more</span></small>
+                                        </p>
+                                    </div>
+                                  </div>                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bs-section bs-section-white input-field-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="bs-section-title">Sections and Navigation</h1>
+                </div>
+            </div>
+
+            <div class="bs-section-grey p-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header">
+                            <div class="main-directory">
+                                <h5><i class="icon icon-plus"></i> Main Directory <span class="badge badge-pill badge-secondary badge-round">12</span></h5>
+                                <hr>
+                                <div>Files <span class="badge badge-pill badge-secondary badge-round">10</span></div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col-lg-6">
+                                <div class="contributor">
+                                    <p>Contributor</p>
+                                    <nav class="navbar header-top d-flex">
+                                        <div class="flex-fill">
+                                            <div class="avatar rounded-circle mr-4 float-left">
+                                                <img src="./app/images/profile-picture.png" width="32" height="32">
+                                            </div>
+                                            <p class="mb-0">Agnes Rogahn</p>
+                                        </div>
+                                        <div class="form-group mb-0 pr-2">
+                                            <select id="inputState" class="form-control bg-secondary h-auto border">
+                                                <option selected="">Owner</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="settings">
+                                            <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
+                                                <i class="icon-settings"></i>
+                                            </button>
+                                        </div>
+                                    </nav>
+                                </div>
+        
+                                <div class="mt-3">
+                                    <p>Default</p>
+                                    <nav class="navbar header-top d-flex">
+                                        <div class="flex-fill">
+                                            <p class="mb-0">Developer</p>
+                                        </div>
+                                        <div class="flex-fill">
+                                            <span class="badge badge-primary rounded p-2">Clients: 0</span>
+                                            <span class="badge badge-primary rounded p-2">Users: 0</span>
+                                        </div>
+                                        <div class="form-group mb-0 pr-2">
+                                            <select id="inputState" class="form-control bg-secondary h-auto border">
+                                                <option selected="">Owner</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="settings">
+                                            <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
+                                                <i class="icon-settings"></i>
+                                            </button>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-4">
+                                <ol class="breadcrumb border-0 w-50 m-auto">
+                                    <li class="breadcrumb-item">
+                                        <select class="p-1 border rounded" name="" id="">
+                                            <option value="a">My Application</option>
+                                            <option value="b">My Application 2</option>
+                                            <option value="c">My Application 3</option>
+                                        </select>
+                                    </li>
+                                    <li class="breadcrumb-item active">Assets</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bs-section bs-section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="bs-section-title">Modals</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bs-component bs-section-grey p-5">
+                        <div class="row">
+                            <div class="col-lg-6 m-auto">
+                                <div class="modal" style="position: relative; width: 100%; display: block">
+                                    <div class="modal-dialog modal-lg position-relative">
+                                        <div class="modal-content shadow-none border">
+                                            <div class="modal-header bg-white text-dark border-bottom" *ngIf="showHeader">
+                                                <h4 class="modal-title">Create Schema</h4>
+                                                <button type="button" class="close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-group row mb-4">
+                                                    <label for="inputName" class="col-sm-12">Name <span class="text-muted">(Required)</span></label>
+                                                    <div class="col-sm-12">
+                                                      <input type="text" class="form-control" id="inputName" placeholder="Field name">
+                                                      <small class="text-muted form-text text-left">You can only use letters, numbers and dashes and not more than 40 characters.</small>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <div class="img rounded border p-3 text-center">
+                                                                    <img src="./app/images/icons/multicontent.svg" alt="multi content" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <h5>Multiple Content</h5>
+                                                                <p class="text-muted small">Best for multiple instances like blog posts, pages, authors, products…</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <div class="img rounded border p-3 text-center"><img src="./app/images/icons/multicontent.svg" alt="multi content" /></div>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <h5 class="mb-3">Multiple Content</h5>
+                                                                <p class="text-muted small">Best for multiple instances like blog posts, pages, authors, products…</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 mt-3">
+                                                        <h5 class="text-primary">Import schema</h5>
+                                                        <div class="alert bg-light-blue text-dark" role="alert">
+                                                            <i class="icon-info-outline"></i> These values cannot be changed later.
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class="clearfix">
+                                                    <button type="button" class="float-right btn btn-success">
+                                                        Create
+                                                    </button>
+        
+                                                    <button type="button" class="float-left btn btn-text-secondary2">
+                                                        Cancel
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2395,87 +2657,6 @@
                                 </div>
 
                                 <div class="card-footer text-muted text-xs-center">2 days ago</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bs-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="bs-section-title">Modals</h1>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="bs-component">
-                            <div class="modal" style="position: relative; width: 100%; height: 500px; display: block">
-                                <div class="modal-backdrop show" style="position: absolute"></div>
-
-                                <div
-                                    class="modal-dialog modal-lg"
-                                    style="
-                                        position: absolute;
-                                        top: 50px;
-                                        left: 50px;
-                                        right: 50px;
-                                        bottom: 50px;
-                                        display: block;
-                                    "
-                                >
-                                    <div class="modal-content">
-                                        <div class="modal-header" *ngIf="showHeader">
-                                            <h4 class="modal-title">Title</h4>
-
-                                            <button type="button" class="close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-
-                                        <div class="modal-tabs clearfix">
-                                            <ul class="nav nav-tabs2">
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" href="#home">Home</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#profile">Profile</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link disabled" href="#">Disabled</a>
-                                                </li>
-                                                <li class="nav-item dropdown">
-                                                    <a
-                                                        class="nav-link dropdown-toggle"
-                                                        data-toggle="dropdown"
-                                                        href="#"
-                                                        role="button"
-                                                        aria-haspopup="true"
-                                                        aria-expanded="false"
-                                                        >Dropdown</a
-                                                    >
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="modal-body">Modal body text goes here.</div>
-
-                                        <div class="modal-footer">
-                                            <div class="clearfix">
-                                                <button type="button" class="float-right btn btn-primary">
-                                                    Save changes
-                                                </button>
-
-                                                <button type="button" class="float-left btn btn-text-secondary2">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
