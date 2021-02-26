@@ -557,6 +557,25 @@
                             <div class="row">
                                 <div class="col-lg-6 border-right">
                                     <p class="bs-component">
+                                        List Item Actions
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="bs-component">
+                                        <div class="switch-toggle m-auto">
+                                            <div class="form-check form-switch border rounded p-2">
+                                                <span>Status</span>
+                                                <label class="form-check-label text-primary" for="flexSwitchCheckChecked">Active</label>
+                                                <input class="form-check-input border" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 border-right">
+                                    <p class="bs-component">
                                         Floating button
                                     </p>
                                 </div>
@@ -1315,7 +1334,7 @@
             <div class="text-center bs-section-grey p-4">
                 <p>Custom List Item for Rules</p>
                 <div class="row bs-component">
-                    <div class="col-lg-6 m-auto">
+                    <div class="col-lg-9 m-auto">
                                 <div class="tab-bars header-rules">
                                     <nav class="navbar header-top">
                                         <div class="d-flex justify-content-start">
@@ -1347,10 +1366,11 @@
                                                 <span class="border-left pl-3">Create Content</span>
                                             </button>
                                         </div>
-                                        <div class="d-flex justify-content-end">
-                                            <div>
-                                                <button class="btn btn btn-light">Cancel</button>
-                                                <button class="btn btn-primary">Save</button>
+                                        <div class="d-flex switch-toggle">
+                                            <div class="form-check form-switch border rounded p-2">
+                                                <span>Status</span>
+                                                <label class="form-check-label" for="flexSwitchCheckChecked">Active</label>
+                                                <input class="form-check-input border" type="checkbox" id="flexSwitchCheckChecked" checked>
                                             </div>
                                         </div>
                                     </div>
@@ -1651,7 +1671,7 @@
                     <div class="bs-component bs-section-grey p-5">
                         <div class="row">
                             <div class="col-lg-6 m-auto">
-                                <div class="modal" style="position: relative; width: 100%; display: block">
+                                <div class="modal d-block position-relative w-100">
                                     <div class="modal-dialog modal-lg position-relative">
                                         <div class="modal-content shadow-none border">
                                             <div class="modal-header bg-white text-dark border-bottom" *ngIf="showHeader">
@@ -1717,6 +1737,143 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="modal d-block position-relative w-100">
+                                    <div class="modal-dialog modal-lg position-relative">
+                                        <div class="modal-content shadow-none border">
+                                            <div class="modal-header bg-white text-dark border-bottom" *ngIf="showHeader">
+                                                <h4 class="modal-title">Customise Columns</h4>
+                                                <button type="button" class="close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body" style="height: 260px">
+                                                <div class="border p-2 d-flex justify-content-between rounded shadow-sm mb-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckName" checked>
+                                                        <label class="form-check-label text-muted" for="flexCheckName">
+                                                            NAME
+                                                        </label>
+                                                    </div>
+                                                    <div class="collapse-icom">
+                                                        <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                                                            <img src="./app/images/icons/collapsiable-icon.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="border p-2 d-flex justify-content-between rounded shadow-sm mb-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDescription" checked>
+                                                        <label class="form-check-label text-muted" for="flexCheckDescription">
+                                                            Description
+                                                        </label>
+                                                    </div>
+                                                    <div class="collapse-icom">
+                                                        <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                                                            <img src="./app/images/icons/collapsiable-icon.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="border p-2 d-flex justify-content-between rounded shadow-sm mb-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckStatus">
+                                                        <label class="form-check-label text-muted" for="flexCheckStatus">
+                                                            Status
+                                                        </label>
+                                                    </div>
+                                                    <div class="collapse-icom">
+                                                        <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                                                            <img src="./app/images/icons/collapsiable-icon.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="border p-2 d-flex justify-content-between rounded shadow-sm mb-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckUpdate" checked>
+                                                        <label class="form-check-label text-muted" for="flexCheckUpdate">
+                                                            Update (Date and User)
+                                                        </label>
+                                                    </div>
+                                                    <div class="collapse-icom">
+                                                        <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                                                            <img src="./app/images/icons/collapsiable-icon.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="border p-2 d-flex justify-content-between rounded shadow-sm mb-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckCreated" checked>
+                                                        <label class="form-check-label text-muted" for="flexCheckCreated">
+                                                            Created By
+                                                        </label>
+                                                    </div>
+                                                    <div class="collapse-icom">
+                                                        <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                                                            <img src="./app/images/icons/collapsiable-icon.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class="clearfix">
+                                                    <button type="button" class="float-right btn btn-primary">
+                                                        Save
+                                                    </button>
+                                                    <button type="button" class="float-right btn">
+                                                        Cancel
+                                                    </button>
+        
+                                                    <button type="button" class="float-left btn btn-text-secondary2">
+                                                        Default
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal d-block position-relative w-100">
+                                    <div class="modal-dialog modal-lg position-relative">
+                                        <div class="modal-content shadow-none border">
+                                            <div class="modal-header bg-white text-dark border-bottom" *ngIf="showHeader">
+                                                <h4 class="modal-title">Customise Columns</h4>
+                                                <button type="button" class="close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="border p-2 d-flex justify-content-between rounded shadow-sm mb-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckName" checked>
+                                                        <label class="form-check-label text-muted" for="flexCheckName">
+                                                            NAME
+                                                        </label>
+                                                    </div>
+                                                    <div class="collapse-icom">
+                                                        <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                                                            <img src="./app/images/icons/collapsiable-icon.svg">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class="clearfix">
+                                                    <button type="button" class="float-right btn btn-primary">
+                                                        Save
+                                                    </button>
+                                                    <button type="button" class="float-right btn">
+                                                        Cancel
+                                                    </button>
+        
+                                                    <button type="button" class="float-left btn btn-text-secondary2">
+                                                        Default
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>

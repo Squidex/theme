@@ -448,6 +448,57 @@ body {
 }
 
 //
+// switch input field
+//
+.switch-toggle {
+    position: relative;
+    width: 160px;
+    .form-switch {
+        position: absolute;
+        right: 0;
+        width: 100%;
+
+        .form-check-input {
+            appearance: none;
+            background-image: $asset-checked-before;
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 2em;
+            height: 1em;
+            margin-left: -2.5em;
+            margin-top: .25em;
+            position: absolute;
+            right: 8px;
+            transition: background-position .15s ease-in-out;
+            vertical-align: top;
+            width: 2em;
+
+            &:checked {
+                background-color: $color-theme-blue;
+                background-image: $asset-checked-after;
+                background-position: right center;
+                border-color: $color-theme-blue;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        span {
+            float: left;
+        }
+
+        label {
+            &.form-check-label {
+                margin-left: -20px;
+            }
+        }
+    }
+}
+
+//
 // Profile picture in circle
 //
 .avatar {
