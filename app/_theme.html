@@ -376,7 +376,7 @@
                                     <!-- <img src="./app/images/profile-picture.png" /> -->
                                     <div class="input-group w-50 flex-grow-1 mr-1 publish">
                                         <h2 class="nav-title"><span class="publish-icon mr-2"></span>Schema 2</h2>
-                                        <p>Content <span class="badge">5</span></p>
+                                        <p>Content <span class="badge badge-pill badge-secondary badge-round">5</span></p>
                                     </div>
         
                                     <div class="mr-2">
@@ -547,9 +547,9 @@
                                         Collapsible
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 custom-btns">
                                     <p class="bs-component">
-                                        <button type="button" class="btn btn-success btn-circle btn-lg"><i class="icon icon-plus"></i></button>
+                                        <button type="button" class="btn btn-success btn-circle"><i class="icon icon-plus"></i></button>
                                     </p>
                                 </div>
                             </div>
@@ -580,16 +580,16 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="bs-component">
+                                    <div class="bs-component custom-btns">
                                         <p>
-                                            <button type="button" class="btn btn-success btn-circle btn-lg"><i class="icon icon-plus"></i></button>
-                                            <button type="button" class="btn btn-grey btn-circle btn-lg"><i class="icon icon-plus"></i></button>
+                                            <button type="button" class="btn btn-success btn-circle"><i class="icon icon-plus"></i></button>
+                                            <button type="button" class="btn btn-grey btn-circle"><i class="icon icon-plus"></i></button>
                                         </p>
                                         <p>
-                                            <button type="button" class="btn btn-success btn-rounded btn-lg"><i class="icon icon-plus"></i> Add Field</button>
+                                            <button type="button" class="btn btn-success btn-rounded"><i class="icon icon-plus"></i> Add Field</button>
                                         </p>
                                         <p>
-                                            <button type="button" class="btn btn-grey btn-rounded btn-lg"><i class="icon icon-plus"></i> Add Field</button>
+                                            <button type="button" class="btn btn-grey btn-rounded"><i class="icon icon-plus"></i> Add Field</button>
                                         </p>
                                     </div>
                                 </div>
@@ -703,8 +703,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <p class="bs-component">
-                                        <div class="dropdown">
+                                        <div class="dropdown mr-2 float-left">
                                             <button class="btn" type="button">
                                               ...
                                             </button>
@@ -721,7 +720,13 @@
                                                  </ul>
                                             </div>
                                           </div>
-                                    </p>
+
+                                          <div class="d-flex">
+                                            <button type="button" class="btn btn-outline-dark border">Bulk <span class="badge badge-pill badge-secondary badge-round border">2</span></button>
+                                            <button type="button" class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split border rounded-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              <span class="sr-only">Toggle Dropdown</span>
+                                            </button>
+                                          </div>
                                 </div>
                             </div>
     
@@ -914,7 +919,7 @@
                                         <div class="col-lg-8">
                                             <div class="bs-component">
                                                 <div class="form-group row">
-                                                    <div class="col-sm-9">
+                                                    <div class="col-sm-9 custom-btns">
                                                         <span class="btn btn-light-green btn-rounded">
                                                             Enabled
                                                           </span>
@@ -1169,7 +1174,7 @@
                                     <p class="mb-0 pl-2">Name <span class="badge badge-pill badge-secondary badge-round">3</span></p> 
                                 </div>
                               </div>
-                              <div class="d-flex justify-content-end">
+                              <div class="d-flex justify-content-end custom-btns">
                                 <div class="collapse-icon">
                                     <button type="button" class="btn btn-grey btn-circle"><i class="icon icon-plus"></i></button>
                                 </div>
@@ -1202,7 +1207,7 @@
                                                 <p class="mb-0 pl-2">First Name</p> 
                                             </div>
                                           </div>
-                                          <div class="d-flex justify-content-end">
+                                          <div class="d-flex justify-content-end custom-btns">
                                             <div class="enabled-btn mx-2">
                                                 <button class="btn btn-light-green btn-rounded">
                                                     Enabled
@@ -1253,7 +1258,7 @@
             <div class="text-center bs-section-grey p-4">
                 <p>Collapsible Component with Sublists</p>
                 <div class="row bs-component">
-                    <div class="col-lg-10 text-left m-auto">
+                    <div class="col-lg-10 text-left m-auto custom-btns">
                         <p><button type="button" class="btn btn-grey btn-circle btn-lg"><i class="icon icon-plus"></i></button>
                             <a class="collapse-btn ml-2" data-toggle="collapse" href="#collapseList" role="button" aria-expanded="false" aria-controls="collapseExample">
                                 My Collapsible UI Component
@@ -1291,7 +1296,7 @@
                                                 <p class="mb-0 pl-2">My Expanded list item</p> 
                                             </div>
                                           </div>
-                                          <div class="d-flex justify-content-end">
+                                          <div class="d-flex justify-content-end custom-btns">
                                             <div class="enabled-btn mx-2">
                                                 <button class="btn btn-light-green btn-rounded">
                                                     Enabled
@@ -1407,7 +1412,7 @@
                             <div class="col-lg-12 mt-2 ml-auto">
                                 <div class="tab-bars header-rules">
                                     <nav class="navbar header-top d-flex">
-                                        <div class="flex-fill">
+                                        <div class="flex-fill custom-btns">
                                             <button class="btn btn-light-green btn-rounded">
                                                 Success
                                             </button>
@@ -1670,8 +1675,8 @@
                 <div class="col-lg-12">
                     <div class="bs-component bs-section-grey p-5">
                         <div class="row">
-                            <div class="col-lg-6 m-auto">
-                                <div class="modal d-block position-relative w-100">
+                            <div class="col-lg-12 m-auto">
+                                <div class="modal d-block position-relative w-100 col-lg-6 m-auto">
                                     <div class="modal-dialog modal-lg position-relative">
                                         <div class="modal-content shadow-none border">
                                             <div class="modal-header bg-white text-dark border-bottom" *ngIf="showHeader">
@@ -1738,7 +1743,7 @@
                                     </div>
                                 </div>
 
-                                <div class="modal d-block position-relative w-100">
+                                <div class="modal d-block position-relative w-100 col-lg-6 m-auto">
                                     <div class="modal-dialog modal-lg position-relative">
                                         <div class="modal-content shadow-none border">
                                             <div class="modal-header bg-white text-dark border-bottom" *ngIf="showHeader">
@@ -1833,40 +1838,372 @@
                                 </div>
 
                                 <div class="modal d-block position-relative w-100">
-                                    <div class="modal-dialog modal-lg position-relative">
-                                        <div class="modal-content shadow-none border">
-                                            <div class="modal-header bg-white text-dark border-bottom" *ngIf="showHeader">
-                                                <h4 class="modal-title">Customise Columns</h4>
-                                                <button type="button" class="close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="border p-2 d-flex justify-content-between rounded shadow-sm mb-2">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckName" checked>
-                                                        <label class="form-check-label text-muted" for="flexCheckName">
-                                                            NAME
-                                                        </label>
-                                                    </div>
-                                                    <div class="collapse-icom">
-                                                        <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-                                                            <img src="./app/images/icons/collapsiable-icon.svg">
+                                    <div class="modal-dialog modal-lg mw-100 position-relative">
+                                        <div class="modal-content w-75 m-auto shadow-none border">
+                                            <div class="modal-header bg-white text-dark border-bottom d-block" *ngIf="showHeader">
+                                                <div class="row">
+                                                    <div class="col-lg-12 p-0">
+                                                        <h4 class="modal-title float-left">Select References</h4>
+                                                        <button type="button" class="close">
+                                                            <span aria-hidden="true">&times;</span>
                                                         </button>
                                                     </div>
                                                 </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 p-0">
+                                                        <nav class="navbar header-rules d-flex px-0">
+                                                                <div class="flex-fill mr-2">
+                                                                    <select class="form-control">
+                                                                        <option value="" selected="" disabled=""><i class="icon icon-bell ml-1 mr-1"></i> Schema 3</option>
+                                                                        <option value="">A</option>
+                                                                        <option value="">B</option>
+                                                                        <option value="">C</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="input-group w-50 flex-grow-1 mr-2">
+                                                                    <input type="text" class="form-control" placeholder="Search for content in " aria-label="Recipient's username with two button addons">
+                                                                    <button class="btn custom-btn-outline-secondary border-left-0 " type="button"><i class="icon icon-star-empty"></i></button>
+                                                                    <button class="btn custom-btn-outline-secondary rounded-right border-left-0" type="button"><i class="icon icon-reset mr-1"></i></button>
+                                                                </div>
+                                
+                                                                <div class="refresh ml-2">
+                                                                    <i class="icon icon-reset mr-1"></i>
+                                                                </div>
+                                                            </nav>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="modal-footer">
-                                                <div class="clearfix">
-                                                    <button type="button" class="float-right btn btn-primary">
-                                                        Save
+                                            <div class="modal-body bg-light py-0">
+                                                <table class="table table-borderless table-row-spacing">
+                                                    <thead>
+                                                      <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Updated</th>
+                                                        <th scope="col">Created By</th>
+                                                        <th scope="col">Custom Column</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr class="bg-white">
+                                                        <th scope="row">
+                                                            <div class="form-check border-right pr-4">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckName" checked="">
+                                                                <label class="form-check-label text-muted" for="flexCheckName">
+                                                                    <div class="dropdown-with-options">
+                                                                        <div class="status-options dropdown-with-status">
+                                                                            <i class="status status-draft p-1"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td>Snapback Cap</td>
+                                                        <td><div>Thu, 6:20 PM<span class="badge rounded ml-1">Adam</span></div></td>
+                                                        <td>
+                                                            <div class="avatar rounded-circle float-left mr-2">
+                                                                <img src="./app/images/profile-picture.png" width="32" height="32">
+                                                            </div>
+                                                            <span class="float-left mt-1">Marshal</span>
+                                                        </td>
+                                                        <td>Thu, 6:20 PM</td>
+                                                      </tr>
+                                                      <tr class="bg-white">
+                                                        <th scope="row">
+                                                            <div class="form-check border-right pr-4">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckName">
+                                                                <label class="form-check-label text-muted" for="flexCheckName">
+                                                                    <div class="dropdown-with-options">
+                                                                        <div class="status-options dropdown-with-status">
+                                                                            <i class="status status-publish p-1"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td>Snapback Cap</td>
+                                                        <td><div>Thu, 6:20 PM<span class="badge rounded ml-1">Adam</span></div></td>
+                                                        <td>
+                                                            <div class="avatar rounded-circle float-left mr-1">
+                                                                <img src="./app/images/profile-picture.png" width="32" height="32">
+                                                            </div>
+                                                            <span class="float-left mt-1">Marshal</span>
+                                                        </td>
+                                                        <td>Thu, 6:20 PM</td>
+                                                      </tr>
+                                                      <tr class="bg-white">
+                                                        <th scope="row">
+                                                            <div class="form-check border-right pr-4">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckName">
+                                                                <label class="form-check-label text-muted" for="flexCheckName">
+                                                                    <div class="dropdown-with-options">
+                                                                        <div class="status-options dropdown-with-status">
+                                                                            <i class="status status-steps p-1"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td>Snapback Cap</td>
+                                                        <td><div>Thu, 6:20 PM<span class="badge rounded ml-1">Adam</span></div></td>
+                                                        <td>
+                                                            <div class="avatar rounded-circle float-left mr-2">
+                                                                <img src="./app/images/profile-picture.png" width="32" height="32">
+                                                            </div>
+                                                            <span class="float-left mt-1">Marshal</span>
+                                                        </td>
+                                                        <td>Thu, 6:20 PM</td>
+                                                      </tr>
+                                                      <tr class="bg-white">
+                                                        <th scope="row">
+                                                            <div class="form-check border-right pr-4">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckName">
+                                                                <label class="form-check-label text-muted" for="flexCheckName">
+                                                                    <div class="dropdown-with-options">
+                                                                        <div class="status-options dropdown-with-status">
+                                                                            <i class="status status-draft p-1"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td>Snapback Cap</td>
+                                                        <td><div>Thu, 6:20 PM<span class="badge rounded ml-1">Adam</span></div></td>
+                                                        <td>
+                                                            <div class="avatar rounded-circle float-left mr-2">
+                                                                <img src="./app/images/profile-picture.png" width="32" height="32">
+                                                            </div>
+                                                            <span class="float-left mt-1">Marshal</span>
+                                                        </td>
+                                                        <td>Thu, 6:20 PM</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                  <div class="clearfix border-top p-2">
+                                                    <span class="align-middle">
+                                                        Showing 04 of 04 content records
+                                                    </span>
+                                                    <button type="button" class="float-right btn bg-white border text-muted">
+                                                        Next
                                                     </button>
-                                                    <button type="button" class="float-right btn">
+                                                    <button type="button" class="float-right btn bg-white border text-muted">
+                                                        Previous
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer py-2">
+                                                <div class="clearfix">
+                                                    <span class="align-middle">
+                                                        2 assets selected
+                                                    </span>
+                                                    <button type="button" class="float-right btn btn-primary">
+                                                        Link Selected Contents (2)
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal d-block position-relative w-100">
+                                    <div class="modal-dialog modal-lg position-relative mw-100">
+                                        <div class="modal-content w-75 m-auto shadow-none border">
+                                            <div class="modal-header bg-white text-dark border-bottom d-block" *ngIf="showHeader">
+                                                <div class="row">
+                                                    <div class="col-lg-12 p-0">
+                                                        <h4 class="modal-title float-left">Select Assets</h4>
+                                                        <button type="button" class="close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 p-0">
+                                                        <nav class="navbar header-rules d-flex px-0">
+                                                                <div class="flex-fill mr-2">
+                                                                    <select class="form-control">
+                                                                        <option value="" selected="" disabled=""><i class="icon icon-bell ml-1 mr-1"></i> # Search by tags</option>
+                                                                        <option value="">A</option>
+                                                                        <option value="">B</option>
+                                                                        <option value="">C</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="input-group w-50 flex-grow-1 mr-2">
+                                                                    <input type="text" class="form-control" placeholder="Search file names and folders" aria-label="Search file names and folders">
+                                                                </div>
+                                
+                                                                <div class="refresh ml-2">
+                                                                    <i class="icon icon-reset mr-1"></i>
+                                                                </div>
+                                                            </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="header pt-3">
+                                                <div class="main-directory">
+                                                    <div class="col-lg-12">
+                                                        <h5>Main Directory <span class="badge badge-pill badge-secondary badge-round">12</span></h5>
+                                                        <hr>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body py-0 px-3" style="height: 600px">
+                                                <h5 class="small">Files <span class="badge badge-pill badge-secondary badge-round">10</span></h5>
+                                                <div class="row">
+                                                <div class="col-lg-3 px-2">
+                                                    <div class="card rounded border">
+                                                        <img class="card-img-top rounded-top" src="./app/images/default-png.jpg" alt="Card image cap">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title mb-1">My File.png</h5>
+                                                            <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                                            <p>
+                                                                <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
+                                                                <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
+                                                                <span class="badge badge-secondary text-muted rounded mb-1 mr-1">Type/png</span>
+                                                                <small><span class="text-primary">+3 more</span></small>
+                                                            </p>
+                                                        </div>
+                                                        </div>                          
+                                                </div>
+                                                <div class="col-lg-3 px-2">
+                                                    <div class="card rounded border">
+                                                        <img class="card-img-top rounded-top" src="./app/images/img_avatar.png" alt="Card image cap">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title mb-1 text-truncate">Lorem ipsum dolor sit amet</h5>
+                                                            <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                                            <p>
+                                                                <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
+                                                                <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
+                                                            </p>
+                                                        </div>
+                                                        </div>                          
+                                                </div>
+                                                <div class="col-lg-3 px-2">
+                                                    <div class="card rounded border">
+                                                        <img class="card-img-top rounded-top" src="./app/images/web-summit.png" alt="Card image cap">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title mb-1">My File.jpg</h5>
+                                                            <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                                            <p>
+                                                                <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
+                                                                <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
+                                                                <span class="badge badge-secondary text-muted rounded mb-1 mr-1">Type/png</span>
+                                                                <small><span class="text-primary">+3 more</span></small>
+                                                            </p>
+                                                        </div>
+                                                        </div>                          
+                                                </div>
+                                                <div class="col-lg-3 px-2">
+                                                    <div class="card rounded border">
+                                                        <div class="card-header text-center pb-0 pt-4 rounded border-bottom-0">
+                                                            <h5>Basic</h5>
+                                                            <p class="mb-0">150K API Calls</p>
+                                                            <button class="btn btn-primary my-3">$19 / month</button>
+                                                            <p>Or pay per year</p>
+                                                            <p class="text-primary mb-0">$190 / year</p>
+                                                            <hr>
+                                                        </div>
+                                                        <div class="card-body pt-1">
+                                                            <h5 class="card-title mb-2 text-muted">Includes</h5>
+                                                            <ul class="list-unstyled p-0">
+                                                                <li class="pb-1"><i class="fa fa-check" aria-hidden="true"></i> <strong>150k</strong> API Calls</li>
+                                                                <li class="pb-1"><i class="fa fa-check" aria-hidden="true"></i> <strong>5.0 GB</strong> Storage</li>
+                                                                <li class="pb-1"><i class="fa fa-check" aria-hidden="true"></i> <strong>10</strong> Contributors</li>
+                                                            </ul>
+                                                        </div>
+                                                        </div>                          
+                                                </div>
+                                                <div class="col-lg-3 px-2">
+                                                    <div class="card rounded border">
+                                                        <img class="card-img-top rounded-top" src="./app/images/default-png.jpg" alt="Card image cap">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title mb-1">My File.png</h5>
+                                                            <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                                            <p>
+                                                                <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
+                                                                <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
+                                                                <span class="badge badge-secondary text-muted rounded mb-1 mr-1">Type/png</span>
+                                                                <small><span class="text-primary">+3 more</span></small>
+                                                            </p>
+                                                        </div>
+                                                        </div>                          
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer py-2">
+                                                <div class="clearfix">
+                                                    <span class="align-middle">
+                                                        2 assets selected
+                                                    </span>
+                                                    <button type="button" class="float-right btn btn-primary">
+                                                        Link Selected Contents (2)
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal d-block position-relative">
+                                    <div class="modal-dialog position-relative">
+                                        <div class="modal-content shadow-none border">
+                                            <div class="modal-header bg-white text-dark border-bottom d-block" *ngIf="showHeader">
+                                                <div class="row">
+                                                    <div class="col-lg-12 p-0">
+                                                        <h4 class="modal-title float-left">New Rule</h4>
+                                                        <button type="button" class="close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="row custom-stepper">
+                                                    <div class="col-lg-12 p-0">
+                                                        <nav class="navbar header-rules d-flex text-muted small px-0">
+                                                            <div class="flex-fill mr-2 step finish">
+                                                                Select Trigger
+                                                            </div>
+                                                            <div class="flex-fill mr-2 step active">
+                                                                Edit Trigger
+                                                            </div>
+                                                            <div class="flex-fill mr-2 step">
+                                                                Select Action
+                                                            </div>
+                                                            <div class="last-step step">
+                                                                Edit Action
+                                                            </div>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body py-0 px-3" style="height: 600px">
+                                                <div class="py-3">
+                                                    <h5>Asset Changed</h5>
+                                                    <h6 class="mt-4">Condition</h6>
+                                                    <textarea type="password" class="form-control bs-section-grey" id="exampleFormControlTextarea1" rows="6" spellcheck="false" placeholder="Optional condition as javascript expression"></textarea>
+                                                    <h5 class="mt-3">Conditions</h5>
+                                                    <p>Conditions are javascript expressions that define when to trigger, for example:</p>
+                                                    <ul>
+                                                        <li>Specific events:
+                                                            <p class="bg-light p-1 bg-with-icon">event.type ==  'Created'  || event.type  == 'Updated' <span class="icon-box"><i class="iocn icon-plus text-white"></i></span></p>
+                                                        </li>
+                                                        <li>Large assets:
+                                                            <p class="bg-light p-1 bg-with-icon">event.fileSize > 100000000 <span class="icon-box"><i class="iocn icon-plus text-white"></i></span></p>
+                                                        </li>
+                                                        <li>Images only:
+                                                            <p class="bg-light p-1 bg-with-icon">event.isImage <span class="icon-box"><i class="iocn icon-plus text-white"></i></span></p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer py-2">
+                                                <div class="clearfix">
+                                                    <button type="button" class="btn">
                                                         Cancel
                                                     </button>
-        
-                                                    <button type="button" class="float-left btn btn-text-secondary2">
-                                                        Default
+                                                    <button type="button" class="float-right btn btn-primary">
+                                                        Continue
                                                     </button>
                                                 </div>
                                             </div>

@@ -79,6 +79,11 @@ body {
     }
 }
 
+.table-row-spacing {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
 .cdk-drag-placeholder {
     opacity: 0;
 }
@@ -113,6 +118,94 @@ body {
     h3,
     h4 {
         margin-top: 1rem;
+    }
+}
+
+//
+// Stepper
+//
+
+.custom-stepper {
+    .step {
+        padding-left: 15px;
+        position: relative;
+
+        &::before {
+            border: 1px solid $color-theme-blue;
+            border-radius: 100px;
+            content: '';
+            height: 10px;
+            left: 0;
+            position: absolute;
+            top: 7px;
+            width: 10px;
+        }
+
+        &::after {
+            background: $color-grey-dark;
+            content: '';
+            height: 2px;
+            position: absolute;
+            right: 0;
+            top: 12px;
+            width: 30px;
+        }
+        
+        &:last-child {
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &.finish {
+            
+            &::before {
+                background: $color-theme-blue;
+                border-color: $color-theme-blue;
+            }
+
+            &::after {
+                background: $color-theme-blue;
+            }
+        }
+
+        &.active {
+            color: $color-black;
+            &::before {
+                background: $color-theme-blue;
+                border-color: $color-theme-blue;
+            }
+
+            &::after {
+                background: $color-theme-blue;
+            }
+        }
+    }
+}
+
+//
+// Icon with Bg
+//
+.bg-with-icon {
+    position: relative;
+    .icon-box {
+        background: $color-grey-dark;
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+
+        i {
+            left: 0;
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: fit-content;
+        }
     }
 }
 
@@ -277,6 +370,39 @@ body {
                 transform: translateY(-50%);
             }
         }
+        
+        &.status-options {
+            .status {
+                background: $color-grey;
+                border-radius: 100px;
+                content: '';
+                height: 10px;
+                left: 25px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 10px;
+
+                &.status-publish {
+                    background: $color-theme-green;
+                }
+
+                &.status-draft {
+                    background: $color-theme-blue;
+                }
+
+                &.status-steps {
+                    background: $color-theme-orange;
+                }
+            }
+
+            .icon {
+                left: 25px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
     }
 }
 
@@ -402,28 +528,30 @@ body {
     }
 }
 
-.btn {
+.custom-btns {
     font-size: 14px;
-
-    &.btn-circle {
-        border-radius: 100px;
-        height: 40px;
-        padding: 0;
-        width: 40px;
-    }
-
-    &.btn-grey {
-        background: $color-grey-dark;
-        color: $color-white;
-    }
-
-    &.btn-rounded {
-        border-radius: 50px;
-    }
-
-    &.btn-light-green {
-        background: $color-green-lighter;
-        color: $color-theme-green;
+    
+    .btn {
+        &.btn-circle {
+            border-radius: 100px;
+            height: 40px;
+            padding: 0;
+            width: 40px;
+        }
+    
+        &.btn-grey {
+            background: $color-grey-dark;
+            color: $color-white;
+        }
+    
+        &.btn-rounded {
+            border-radius: 50px;
+        }
+    
+        &.btn-light-green {
+            background: $color-green-lighter;
+            color: $color-theme-green;
+        }
     }
 }
 
