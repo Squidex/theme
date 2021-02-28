@@ -530,7 +530,6 @@ body {
 
 .custom-btns {
     font-size: 14px;
-    
     .btn {
         &.btn-circle {
             border-radius: 100px;
@@ -552,6 +551,28 @@ body {
             background: $color-green-lighter;
             color: $color-theme-green;
         }
+    }
+}
+
+//
+// Custom Icons
+//
+
+.custom-icons {
+    .icon-bell {
+        content: $asset-icon-bell;
+    }
+    .icon-filter {
+        content: $asset-icon-filter;
+    }
+    .icon-clone {
+        content: $asset-icon-clone;
+    }
+    .icon-folder-plus {
+        content: $asset-icon-folder-plus;
+    }
+    .icon-reset {
+        content: $asset-icon-reset;
     }
 }
 
@@ -581,6 +602,7 @@ body {
 .switch-toggle {
     position: relative;
     width: 160px;
+    
     .form-switch {
         position: absolute;
         right: 0;
