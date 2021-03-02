@@ -29,6 +29,7 @@
 
             .bs-component {
                 margin-bottom: 1rem;
+                color: #9da1b6;
             }
 
             .modal-tabs {
@@ -74,59 +75,65 @@
 
                 <div class="row bs-component">
                     <div class="col-lg-12">
-                        <nav class="navbar navbar-expand navbar-dark bg-primary">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                             <a class="navbar-brand" href="#">Navbar</a>
-
-                            <ul class="navbar-nav ml-auto">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                        
+                            <div class="collapse navbar-collapse" id="navbarColor02">
+                              <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
+                                  <a class="nav-link" href="#">Features</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
+                                  <a class="nav-link" href="#">Pricing</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                  <a class="nav-link" href="#">About</a>
                                 </li>
-                            </ul>
-
-                            <form class="form-inline">
+                              </ul>
+                              <form class="form-inline">
                                 <input class="form-control mr-sm-2" type="text" placeholder="Search" />
-
                                 <button type="button" class="btn btn-secondary my-2 my-sm-0">Search</button>
-                            </form>
-                        </nav>
+                              </form>
+                            </div>
+                          </nav>
                     </div>
                 </div>
 
                 <div class="row bs-component">
                     <div class="col-lg-12">
-                        <nav class="navbar navbar-expand navbar-light bg-light">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
                             <a class="navbar-brand" href="#">Navbar</a>
-
-                            <ul class="navbar-nav ml-auto">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                        
+                            <div class="collapse navbar-collapse" id="navbarColor02">
+                              <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
+                                  <a class="nav-link" href="#">Features</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
+                                  <a class="nav-link" href="#">Pricing</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                  <a class="nav-link" href="#">About</a>
                                 </li>
-                            </ul>
-
-                            <form class="form-inline">
+                              </ul>
+                              <form class="form-inline">
                                 <input class="form-control mr-sm-2" type="text" placeholder="Search" />
-
                                 <button type="button" class="btn btn-secondary my-2 my-sm-0">Search</button>
-                            </form>
-                        </nav>
+                              </form>
+                            </div>
+                          </nav>
                     </div>
                 </div>
             </div>
@@ -142,52 +149,53 @@
 
                 <div class="row bs-component">
                     <div class="col-lg-12">
-                        <nav class="navbar header-top">
+                        <nav class="navbar header-top d-flex justify-content-between">
                             <!-- <img src="./app/images/profile-picture.png" /> -->
 
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item">
-                                    <select class="p-1" name="" id="">
-                                        <option value="a">My Application</option>
-                                        <option value="b">My Application 2</option>
-                                        <option value="c">My Application 3</option>
-                                    </select>
-                                </li>
-                                <li class="breadcrumb-item">
-                                    <a href="#">Schemas</a>
-                                </li>
-                                <li class="breadcrumb-item active">Schemas 2</li>
-                            </ol>
-
-                            <ul class="navbar-nav ml-auto"></ul>
-
-                            <form class="form-inline">
-                                <input class="form-control" type="text" placeholder="Search" />
-                                <i class="icon icon-search"></i>
-                            </form>
-                            <div class="upload-count mx-3">
-                                <i class="icon icon-upload-3 mr-1"></i>
-                                <span>0</span>
+                            <div class="d-flex m-lg-0 m-sm-auto m-xs-auto">
+                                <ol class="breadcrumb p-2">
+                                    <li class="breadcrumb-item">
+                                        <select class="p-1" name="" id="">
+                                            <option value="a">My Application</option>
+                                            <option value="b">My Application 2</option>
+                                            <option value="c">My Application 3</option>
+                                        </select>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="#">Schemas</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">Schemas 2</li>
+                                </ol>
                             </div>
-                            <div class="dropdown border-left pl-3">
-                                <div class="avatar rounded-circle mr-1">
-                                    <img src="./app/images/profile-picture.png" />
+                            <div class="d-flex m-lg-0 m-sm-auto m-xs-auto">
+                                <form class="form-inline p-2">
+                                    <input class="form-control" type="text" placeholder="Quick Nav (Press )" />
+                                    <i class="icon icon-search"></i>
+                                </form>
+                                <div class="upload-count p-2">
+                                    <i class="icon icon-upload-3 mr-1"></i>
+                                    <span>0</span>
                                 </div>
-                                <i
-                                    class="icon icon-caret-down ml-2"
-                                    id="dropdownMenuButton"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                ></i>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-
-                                    <div class="dropdown-divider"></div>
-
-                                    <a class="dropdown-item dropdown-item-delete" href="#">Separated link</a>
+                                <div class="dropdown border-left pl-3 p-2">
+                                    <div class="avatar rounded-circle mr-1">
+                                        <img src="./app/images/profile-picture.png" />
+                                    </div>
+                                    <i
+                                        class="icon icon-caret-down ml-2"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    ></i>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+    
+                                        <div class="dropdown-divider"></div>
+    
+                                        <a class="dropdown-item dropdown-item-delete" href="#">Separated link</a>
+                                    </div>
                                 </div>
                             </div>
                         </nav>
@@ -199,15 +207,17 @@
                         <nav class="navbar header-rules">
                             <!-- <img src="./app/images/profile-picture.png" /> -->
 
-                            <h2>Rules</h2>
-                            <span class="badge badge-pill badge-secondary badge-round">02</span>
+                            <div class="d-flex mb-1">
+                                <h2>Rules</h2>
+                                <span class="badge badge-pill badge-secondary badge-round">02</span>
+                            </div>
 
                             <ul class="navbar-nav ml-auto"></ul>
 
-                            <div class="text-muted">
-                                <i class="icon icon-reset mr-1"></i>
+                            <div class="text-muted mr-3">
+                                <i class="icon icon-reset ml-1"></i>
                             </div>
-                            <div class="dropdown pl-3">
+                            <div class="dropdown">
                                 <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
                                     <i class="icon icon-plus"></i> Next Rule
                                     <span class="badge text-white">N</span>
@@ -222,7 +232,7 @@
                         <nav class="navbar header-rules d-flex">
                             <!-- <img src="./app/images/profile-picture.png" /> -->
 
-                            <div class="input-group w-50 flex-grow-1 mr-4">
+                            <div class="input-group w-50 flex-grow-1 mr-4 mb-2">
                                 <input type="text" class="form-control" placeholder="Search for content in " aria-label="Recipient's username with two button addons">
                                 <button class="btn custom-btn-outline-secondary border-left-0 " type="button"><i class="icon icon-star-empty"></i></button>
                                 <button class="btn custom-btn-outline-secondary rounded-right border-left-0" type="button"><i class="icon icon-filter mr-1"></i></button>
@@ -233,7 +243,7 @@
                                 <i class="icon icon-reset mr-1"></i>
                             </div>
 
-                            <div class="dropdown pl-3">
+                            <div class="dropdown">
                                 <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
                                     <i class="icon icon-plus"></i> New
                                 </button>
@@ -249,7 +259,7 @@
                                 <div class="mr-4">
                                     <h2>Assets</h2>
                                 </div>
-                                <div class="flex-fill mr-4">
+                                <div class="flex-fill p-2 mr-0 mr-lg-4">
                                     <select class="form-control">
                                         <option value="" selected="" disabled=""># Search by tags</option>
                                         <option value="">A</option>
@@ -257,16 +267,16 @@
                                         <option value="">C</option>
                                     </select>
                                 </div>
-                                <div class="flex-fill mr-4">
+                                <div class="flex-fill p-2 mr-0 mr-lg-4">
                                     <input type="text" class="form-control" placeholder="Search for content in " aria-label="Recipient's username with two button addons">
                                 </div>
 
-                                <div class="mr-4 text-muted">
+                                <div class="mr-0 mr-lg-4 p-2 text-muted">
                                     <i class="icon icon-list1 mr-3"></i>
                                     <i class="icon icon-reset mr-1"></i>
                                 </div>
 
-                                <div class="mr-0">
+                                <div class="mr-0 p-2">
                                     <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
                                         <i class="icon icon-plus"></i> New
                                         <span class="badge text-white">N</span>
@@ -376,8 +386,8 @@
                                 <nav class="navbar header-rules d-flex main-tab-bar">
                                     <!-- <img src="./app/images/profile-picture.png" /> -->
                                     <div class="input-group w-50 flex-grow-1 mr-1 publish">
-                                        <h2 class="nav-title"><span class="publish-icon mr-2"></span>Schema 2</h2>
-                                        <p>Content <span class="badge badge-pill badge-secondary badge-round">5</span></p>
+                                        <h2 class="nav-title pl-0"><span class="publish-icon mr-2"></span>Schema 2</h2>
+                                        <p class="border-left pl-3">Content <span class="badge badge-pill badge-secondary badge-round">5</span></p>
                                     </div>
         
                                     <div class="mr-2 text-muted">
@@ -431,19 +441,19 @@
                                 <h3>Sub Tabs</h3>
                                 <div class="sub-tab-bar">
                                     <ul class="nav">
-                                        <li class="nav-item mr-2">
+                                        <li class="nav-item mr-2 mb-1">
                                           <a class="nav-link" href="#">Query</a>
                                         </li>
-                                        <li class="nav-item mr-2">
+                                        <li class="nav-item mr-2 mb-1">
                                           <a class="nav-link active" href="#">Create</a>
                                         </li>
-                                        <li class="nav-item mr-2">
+                                        <li class="nav-item mr-2 mb-1">
                                           <a class="nav-link" href="#">Change</a>
                                         </li>
-                                        <li class="nav-item mr-2">
+                                        <li class="nav-item mr-2 mb-1">
                                             <a class="nav-link" href="#">Delete</a>
                                         </li>
-                                        <li class="nav-item mr-2">
+                                        <li class="nav-item mr-2 mb-1">
                                             <a class="nav-link" href="#">Update</a>
                                         </li>
                                       </ul>
@@ -455,21 +465,21 @@
                             <div class="col-lg-12">
                                 <h3>Tabs in Expanded List Item</h3>
                                 <div class="tab-bars header-rules p-4">
-                                    <div class="bg-light d-flex p-2">
+                                    <div class="bg-light d-flex flex-column justify-content-between flex-sm-row p-2">
                                         <div class="tab-expanded-list flex-grow-1">
                                             <ul class="nav">
                                                 <li class="nav-item">
                                                 <a class="nav-link text-decent" href="#">Common</a>
                                                 </li>
-                                                <li class="nav-item">
-                                                <a class="nav-link text-decent active" href="#">Validation</a>
+                                                <li class="nav-item active">
+                                                <a class="nav-link text-decent" href="#">Validation</a>
                                                 </li>
                                                 <li class="nav-item">
                                                 <a class="nav-link text-decent" href="#">Editing</a>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div>
+                                        <div class="p-1">
                                             <button class="btn btn btn-light">Cancel</button>
                                             <button class="btn btn-primary">Save</button>
                                         </div>
@@ -484,11 +494,11 @@
                                 <div class="tab-bars-modal-view header-rules p-4">
                                     <h4 class="d-inline">My transparent file.png</h4>
                                     <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                    <div class="d-flex pt-2 pl-0 pr-0 border-bottom pb-0">
-                                        <div class="tab-expanded-list flex-grow-1">
+                                    <div class="d-flex flex-column pt-2 pl-0 pr-0 border-bottom pb-0">
+                                        <div class="tab-expanded-list w-100 justify-content-between d-flex flex-column justify-content-between flex-sm-row">
                                             <ul class="nav">
-                                                <li class="nav-item">
-                                                    <a class="nav-link text-decent active" href="#">Metadata</a>
+                                                <li class="nav-item active">
+                                                    <a class="nav-link text-decent" href="#">Metadata</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link text-decent" href="#">Image</a>
@@ -500,9 +510,9 @@
                                                     <a class="nav-link text-decent" href="#">History</a>
                                                 </li>
                                             </ul>
-                                        </div>
-                                        <div>
-                                            <button class="btn btn-primary">Save</button>
+                                            <div class="p-1">
+                                                <button class="btn btn-primary">Save</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -522,16 +532,16 @@
                     </div>
                 </div>
 
-                <div class="text-center bs-section-grey p-4">
+                <div class="text-center bs-section-grey p-2 p-sm-5">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         Left Nav Button
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                     <p class="bs-component">
                                         <button class="btn btn-success"><i class="icon icon-plus"></i></button>
                                     </p>
@@ -539,12 +549,12 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         Secondary Icon Buttons
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                     <p class="bs-component custom-icons">
                                         <button class="btn custom-btn-outline-secondary bg-white mr-1"><i class="icon icon-clone"></i></button>
                                         <button class="btn custom-btn-outline-secondary bg-white mr-1"><i class="icon icon-more"></i></button>
@@ -555,27 +565,27 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         Collapsible
                                     </p>
                                 </div>
-                                <div class="col-lg-6 custom-btns">
+                                <div class="col-lg-8 custom-btns">
                                     <p class="bs-component">
-                                        <button type="button" class="btn btn-success btn-circle"><i class="icon icon-angle-up"></i></button>
+                                        <button type="button" class="btn btn-collapse btn-circle"><i class="icon icon-angle-down"></i></button>
                                     </p>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         List Item Actions
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="bs-component d-flex">
-                                        <div class="switch-toggle ml-auto mr-2">
+                                <div class="col-lg-8">
+                                    <div class="bs-component d-flex justify-content-center">
+                                        <div class="switch-toggle mr-2">
                                             <div class="form-check form-switch border position-relative rounded p-2">
                                                 <span>Status</span>
                                                 <label class="form-check-label text-primary" for="flexSwitchCheckChecked">Active</label>
@@ -588,12 +598,12 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         Floating button
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                     <div class="bs-component custom-btns">
                                         <p>
                                             <button type="button" class="btn btn-success btn-circle"><i class="icon icon-plus"></i></button>
@@ -610,12 +620,12 @@
                             </div>
                             
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         Iconic
                                     </p>
                                 </div>
-                                <div class="col-lg-6 custom-icons">
+                                <div class="col-lg-8 custom-icons">
                                     <div class="bs-component">
                                         <p>
                                             <i class="icon icon-bell mr-2"></i> 
@@ -630,18 +640,18 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         Primary with Options
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class = "btn-group d-block">
+                                <div class="col-lg-8">
+                                    <div class = "btn-group w-50 d-block m-auto">
                                         <button type="button" class="btn btn-success btn-sm rounded">
                                             <i class="icon icon-plus"></i> New
                                             <span class="badge text-white">N</span>
                                         </button>
-                                        <div class="dropdown-menu d-block mt-2 dropdown-with-options position-relative">
+                                        <div class="dropdown-menu d-block mt-2 mb-5 dropdown-with-options position-relative">
                                             <small class="text-muted d-block px-4 py-2">NEW</small>
                                             <ul class = "dropdown p-0 custom-icons" role = "menu">
                                                 <li class="dropdown-item"><i class="icon icon-upload-4"></i> File Upload</li>
@@ -658,12 +668,12 @@
     
                         <div class="col-lg-6">
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         Expandable List Actions
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                     <p class="bs-component">
                                         <button class="btn btn-primary-outline">Cancel</button>
                                         <button class="btn btn-success">Save</button>
@@ -672,12 +682,12 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         Textual / Links
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                     <p class="bs-component">
                                         <a href="#">Logs</a>
                                     </p>
@@ -685,29 +695,29 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         Primary
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                     <p class="bs-component">
-                                        <button class="btn btn-success">Create</button>
-                                        <button class="btn btn-primary">Save</button>
-                                        <button type="button" class="btn rounded bg-white text-success border"><i class="icon icon-plus"></i> Add Nested Field</button>
+                                        <button class="btn btn-success mb-1">Create</button>
+                                        <button class="btn btn-primary mb-1">Save</button>
+                                        <button type="button" class="btn rounded bg-white text-success border mb-1"><i class="icon icon-plus"></i> Add Nested Field</button>
                                     </p>
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         Secondary
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                     <div class="bs-component">
-                                        <p>
+                                        <p class="d-flex justify-content-center">
                                             <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
                                                 <i class="icon icon-plus"></i> New Rule
                                                 <span class="badge text-white">N</span>
@@ -718,12 +728,12 @@
                             </div>
                             
                             <div class="row">
-                                <div class="col-lg-6 border-right">
+                                <div class="col-lg-4 border-right">
                                     <p class="bs-component">
                                         Buttons with drop
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                         <div class="dropdown mr-2">
                                             <button class="btn text-muted" type="button">
                                               <i class="icon icon-more"></i>
@@ -736,7 +746,7 @@
                                                     <li class="dropdown-item"><i class="status status-archive p-1"></i> Archive</li>
                                                     <li class="dropdown-item"><i class="status status-steps p-1"></i> Step 4</li>
                                                     <li class="dropdown-item"><hr></li>
-                                                    <li class="dropdown-item"><i class="icon icon-clone"></i> Clone</li>
+                                                    <li class="dropdown-item"><i class="icon icon-clone small"></i> Clone</li>
                                                     <li class="dropdown-item"><i class="icon icon-delete text-danger"></i> Delete</li>
                                                  </ul>
                                             </div>
@@ -766,7 +776,7 @@
                     </div>
                 </div>
 
-                <div class="text-center bs-section-grey p-4">
+                <div class="text-center bs-section-grey p-2 p-sm-5">
                     <div class="row">
                         <div class="col-lg-8">
                             <form>
@@ -802,8 +812,11 @@
                                                 <div class="form-group row">
                                                     <label for="inputName" class="col-sm-3 col-form-label">Name</label>
                                                     <div class="col-sm-9">
-                                                      <input type="password" class="form-control" id="inputName" placeholder="Field name">
-                                                      <small class="text-muted form-text text-left">Field name in API response</small>
+                                                      <div class="field-with-text-action">
+                                                        <input type="password" class="form-control" id="inputName" placeholder="My transparent file.png">
+                                                        <span class="field-action text-primary small">Generate</span>
+                                                      </div>
+                                                      <small class="text-muted form-text text-left">Slug text field hint</small>
                                                     </div>
                                                   </div>
                                             </div>
@@ -821,7 +834,20 @@
                                                 <div class="form-group row">
                                                     <label for="inputTags" class="col-sm-3 col-form-label">Tags</label>
                                                     <div class="col-sm-9">
-                                                      <input type="text" class="form-control" id="inputTags" data-role="tagsinput" placeholder="Field tags">
+                                                      <div class="field-tag-area bg-white border text-left rounded">
+                                                            <span class="badge badge-primary">
+                                                                tag1
+                                                                <button type="button" class="close" aria-label="Dismiss">
+                                                                <span aria-hidden="true">×</span>
+                                                                </button>
+                                                            </span>
+                                                            <span class="badge badge-primary">
+                                                                tag2
+                                                                <button type="button" class="close" aria-label="Dismiss">
+                                                                <span aria-hidden="true">×</span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
                                                       <small class="text-muted form-text text-left">Field name in API response</small>
                                                     </div>
                                                   </div>
@@ -840,7 +866,10 @@
                                                 <div class="form-group row">
                                                     <label for="inputSecret" class="col-sm-3 col-form-label">Client Secret</label>
                                                     <div class="col-sm-9">
-                                                      <input type="text" class="form-control" id="inputSecret" value="qcaowvypkdh3bcyg8nmtkpaagemwkf9gsbqnphvgv…ckx" readonly>
+                                                        <div class="field-client-secret">
+                                                            <input type="text" class="form-control" id="inputSecret" value="qcaowvypkdh3bcyg8nmtkpaagemwkf9gsbqnphvgv…ckx" readonly>
+                                                            <i class="icon icon-copy"></i>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -880,7 +909,7 @@
                                         <div class="col-lg-8">
                                             <div class="bs-component">
                                                 <div class="form-group row">
-                                                    <div class="col-sm-9">
+                                                    <div class="col-lg-9 col-sm-12">
                                                         <span class="badge badge-primary">
                                                             tag2
                                                             <button type="button" class="close" aria-label="Dismiss">
@@ -902,7 +931,7 @@
                                         <div class="col-lg-8">
                                             <div class="bs-component">
                                                 <div class="form-group row">
-                                                    <div class="col-sm-9">
+                                                    <div class="col-lg-9 col-sm-12">
                                                         <span class="badge badge-primary rounded p-2">
                                                             Clients: 0
                                                           </span>
@@ -921,7 +950,7 @@
                                         <div class="col-lg-8">
                                             <div class="bs-component">
                                                 <div class="form-group row">
-                                                    <div class="col-sm-9">
+                                                    <div class="col-lg-9 col-sm-12">
                                                         <span class="badge badge-primary rounded">
                                                             image/large
                                                           </span>
@@ -940,8 +969,8 @@
                                         <div class="col-lg-8">
                                             <div class="bs-component">
                                                 <div class="form-group row">
-                                                    <div class="col-sm-9 custom-btns">
-                                                        <span class="btn btn-light-green btn-rounded">
+                                                    <div class="col-lg-9 col-sm-12 custom-btns">
+                                                        <span class="btn btn-light-green btn-rounded btn-sm">
                                                             Enabled
                                                           </span>
                                                     </div>
@@ -1047,20 +1076,20 @@
                     </div>
                 </div>
 
-            <div class="text-center bs-section-grey p-4">
+            <div class="text-center bs-section-grey p-2 p-sm-5">
                 <p>Checkboxes and Actions</p>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="row bs-component">
                             <div class="col-lg-10 m-auto">
                                 <nav class="navbar header-top d-flex text-muted">
-                                    <div class="form-checkbox-group">
+                                    <div class="form-checkbox-group flex-fill mr-2">
                                         <input type="checkbox" class="form-checkbox" value="">
                                         <span class="ml-3"><i class="icon icon-more"></i></span>
                                     </div>
-                                    <div class="flex-fill">Wrist Watch</div>
-                                    <div class="flex-fill">Men Watch White or Black</div>
-                                    <div class="flex-fill">
+                                    <div class="flex-fill mr-2">Wrist Watch</div>
+                                    <div class="flex-fill mr-2">Men Watch White or Black</div>
+                                    <div class="flex-fill mr-2">
                                         29 minutes ago
                                         <span class="badge rounded ml-1">Me</span>
                                     </div>
@@ -1090,13 +1119,13 @@
                         <div class="row bs-component">
                             <div class="col-lg-10 m-auto">
                                 <nav class="navbar header-top d-flex text-muted">
-                                    <div class="form-checkbox-group">
+                                    <div class="form-checkbox-group flex-fill mr-2">
                                         <input type="checkbox" class="form-checkbox" value="" checked>
                                         <span class="ml-3"><i class="icon icon-more"></i></span>
                                     </div>
-                                    <div class="flex-fill text-dark">Snapback Cap</div>
-                                    <div class="flex-fill">Add Description</div>
-                                    <div class="flex-fill">
+                                    <div class="flex-fill text-dark mr-2">Snapback Cap</div>
+                                    <div class="flex-fill mr-2">Add Description</div>
+                                    <div class="flex-fill mr-2">
                                         Thu, 6:20 PM
                                         <span class="badge rounded ml-1">Adam</span>
                                     </div>
@@ -1122,7 +1151,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="flex-fill">
+                                    <div class="flex-fill mr-2">
                                         Thu, 6:20 PM
                                     </div>
                                 </nav>
@@ -1133,12 +1162,12 @@
                 </div>
             </div>
 
-            <div class="text-center bs-section-grey p-4">
+            <div class="text-center bs-section-grey p-2 p-sm-5">
                 <p>List Item with thumbnail</p>
                 <div class="row bs-component">
                     <div class="col-lg-10 m-auto">
                         <nav class="navbar header-top d-flex">
-                            <div class="flex-fill">
+                            <div class="flex-fill my-2">
                                 <div class="avatar rounded-circle mr-4 float-left">
                                     <img src="./app/images/profile-picture.png" width="48" height="48" />
                                 </div>
@@ -1147,14 +1176,14 @@
                                     <small>48 x 48</small> 
                                 </div>
                             </div>
-                            <div class="flex-fill">
+                            <div class="flex-fill my-2">
                                 <span class="badge rounded ml-1">Image</span>
                                 <span class="badge rounded ml-1">image/large</span>
                                 <span class="badge rounded ml-1">Type/jpg</span>
                                 <a href="#" class="link"><small>+3 more</small></a>
                             </div>
-                            <div class="flex-fill">1.3 mb</div>
-                            <div class="flex-fill">
+                            <div class="flex-fill my-2">1.3 mb</div>
+                            <div class="flex-fill my-2">
                                 <div class="dropdown border-left pl-3">
                                     <div class="avatar rounded-circle mr-1">
                                         <img src="./app/images/profile-picture.png" />
@@ -1170,7 +1199,7 @@
                                 </div>
                             </div>
 
-                            <div class="nav-actions">
+                            <div class="nav-actions flex-fill my-2">
                                 <button class="btn custom-btn-outline-secondary mr-1"><i class="icon icon-download"></i></button>
                                 <button class="btn custom-btn-outline-secondary text-danger"><i class="icon icon-delete"></i></button>
                             </div>
@@ -1179,12 +1208,12 @@
                 </div>
             </div>
 
-            <div class="text-center bs-section-grey p-4">
+            <div class="text-center bs-section-grey p-2 p-sm-5">
                 <p>Expandable</p>
                 <div class="row bs-component">
                     <div class="col-lg-8 m-auto">
                         <nav class="navbar header-top expandable-tab">
-                            <div class="d-flex justify-content-start">
+                            <div class="d-flex ml-sm-0 m-auto py-2">
                                 <div class="collapse-icon">
                                     <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                                         <img src="./app/images/icons/collapsiable-icon.svg" />
@@ -1197,7 +1226,7 @@
                                     <p class="mb-0 pl-2">Name <span class="badge badge-pill badge-secondary badge-round">3</span></p> 
                                 </div>
                               </div>
-                              <div class="d-flex justify-content-end custom-btns">
+                              <div class="d-flex mr-sm-0 m-auto py-2 custom-btns">
                                 <div class="collapse-icon">
                                     <button type="button" class="btn btn-grey btn-circle"><i class="icon icon-angle-down"></i></button>
                                 </div>
@@ -1217,7 +1246,7 @@
                             <div class="col-lg-11 mt-2 ml-auto">
                                 <div class="tab-bars header-rules">
                                     <nav class="navbar header-top">
-                                        <div class="d-flex justify-content-start">
+                                        <div class="d-flex ml-sm-0 m-auto py-2">
                                             <div class="collapse-icon">
                                                 <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                                                     <img src="./app/images/icons/collapsiable-icon.svg" />
@@ -1230,7 +1259,7 @@
                                                 <p class="mb-0 pl-2">First Name</p> 
                                             </div>
                                           </div>
-                                          <div class="d-flex justify-content-end custom-btns">
+                                          <div class="d-flex mr-sm-0 m-auto py-2 custom-btns">
                                             <div class="enabled-btn mx-2">
                                                 <button class="btn btn-light-green btn-rounded">
                                                     Enabled
@@ -1243,21 +1272,21 @@
                                             </div>
                                           </div>
                                     </nav>
-                                    <div class="bg-light d-flex p-2">
-                                        <div class="tab-expanded-list flex-grow-1">
+                                    <div class="bg-light d-flex flex-column justify-content-between flex-sm-row p-2">
+                                        <div class="tab-expanded-list flex-grow-1 m-auto">
                                             <ul class="nav">
                                                 <li class="nav-item">
                                                 <a class="nav-link text-decent" href="#">Common</a>
                                                 </li>
-                                                <li class="nav-item">
+                                                <li class="nav-item active">
                                                 <a class="nav-link text-decent" href="#">Validation</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                <a class="nav-link text-decent active" href="#">Editing</a>
+                                                <a class="nav-link text-decent" href="#">Editing</a>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="px-2">
+                                        <div class="p-1">
                                             <button class="btn btn btn-light">Cancel</button>
                                             <button class="btn btn-primary">Save</button>
                                         </div>
@@ -1278,20 +1307,20 @@
                 </div>
             </div>
 
-            <div class="text-center bs-section-grey p-4">
+            <div class="text-center bs-section-grey p-2 p-sm-5">
                 <p>Collapsible Component with Sublists</p>
                 <div class="row bs-component">
                     <div class="col-lg-10 text-left m-auto custom-btns">
-                        <p><button type="button" class="btn btn-grey btn-circle btn-lg"><i class="icon icon-plus"></i></button>
-                            <a class="collapse-btn ml-2" data-toggle="collapse" href="#collapseList" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <p><button type="button" class="btn btn-collapse btn-circle"><i class="icon icon-angle-down"></i></button>
+                            <a class="collapse-btn ml-2 text-dark" data-toggle="collapse" href="#collapseList" role="button" aria-expanded="false" aria-controls="collapseExample">
                                 My Collapsible UI Component
                             </a>
                         </p>
                         <div class="collapse-hide rounded border" id="collapseList">
-                            <div class="my-list rounded bg-white p-2">
+                            <div class="my-list rounded bg-white p-4">
                                 <div class="d-flex">
-                                    <div class="mr-auto p-2"><h5>My List</h5></div>
-                                    <div class="p-2"><div class="languages">All Languages</div></div>
+                                    <div class="mr-auto py-2"><h5>My List</h5></div>
+                                    <div class="p-2"><div class="languages custom-icons"><i class="icon icon-globe align-middle mr-1"></i>All Languages</div></div>
                                     <div class="p-2">
                                         <div class="form-group">
                                             <select class="form-control p-0 h-auto" id="sel1">
@@ -1302,10 +1331,10 @@
                                             </select>
                                           </div>
                                     </div>
-                                    <div class="p-1"><button class="btn p-0 custom-icons"><i class="icon icon-reset"></i> Reset</button></div>
+                                    <div class="p-1"><button class="btn p-0 custom-icons btn-sm"><i class="icon icon-refresh"></i> Reset</button></div>
                                 </div>
                                 <div class="tab-bars header-rules">
-                                    <nav class="navbar header-top border rounded">
+                                    <nav class="navbar header-top border px-0 rounded">
                                         <div class="d-flex justify-content-start">
                                             <div class="collapse-icon">
                                                 <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
@@ -1366,10 +1395,10 @@
                 </div>
             </div>
 
-            <div class="text-center bs-section-grey p-4">
+            <div class="text-center bs-section-grey p-2 p-sm-5">
                 <p>Custom List Item for Rules</p>
                 <div class="row bs-component">
-                    <div class="col-lg-9 m-auto">
+                    <div class="col-lg-10 col-md-12 m-auto">
                                 <div class="tab-bars header-rules">
                                     <nav class="navbar header-top">
                                         <div class="d-flex justify-content-start">
@@ -1381,27 +1410,31 @@
                                             <div class="text-muted mr-2">
                                                 <small><em>Published 1 day ago</em></small>
                                             </div>
-                                            <div class="settings">
-                                                <button type="button" class="btn table-items-edit-button mr-1">
-                                                    <i class="icon-down">---</i>
+                                            <div class="settings custom-btns">
+                                                <button type="button" class="btn bg-light px-2 py-0 btn-rounded mr-1">
+                                                    <i class="icon icon-more"></i>
                                                 </button>
                                             </div>
                                           </div>
                                     </nav>
-                                    <div class="bg-light d-flex justify-content-between border-top border-bottom mx-3 p-3">
-                                        <div class="d-flex">
-                                            <span class="pr-3 mt-2">if</span>
-                                            <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
-                                                <i class="icon icon-assets"></i> 
-                                                <span class="border-left pl-3">Asset changed</span>
-                                            </button>
-                                            <span class="px-3 mt-2">then</span>
-                                            <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
-                                                <i class="icon icon-contents"></i> 
-                                                <span class="border-left pl-3">Create Content</span>
-                                            </button>
+                                    <div class="bg-light d-flex flex-wrap justify-content-between border-top border-bottom mx-3 p-3">
+                                        <div class="d-flex justify-content-sm-around">
+                                            <div class="mr-2">
+                                                <span class="pr-3 mt-2">if</span>
+                                                <button type="button" class="btn btn-primary d-inline btn-with-icon btn-with-shortcut mb-2 mb-lg-0">
+                                                    <i class="icon icon-assets"></i> 
+                                                    <span class="border-left pl-3">Asset changed</span>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <span class="px-3 mt-2">then</span>
+                                                <button type="button" class="btn btn-primary d-inline btn-with-icon btn-with-shortcut mb-2 mb-lg-0">
+                                                    <i class="icon icon-contents"></i> 
+                                                    <span class="border-left pl-3">Create Content</span>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="d-flex switch-toggle">
+                                        <div class="d-flex switch-toggle pt-lg-0 pb-lg-0 pt-4 pb-5">
                                             <div class="form-check form-switch border rounded p-2">
                                                 <span>Status</span>
                                                 <label class="form-check-label" for="flexSwitchCheckChecked">Active</label>
@@ -1410,19 +1443,19 @@
                                         </div>
                                     </div>
                                     <div class="log-status d-flex justify-content-between p-3">
-                                        <div class="d-flex justify-content-start">
-                                            <div class="succeeded pr-5 border-right">
+                                        <div class="d-sm-flex text-left d-inline justify-content-start">
+                                            <div class="succeeded pr-2 pr-lg-5 border-right">
                                                 Succeeded <span class="badge badge-pill badge-secondary rounded">02</span>
                                             </div>
-                                            <div class="failed px-5 border-right">
+                                            <div class="failed px-2 px-lg-5 border-right">
                                                 Failed <span class="badge badge-pill badge-secondary rounded">02</span> 
                                             </div>
-                                            <div class="executed pl-5">
+                                            <div class="executed pl-2 pl-lg-5">
                                                 Executed <span class="badge badge-pill badge-secondary rounded">02</span> 
                                             </div>
                                         </div>
                                           <div class="d-flex justify-content-end">
-                                            <div class="logs">
+                                            <div class="logs pl-3">
                                                 <a class="link">
                                                     Logs
                                                 </a>
@@ -1434,10 +1467,10 @@
                 </div>
             </div>
 
-            <div class="text-center bs-section-grey p-4">
+            <div class="text-center bs-section-grey p-2 p-sm-5">
                 <p>Extendable list item with text area</p>
                 <div class="row bs-component">
-                    <div class="col-lg-6 text-left m-auto">
+                    <div class="col-lg-8 col-md-12 text-left m-auto">
                         <div class="row">
                             <div class="col-lg-12 mt-2 ml-auto">
                                 <div class="tab-bars header-rules">
@@ -1485,13 +1518,13 @@
                 </div>
             </div>
             
-            <div class="text-center bs-section-grey p-4">
+            <div class="text-center bs-section-grey p-2 p-sm-5">
                 <p>Section Headers with components and actions</p>
                 <div class="row bs-component">
-                    <div class="col-lg-5 text-left m-auto p-4">
+                    <div class="col-lg-7 col-md-12 text-left m-auto p-4">
                         <div class="section-headers header-rules p-3">
                             <h4>Add new contributors</h4>
-                            <div class="d-flex flex-row">
+                            <div class="d-flex flex-md-row flex-column mb-2 mb-md-0">
                                 <div class="d-flex flex-grow-1 mr-2 form-group">
                                     <input type="text" class="form-control" placeholder="Find existing user or invite by email" aria-label="Find existing user or invite by email">
                                 </div>
@@ -1514,12 +1547,12 @@
             </div>
         
         
-            <div class="text-center bs-section-grey p-4">
+            <div class="text-center bs-section-grey p-2 p-sm-5">
                 <p>Card View</p>
                 <div class="row bs-component">
                     <div class="col-lg-12 text-left m-auto p-4">
                         <div class="row">
-                            <div class="col-lg-2">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="card rounded border">
                                     <img class="card-img-top rounded-right rounded-left" src="./app/images/default-png.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -1534,7 +1567,7 @@
                                     </div>
                                   </div>                          
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="card rounded border">
                                     <img class="card-img-top rounded-right rounded-left" src="./app/images/img_avatar.png" alt="Card image cap">
                                     <div class="card-body">
@@ -1547,7 +1580,7 @@
                                     </div>
                                   </div>                          
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="card rounded border">
                                     <img class="card-img-top rounded-right rounded-left" src="./app/images/web-summit.png" alt="Card image cap">
                                     <div class="card-body">
@@ -1562,7 +1595,7 @@
                                     </div>
                                   </div>                          
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="card rounded border">
                                     <div class="card-header text-center pb-0 pt-4 rounded border-bottom-0">
                                         <h5>Basic</h5>
@@ -1582,7 +1615,7 @@
                                     </div>
                                   </div>                          
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="card rounded border">
                                     <img class="card-img-top rounded-right rounded-left" src="./app/images/default-png.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -1613,7 +1646,7 @@
                 </div>
             </div>
 
-            <div class="bs-section-grey p-5">
+            <div class="bs-section-grey p-2 p-sm-5">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="header">
@@ -1629,21 +1662,21 @@
                                 <div class="contributor">
                                     <p>Contributor</p>
                                     <nav class="navbar header-top d-flex">
-                                        <div class="flex-fill">
-                                            <div class="avatar rounded-circle mr-4 float-left">
+                                        <div class="flex-fill mb-2">
+                                            <div class="avatar rounded-circle mr-2 mr-sm-4 float-left">
                                                 <img src="./app/images/profile-picture.png" width="32" height="32">
                                             </div>
                                             <p class="mb-0">Agnes Rogahn</p>
                                         </div>
-                                        <div class="form-group mb-0 pr-2">
+                                        <div class="form-group pr-2 mb-2">
                                             <select id="inputState" class="form-control bg-secondary h-auto border">
                                                 <option selected="">Owner</option>
                                                 <option>...</option>
                                             </select>
                                         </div>
-                                        <div class="settings">
-                                            <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
-                                                <i class="icon-settings"></i>
+                                        <div class="settings mb-2">
+                                            <button type="button" class="btn btn-secondary text-danger mr-1">
+                                                <i class="icon-bin2"></i>
                                             </button>
                                         </div>
                                     </nav>
@@ -1652,14 +1685,14 @@
                                 <div class="mt-3">
                                     <p>Default</p>
                                     <nav class="navbar header-top d-flex">
-                                        <div class="flex-fill">
+                                        <div class="flex-fill mb-2">
                                             <p class="mb-0">Developer</p>
                                         </div>
-                                        <div class="flex-fill">
+                                        <div class="flex-fill mb-2">
                                             <span class="badge badge-primary rounded p-2">Clients: 0</span>
                                             <span class="badge badge-primary rounded p-2">Users: 0</span>
                                         </div>
-                                        <div class="form-group mb-0 pr-2">
+                                        <div class="form-group mb-2 pr-2">
                                             <select id="inputState" class="form-control bg-secondary h-auto border">
                                                 <option selected="">Owner</option>
                                                 <option>...</option>
@@ -1703,10 +1736,10 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="bs-component bs-section-grey p-5">
+                    <div class="bs-component bs-section-grey p-2 p-sm-5">
                         <div class="row">
                             <div class="col-lg-12 m-auto">
-                                <div class="modal d-block position-relative w-100 col-lg-6 m-auto">
+                                <div class="modal d-block position-relative w-100 col-lg-6 col-md-12 m-auto">
                                     <div class="modal-dialog modal-lg position-relative">
                                         <div class="modal-content shadow-none border">
                                             <div class="modal-header bg-white text-dark border-bottom" *ngIf="showHeader">
@@ -1773,7 +1806,7 @@
                                     </div>
                                 </div>
 
-                                <div class="modal d-block position-relative w-100 col-lg-6 m-auto">
+                                <div class="modal d-block position-relative w-100 col-lg-6 col-md-12 m-auto">
                                     <div class="modal-dialog modal-lg position-relative">
                                         <div class="modal-content shadow-none border">
                                             <div class="modal-header bg-white text-dark border-bottom" *ngIf="showHeader">
@@ -1869,7 +1902,7 @@
 
                                 <div class="modal d-block position-relative w-100">
                                     <div class="modal-dialog modal-lg mw-100 position-relative">
-                                        <div class="modal-content w-75 m-auto shadow-none border">
+                                        <div class="modal-content shadow-none border">
                                             <div class="modal-header bg-white text-dark border-bottom d-block" *ngIf="showHeader">
                                                 <div class="row">
                                                     <div class="col-lg-12 p-0">
@@ -1882,7 +1915,7 @@
                                                 <div class="row">
                                                     <div class="col-lg-12 p-0">
                                                         <nav class="navbar header-rules d-flex px-0">
-                                                                <div class="flex-fill mr-2">
+                                                                <div class="flex-fill mr-2 mb-2">
                                                                     <select class="form-control">
                                                                         <option value="" selected="" disabled=""><i class="icon icon-bell ml-1 mr-1"></i> Schema 3</option>
                                                                         <option value="">A</option>
@@ -1890,13 +1923,13 @@
                                                                         <option value="">C</option>
                                                                     </select>
                                                                 </div>
-                                                                <div class="input-group w-50 flex-grow-1 mr-2">
+                                                                <div class="input-group w-50 flex-grow-1 mr-2 mb-2">
                                                                     <input type="text" class="form-control" placeholder="Search for content in " aria-label="Recipient's username with two button addons">
                                                                     <button class="btn custom-btn-outline-secondary border-left-0 " type="button"><i class="icon icon-star-empty"></i></button>
                                                                     <button class="btn custom-btn-outline-secondary rounded-right border-left-0" type="button"><i class="icon icon-filter mr-1"></i></button>
                                                                 </div>
                                 
-                                                                <div class="refresh ml-2 text-muted">
+                                                                <div class="refresh ml-2 text-muted mb-2">
                                                                     <i class="icon icon-reset mr-1"></i>
                                                                 </div>
                                                             </nav>
@@ -2009,18 +2042,14 @@
                                                       </tr>
                                                     </tbody>
                                                   </table>
-                                                  <div class="clearfix border-top p-2">
-                                                    <span class="align-middle">
-                                                        Showing 04 of 04 content records
-                                                    </span>
-                                                    <button type="button" class="float-right btn bg-white border text-muted">
-                                                        Next
-                                                    </button>
-                                                    <button type="button" class="float-right btn bg-white border text-muted">
-                                                        Previous
-                                                    </button>
+                                                  <div class="clearfix d-flex flex-column flex-sm-row justify-content-between border-top p-2">
+                                                    <div class="flex-fill"><span class="align-middle">Showing 04 of 04 content records</span></div>
+                                                        <div class="flex-fill">
+                                                            <button type="button" class="float-right btn bg-white border mb-2 text-muted">Next</button>
+                                                            <button type="button" class="float-right btn bg-white border text-muted mr-2">Previous</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
                                             <div class="modal-footer py-2">
                                                 <div class="clearfix">
                                                     <span class="align-middle">
@@ -2038,7 +2067,7 @@
 
                                 <div class="modal d-block position-relative w-100">
                                     <div class="modal-dialog modal-lg position-relative mw-100">
-                                        <div class="modal-content w-75 m-auto shadow-none border">
+                                        <div class="modal-content shadow-none border">
                                             <div class="modal-header bg-white text-dark border-bottom d-block" *ngIf="showHeader">
                                                 <div class="row">
                                                     <div class="col-lg-12 p-0">
@@ -2051,7 +2080,7 @@
                                                 <div class="row">
                                                     <div class="col-lg-12 p-0">
                                                         <nav class="navbar header-rules d-flex px-0">
-                                                                <div class="flex-fill mr-2">
+                                                                <div class="flex-fill mr-2 mb-2">
                                                                     <select class="form-control">
                                                                         <option value="" selected="" disabled=""><i class="icon icon-bell ml-1 mr-1"></i> # Search by tags</option>
                                                                         <option value="">A</option>
@@ -2059,13 +2088,13 @@
                                                                         <option value="">C</option>
                                                                     </select>
                                                                 </div>
-                                                                <div class="input-group w-50 flex-grow-1 mr-2">
+                                                                <div class="input-group w-50 flex-grow-1 mr-2 mb-2">
                                                                     <input type="text" class="form-control" placeholder="Search file names and folders" aria-label="Search file names and folders">
                                                                 </div>
-                                                                <div class="menu ml-2 text-muted">
+                                                                <div class="menu ml-2 text-muted mb-2">
                                                                     <i class="icon icon-list1 mr-1"></i>
                                                                 </div>
-                                                                <div class="refresh ml-2 text-muted">
+                                                                <div class="refresh ml-2 text-muted mb-2">
                                                                     <i class="icon icon-reset mr-1"></i>
                                                                 </div>
                                                             </nav>
@@ -2192,7 +2221,7 @@
                                                 </div>
                                                 <div class="row custom-stepper">
                                                     <div class="col-lg-12 p-0">
-                                                        <nav class="navbar header-rules d-flex text-muted small px-0">
+                                                        <nav class="navbar header-rules d-flex flex-column flex-md-row align-items-stretch text-muted small px-0">
                                                             <div class="flex-fill mr-2 step finish">
                                                                 Select Trigger
                                                             </div>
@@ -2501,7 +2530,7 @@
                         </div>
 
                         <div class="bs-component">
-                            <ul class="nav nav-tabs2">
+                            <ul class="nav nav-tabs2 position-relative">
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#home">Home</a>
                                 </li>
@@ -2610,32 +2639,6 @@
                         <div class="bs-component">
                             <div>
                                 <ul class="pagination">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#">&laquo;</a>
-                                    </li>
-                                    <li class="page-item active">
-                                        <a class="page-link" href="#">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">4</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">5</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">&raquo;</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <ul class="pagination pagination-lg">
                                     <li class="page-item disabled">
                                         <a class="page-link" href="#">&laquo;</a>
                                     </li>
@@ -2913,7 +2916,7 @@
                     <div class="col-lg-12">
                         <div class="bs-component">
                             <div class="jumbotron">
-                                <h1 class="display-3">Jumbotron</h1>
+                                <h1>Jumbotron</h1>
 
                                 <p>
                                     This is a simple hero unit, a simple jumbotron-style component for calling extra

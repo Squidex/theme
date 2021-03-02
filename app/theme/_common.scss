@@ -152,14 +152,12 @@ body {
         }
         
         &:last-child {
-
             &::after {
                 display: none;
             }
         }
 
         &.finish {
-            
             &::before {
                 background: $color-theme-blue;
                 border-color: $color-theme-blue;
@@ -303,9 +301,11 @@ body {
 
     .tab-expanded-list {
         li {
-            .active {
+            &.active {
                 border-bottom: 2px solid $color-theme-blue;
-                color: $color-black;
+                a {
+                    color: $color-black;
+                }
             }
         }
     }
@@ -471,7 +471,7 @@ body {
 
         i {
             color: $color-border-dark;
-            left: 10px;
+            left: 15px;
             position: absolute;
         }
     }
@@ -524,12 +524,14 @@ body {
 
 .button-section {
     .bs-component {
+        color: $color-grey-dark;
         margin-bottom: 50px;
     }
 }
 
 .custom-btns {
     font-size: 14px;
+    
     .btn {
         &.btn-circle {
             border-radius: 100px;
@@ -551,6 +553,11 @@ body {
             background: $color-green-lighter;
             color: $color-theme-green;
         }
+
+        &.btn-collapse {
+            background: $color-badge-primary-background;
+            color: $color-theme-blue;
+        }
     }
 }
 
@@ -562,17 +569,25 @@ body {
     .icon-bell {
         content: $asset-icon-bell;
     }
+    
     .icon-filter {
         content: $asset-icon-filter;
     }
+    
     .icon-clone {
         content: $asset-icon-clone;
     }
+    
     .icon-folder-plus {
         content: $asset-icon-folder-plus;
     }
-    .icon-reset {
-        content: $asset-icon-reset;
+    
+    .icon-refresh {
+        content: $asset-icon-refresh;
+    }
+
+    .icon-globe {
+        content: $asset-icon-globe;
     }
 }
 
@@ -647,6 +662,48 @@ body {
         }
     }
 }
+
+//
+// Fields with text action
+//
+.field-with-text-action {
+    position: relative;
+    span {
+        &.field-action {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+//
+// Field Tag Area
+//
+.field-tag-area {
+    height: 103px;
+    padding: 10px;
+}
+
+//
+// Field Client secret
+//
+.field-client-secret {
+    position: relative;
+    
+    input {
+        padding-right: 40px;
+    }
+    
+    i {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 
 //
 // Profile picture in circle

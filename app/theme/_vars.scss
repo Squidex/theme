@@ -6,7 +6,7 @@ $color-border-darker:       darken($color-border, 3%);
 $color-border-grey:         #dedfe3;
 
 $color-title:               #000;
-$color-text:                #373a3c;
+$color-text:                #6e7387;
 $color-text-decent:         #8091a5;
 $color-tooltip:             #1a2129;
 
@@ -128,7 +128,8 @@ $asset-icon-filter: url('../images/icons/filter.svg');
 $asset-icon-clone: url('../images/icons/clone.svg');
 $asset-icon-delete: url('../images/icons/delete.svg');
 $asset-icon-folder-plus: url('../images/icons/folder-plus.svg');
-$asset-icon-reset: url('../images/icons/reset.svg');
+$asset-icon-refresh: url('../images/icons/reset.svg');
+$asset-icon-globe: url('../images/icons/globe.svg');
 
 $breadcrumb-divider:                quote('>');
 $breadcrumb-margin-bottom:          0 !important;
