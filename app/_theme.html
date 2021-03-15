@@ -152,23 +152,26 @@
                         <nav class="navbar header-top d-flex justify-content-between">
                             <!-- <img src="./app/images/profile-picture.png" /> -->
 
-                            <div class="d-flex m-lg-0 m-sm-auto m-xs-auto">
-                                <ol class="breadcrumb p-2">
-                                    <li class="breadcrumb-item">
-                                        <select class="p-1" name="" id="">
-                                            <option value="a">My Application</option>
-                                            <option value="b">My Application 2</option>
-                                            <option value="c">My Application 3</option>
-                                        </select>
+                            <div class="d-flex">
+                                <ol class="breadcrumb p-2 custom-breadcrumb">
+                                    <li class="breadcrumb-item custom-dropdown-item">
+                                        <div class="sub-menu">
+                                            <span class="text-primary"><i class="icon icon-angle-down"></i></span>
+                                            <select class="p-1" name="" id="">
+                                                <option value="a">My Application</option>
+                                                <option value="b">My Application 2</option>
+                                                <option value="c">My Application 3</option>
+                                            </select>
+                                        </div>
                                     </li>
-                                    <li class="breadcrumb-item">
+                                    <li class="breadcrumb-item d-none d-lg-flex">
                                         <a href="#">Schemas</a>
                                     </li>
-                                    <li class="breadcrumb-item active">Schemas 2</li>
+                                    <li class="breadcrumb-item active d-none d-lg-flex">Schemas 2</li>
                                 </ol>
                             </div>
-                            <div class="d-flex m-lg-0 m-sm-auto m-xs-auto">
-                                <form class="form-inline p-2">
+                            <div class="d-flex flex-grow-1 flex-lg-grow-0">
+                                <form class="form-inline flex-grow-1 p-2">
                                     <input class="form-control" type="text" placeholder="Quick Nav (Press )" />
                                     <i class="icon icon-search"></i>
                                 </form>
@@ -204,35 +207,40 @@
 
                 <div class="row bs-component">
                     <div class="col-lg-12">
-                        <nav class="navbar header-rules">
+                        <nav class="navbar header-rules justify-content-between">
                             <!-- <img src="./app/images/profile-picture.png" /> -->
 
                             <div class="d-flex mb-1">
-                                <h2>Rules</h2>
-                                <span class="badge badge-pill badge-secondary badge-round">02</span>
+                                <h2>
+                                    Rules
+                                    <span class="badge badge-pill badge-secondary badge-round">02</span>
+                                </h2>
+                            </div>
+                            <div class="d-flex flex-grow-0">
+                                <div class="text-muted mr-3 my-auto">
+                                    <i class="icon icon-reset ml-1"></i>
+                                </div>
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
+                                        <i class="icon icon-plus"></i> 
+                                        <span class="d-none d-md-inline-flex">
+                                            Next Rule
+                                            <span class="badge text-white d-none d-md-block">N</span>
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
 
-                            <ul class="navbar-nav ml-auto"></ul>
-
-                            <div class="text-muted mr-3">
-                                <i class="icon icon-reset ml-1"></i>
-                            </div>
-                            <div class="dropdown">
-                                <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
-                                    <i class="icon icon-plus"></i> Next Rule
-                                    <span class="badge text-white">N</span>
-                                </button>
-                            </div>
                         </nav>
                     </div>
                 </div>
 
                 <div class="row bs-component">
                     <div class="col-lg-12">
-                        <nav class="navbar header-rules d-flex">
+                        <nav class="navbar header-rules d-flex search-content-filter">
                             <!-- <img src="./app/images/profile-picture.png" /> -->
 
-                            <div class="input-group w-50 flex-grow-1 mr-4 mb-2">
+                            <div class="input-group search-input-group flex-grow-1 mr-0 mr-lg-4 mb-2">
                                 <input type="text" class="form-control" placeholder="Search for content in " aria-label="Recipient's username with two button addons">
                                 <button class="btn custom-btn-outline-secondary border-left-0 " type="button"><i class="icon icon-star-empty"></i></button>
                                 <button class="btn custom-btn-outline-secondary rounded-right border-left-0" type="button"><i class="icon icon-filter mr-1"></i></button>
@@ -244,8 +252,11 @@
                             </div>
 
                             <div class="dropdown">
-                                <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
-                                    <i class="icon icon-plus"></i> New
+                                <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
+                                    <i class="icon icon-plus"></i>
+                                    <span class="d-none d-md-inline-flex">
+                                        New
+                                    </span>
                                 </button>
                             </div>
                         </nav>
@@ -256,7 +267,7 @@
                     <div class="col-lg-12">
                         <nav class="navbar header-rules d-flex">
                             <!-- <img src="./app/images/profile-picture.png" /> -->
-                                <div class="mr-4">
+                                <div class="mr-4 w-xs-100 w-sm-100 w-md-100">
                                     <h2>Assets</h2>
                                 </div>
                                 <div class="flex-fill p-2 mr-0 mr-lg-4">
@@ -277,9 +288,12 @@
                                 </div>
 
                                 <div class="mr-0 p-2">
-                                    <button type="button" class="btn btn-primary btn-with-icon btn-with-shortcut">
-                                        <i class="icon icon-plus"></i> New
-                                        <span class="badge text-white">N</span>
+                                    <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
+                                        <i class="icon icon-plus"></i>
+                                        <span class="d-none d-md-inline-flex">
+                                            New
+                                            <span class="badge text-white d-none d-md-block">N</span>
+                                        </span>
                                     </button>
                                 </div>
                             </nav>
@@ -383,14 +397,14 @@
                         <div class="row bs-component">
                             <div class="col-lg-12">
                                 <h3>Main</h3>
-                                <nav class="navbar header-rules d-flex main-tab-bar">
+                                <nav class="navbar header-rules d-flex main-tab-bar pt-3 border-bottom pb-0">
                                     <!-- <img src="./app/images/profile-picture.png" /> -->
-                                    <div class="input-group w-50 flex-grow-1 mr-1 publish">
+                                    <div class="input-group w-sm-100 w-xs-100 w-md-100 w-auto flex-grow-1 mr-1 publish">
                                         <h2 class="nav-title pl-0"><span class="publish-icon mr-2"></span>Schema 2</h2>
                                         <p class="border-left pl-3">Content <span class="badge badge-pill badge-secondary badge-round">5</span></p>
                                     </div>
         
-                                    <div class="mr-2 text-muted">
+                                    <div class="mr-2 d-none d-lg-block text-muted">
                                         <small><em>Published 1 day ago</em></small>
                                     </div>
                                     <div class="dropdown pl-3 border rounded show mr-2">
@@ -405,32 +419,34 @@
                                     </div>
                                     <div>
                                         <button class="btn custom-btn-outline-secondary mr-1"><i class="icon icon-clone"></i></button>
-                                        <button class="btn custom-btn-outline-secondary"><i class="icon icon-reset"></i></button>
+                                        <button class="btn custom-btn-outline-secondary"><i class="icon icon-more"></i></button>
                                     </div>
-                                    <div class="tab-bars">
-                                        <ul class="nav">
-                                            <li class="nav-item">
-                                              <a class="nav-link" href="#">Fields</a>
-                                            </li>
-                                            <li class="nav-item">
-                                              <a class="nav-link active" href="#">UI</a>
-                                            </li>
-                                            <li class="nav-item">
-                                              <a class="nav-link" href="#">Script</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">JSON</a>
-                                              </li>
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#">Preview URLs</a>
-                                              </li>
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#">Field Rules</a>
-                                              </li>
-                                              <li class="nav-item">
-                                                <a class="nav-link" href="#">Common</a>
-                                              </li>
-                                          </ul>
+                                    <div class="tab-list mt-3">
+                                        <div class="tab-bars">
+                                            <ul class="nav">
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="#">Fields</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link active" href="#">UI</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="#">Script</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">JSON</a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                    <a class="nav-link" href="#">Preview URLs</a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                    <a class="nav-link" href="#">Field Rules</a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                    <a class="nav-link" href="#">Common</a>
+                                                  </li>
+                                              </ul>
+                                        </div>
                                     </div>
                                 </nav>
                             </div>
@@ -440,7 +456,7 @@
                             <div class="col-lg-12">
                                 <h3>Sub Tabs</h3>
                                 <div class="sub-tab-bar">
-                                    <ul class="nav">
+                                    <ul class="nav d-block text-center d-sm-flex">
                                         <li class="nav-item mr-2 mb-1">
                                           <a class="nav-link" href="#">Query</a>
                                         </li>
@@ -464,24 +480,26 @@
                         <div class="row bs-component pt-4">
                             <div class="col-lg-12">
                                 <h3>Tabs in Expanded List Item</h3>
-                                <div class="tab-bars header-rules p-4">
-                                    <div class="bg-light d-flex flex-column justify-content-between flex-sm-row p-2">
-                                        <div class="tab-expanded-list flex-grow-1">
-                                            <ul class="nav">
-                                                <li class="nav-item">
-                                                <a class="nav-link text-decent" href="#">Common</a>
-                                                </li>
-                                                <li class="nav-item active">
-                                                <a class="nav-link text-decent" href="#">Validation</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                <a class="nav-link text-decent" href="#">Editing</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="p-1">
-                                            <button class="btn btn btn-light">Cancel</button>
-                                            <button class="btn btn-primary">Save</button>
+                                <div class="main-tab-bar header-rules py-4">
+                                    <div class="bg-light tab-expanded-list d-flex flex-column justify-content-between flex-sm-row">
+                                        <div class="tab-expanded d-flex w-100 border-bottom">
+                                            <div class="tab-bars flex-grow-1">
+                                                <ul class="nav">
+                                                    <li class="nav-item">
+                                                    <a class="nav-link text-decent" href="#">Common</a>
+                                                    </li>
+                                                    <li class="nav-item active">
+                                                    <a class="nav-link text-decent" href="#">Validation</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                    <a class="nav-link text-decent" href="#">Editing</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-actions pr-md-4 pr-0">
+                                                <button class="btn btn btn-light">Cancel</button>
+                                                <button class="btn btn-primary">Save</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -491,26 +509,28 @@
                         <div class="row bs-component pt-4">
                             <div class="col-lg-12">
                                 <h3>Tabs in Modal View</h3>
-                                <div class="tab-bars-modal-view header-rules p-4">
+                                <div class="tab-bars-modal-view main-tab-bar header-rules p-4">
                                     <h4 class="d-inline">My transparent file.png</h4>
-                                    <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                    <button type="button" class="close float-right d-none d-md-block" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                                     <div class="d-flex flex-column pt-2 pl-0 pr-0 border-bottom pb-0">
                                         <div class="tab-expanded-list w-100 justify-content-between d-flex flex-column justify-content-between flex-sm-row">
-                                            <ul class="nav">
-                                                <li class="nav-item active">
-                                                    <a class="nav-link text-decent" href="#">Metadata</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link text-decent" href="#">Image</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link text-decent" href="#">Focus Point</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link text-decent" href="#">History</a>
-                                                </li>
-                                            </ul>
-                                            <div class="p-1">
+                                            <div class="tab-bars">
+                                                <ul class="nav">
+                                                    <li class="nav-item active">
+                                                        <a class="nav-link text-decent" href="#">Metadata</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link text-decent" href="#">Image</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link text-decent" href="#">Focus Point</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link text-decent" href="#">History</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-actions pr-md-1 pr-0">
                                                 <button class="btn btn-primary">Save</button>
                                             </div>
                                         </div>
@@ -610,10 +630,10 @@
                                             <button type="button" class="btn btn-grey btn-circle"><i class="icon icon-plus"></i></button>
                                         </p>
                                         <p>
-                                            <button type="button" class="btn btn-success btn-rounded"><i class="icon icon-plus"></i> Add Field</button>
+                                            <button type="button" class="btn btn-success btn-rounded px-5 py-3 px-sm-3 py-sm-2"><i class="icon icon-plus"></i> Add Field</button>
                                         </p>
                                         <p>
-                                            <button type="button" class="btn btn-grey btn-rounded"><i class="icon icon-plus"></i> Add Field</button>
+                                            <button type="button" class="btn btn-grey btn-rounded px-5 py-3 px-sm-3 py-sm-2"><i class="icon icon-plus"></i> Add Field</button>
                                         </p>
                                     </div>
                                 </div>
@@ -791,7 +811,7 @@
                                         <div class="col-lg-8">
                                             <div class="bs-component">
                                                 <div class="form-group row">
-                                                    <label for="inputName" class="col-sm-3 col-form-label">Name</label>
+                                                    <label for="inputName" class="col-sm-3 col-form-label text-left">Name</label>
                                                     <div class="col-sm-9">
                                                       <input type="password" class="form-control" id="inputName" placeholder="Field name">
                                                       <small class="text-muted form-text text-left">Field name in API response</small>
@@ -810,7 +830,7 @@
                                         <div class="col-lg-8">
                                             <div class="bs-component">
                                                 <div class="form-group row">
-                                                    <label for="inputName" class="col-sm-3 col-form-label">Name</label>
+                                                    <label for="inputName" class="col-sm-3 col-form-label text-left">Name</label>
                                                     <div class="col-sm-9">
                                                       <div class="field-with-text-action">
                                                         <input type="password" class="form-control" id="inputName" placeholder="My transparent file.png">
@@ -832,7 +852,7 @@
                                         <div class="col-lg-8">
                                             <div class="bs-component">
                                                 <div class="form-group row">
-                                                    <label for="inputTags" class="col-sm-3 col-form-label">Tags</label>
+                                                    <label for="inputTags" class="col-sm-3 col-form-label text-left">Tags</label>
                                                     <div class="col-sm-9">
                                                       <div class="field-tag-area bg-white border text-left rounded">
                                                             <span class="badge badge-primary">
@@ -864,7 +884,7 @@
                                         <div class="col-lg-8">
                                             <div class="bs-component">
                                                 <div class="form-group row">
-                                                    <label for="inputSecret" class="col-sm-3 col-form-label">Client Secret</label>
+                                                    <label for="inputSecret" class="col-sm-3 col-form-label text-left">Client Secret</label>
                                                     <div class="col-sm-9">
                                                         <div class="field-client-secret">
                                                             <input type="text" class="form-control" id="inputSecret" value="qcaowvypkdh3bcyg8nmtkpaagemwkf9gsbqnphvgv…ckx" readonly>
@@ -885,14 +905,17 @@
                                         <div class="col-lg-8">
                                             <div class="bs-component">
                                                 <div class="form-group row">
-                                                    <label for="inputSecret" class="col-sm-3 col-form-label">Role</label>
+                                                    <label for="inputSecret" class="col-sm-3 col-form-label text-left">Role</label>
                                                     <div class="col-sm-9">
-                                                        <select class="form-select form-control" aria-label="Editor">
-                                                            <option selected>Editor</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                          </select>
+                                                        <div class="select-box">
+                                                            <span class="icon icon-angle-down"></span>
+                                                            <select class="form-select form-control" aria-label="Editor">
+                                                                <option selected>Editor</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                   </div>
                                             </div>
@@ -1017,11 +1040,14 @@
                                         <div class="col-lg-12">
                                             <div class="bs-component">
                                                 <div class="form-group has-search">
-                                                    <select class="selectpicker form-control text-muted data-live-search="true" aria-placeholder="# Search by tags">
-                                                        <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
-                                                        <option data-tokens="mustard">Burger, Shake and a Smile</option>
-                                                        <option data-tokens="frosting">Sugar, Spice and all things nice</option>
-                                                    </select>
+                                                    <div class="select-box">
+                                                        <span class="icon icon-angle-down"></span>
+                                                        <select class="selectpicker form-control text-muted data-live-search="true" aria-placeholder="# Search by tags">
+                                                            <option data-tokens="ketchup mustard"># Search by tags</option>
+                                                            <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                                            <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1082,18 +1108,18 @@
                     <div class="col-lg-12">
                         <div class="row bs-component">
                             <div class="col-lg-10 m-auto">
-                                <nav class="navbar header-top d-flex text-muted">
-                                    <div class="form-checkbox-group flex-fill mr-2">
+                                <nav class="navbar d-block d-md-flex text-left text-md-center header-top text-muted">
+                                    <div class="form-checkbox-group mr-2">
                                         <input type="checkbox" class="form-checkbox" value="">
                                         <span class="ml-3"><i class="icon icon-more"></i></span>
                                     </div>
-                                    <div class="flex-fill mr-2">Wrist Watch</div>
-                                    <div class="flex-fill mr-2">Men Watch White or Black</div>
-                                    <div class="flex-fill mr-2">
+                                    <div class=" mr-2">Wrist Watch</div>
+                                    <div class="mr-2">Men Watch White or Black</div>
+                                    <div class="mr-2">
                                         29 minutes ago
                                         <span class="badge rounded ml-1">Me</span>
                                     </div>
-                                    <div class="dropdown border-left pl-3">
+                                    <div class="dropdown d-none d-md-flex border-left pl-3">
                                         <div class="avatar rounded-circle mr-1">
                                             <img src="./app/images/profile-picture.png" />
                                         </div>
@@ -1118,18 +1144,18 @@
 
                         <div class="row bs-component">
                             <div class="col-lg-10 m-auto">
-                                <nav class="navbar header-top d-flex text-muted">
-                                    <div class="form-checkbox-group flex-fill mr-2">
+                                <nav class="navbar d-block d-md-flex text-left text-md-center header-top text-muted">
+                                    <div class="form-checkbox-group mr-2">
                                         <input type="checkbox" class="form-checkbox" value="" checked>
                                         <span class="ml-3"><i class="icon icon-more"></i></span>
                                     </div>
-                                    <div class="flex-fill text-dark mr-2">Snapback Cap</div>
-                                    <div class="flex-fill mr-2">Add Description</div>
-                                    <div class="flex-fill mr-2">
+                                    <div class="text-dark mr-2">Snapback Cap</div>
+                                    <div class="mr-2">Add Description</div>
+                                    <div class="mr-2">
                                         Thu, 6:20 PM
                                         <span class="badge rounded ml-1">Adam</span>
                                     </div>
-                                    <div class="flex-fill">
+                                    <div class="d-none d-md-flex">
                                         <div class="dropdown border-left pl-3">
                                             <div class="avatar rounded-circle mr-1">
                                                 <img src="./app/images/profile-picture.png" />
@@ -1151,7 +1177,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="flex-fill mr-2">
+                                    <div class="mr-2">
                                         Thu, 6:20 PM
                                     </div>
                                 </nav>
@@ -1166,8 +1192,8 @@
                 <p>List Item with thumbnail</p>
                 <div class="row bs-component">
                     <div class="col-lg-10 m-auto">
-                        <nav class="navbar header-top d-flex">
-                            <div class="flex-fill my-2">
+                        <nav class="navbar header-top d-block d-md-flex">
+                            <div class="my-2 d-inline-block d-md-flex">
                                 <div class="avatar rounded-circle mr-4 float-left">
                                     <img src="./app/images/profile-picture.png" width="48" height="48" />
                                 </div>
@@ -1176,14 +1202,14 @@
                                     <small>48 x 48</small> 
                                 </div>
                             </div>
-                            <div class="flex-fill my-2">
+                            <div class="d-inline-block d-md-flex m-2">
                                 <span class="badge rounded ml-1">Image</span>
                                 <span class="badge rounded ml-1">image/large</span>
                                 <span class="badge rounded ml-1">Type/jpg</span>
                                 <a href="#" class="link"><small>+3 more</small></a>
                             </div>
-                            <div class="flex-fill my-2">1.3 mb</div>
-                            <div class="flex-fill my-2">
+                            <div class="d-block d-md-flex m-2">1.3 mb</div>
+                            <div class="d-inline-block d-md-flex m-2">
                                 <div class="dropdown border-left pl-3">
                                     <div class="avatar rounded-circle mr-1">
                                         <img src="./app/images/profile-picture.png" />
@@ -1199,7 +1225,7 @@
                                 </div>
                             </div>
 
-                            <div class="nav-actions flex-fill my-2">
+                            <div class="nav-actions d-block d-md-flex m-2">
                                 <button class="btn custom-btn-outline-secondary mr-1"><i class="icon icon-download"></i></button>
                                 <button class="btn custom-btn-outline-secondary text-danger"><i class="icon icon-delete"></i></button>
                             </div>
@@ -1272,7 +1298,7 @@
                                             </div>
                                           </div>
                                     </nav>
-                                    <div class="bg-light d-flex flex-column justify-content-between flex-sm-row p-2">
+                                    <div class="bg-light d-flex flex-column justify-content-between flex-md-row p-2">
                                         <div class="tab-expanded-list flex-grow-1 m-auto">
                                             <ul class="nav">
                                                 <li class="nav-item">
@@ -1403,7 +1429,7 @@
                                     <nav class="navbar header-top">
                                         <div class="d-flex justify-content-start">
                                             <div class="p-1">
-                                                My Rule A
+                                                <h3>My Rule A</h3>
                                             </div>
                                           </div>
                                           <div class="d-flex justify-content-end">
@@ -1418,7 +1444,7 @@
                                           </div>
                                     </nav>
                                     <div class="bg-light d-flex flex-wrap justify-content-between border-top border-bottom mx-3 p-3">
-                                        <div class="d-flex justify-content-sm-around">
+                                        <div class="d-inline-block justify-content-around d-lg-flex">
                                             <div class="mr-2">
                                                 <span class="pr-3 mt-2">if</span>
                                                 <button type="button" class="btn btn-primary d-inline btn-with-icon btn-with-shortcut mb-2 mb-lg-0">
@@ -1442,8 +1468,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="log-status d-flex justify-content-between p-3">
-                                        <div class="d-sm-flex text-left d-inline justify-content-start">
+                                    <div class="log-status d-none d-sm-flex justify-content-between p-3">
+                                        <div class="d-sm-flex d-none text-left d-sm-inline justify-content-start">
                                             <div class="succeeded pr-2 pr-lg-5 border-right">
                                                 Succeeded <span class="badge badge-pill badge-secondary rounded">02</span>
                                             </div>
@@ -1454,7 +1480,7 @@
                                                 Executed <span class="badge badge-pill badge-secondary rounded">02</span> 
                                             </div>
                                         </div>
-                                          <div class="d-flex justify-content-end">
+                                          <div class="d-sm-flex d-none justify-content-end">
                                             <div class="logs pl-3">
                                                 <a class="link">
                                                     Logs
@@ -1474,19 +1500,19 @@
                         <div class="row">
                             <div class="col-lg-12 mt-2 ml-auto">
                                 <div class="tab-bars header-rules">
-                                    <nav class="navbar header-top d-flex">
-                                        <div class="flex-fill custom-btns">
+                                    <nav class="navbar d-block d-md-flex header-top">
+                                        <div class="custom-btns">
                                             <button class="btn btn-light-green btn-rounded">
                                                 Success
                                             </button>
                                         </div>
-                                        <div class="flex-fill">Manual</div>
-                                        <div class="flex-fill">Ignore</div>
-                                        <div class="flex-fill">
+                                        <div>Manual</div>
+                                        <div>Ignore</div>
+                                        <div>
                                             29 minutes ago
                                             <span class="badge rounded ml-1">Me</span>
                                         </div>
-                                        <div class="pl-3">
+                                        <div>
                                             <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
                                                 <i class="icon-settings"></i>
                                             </button>
@@ -1552,13 +1578,13 @@
                 <div class="row bs-component">
                     <div class="col-lg-12 text-left m-auto p-4">
                         <div class="row">
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="card rounded border">
                                     <img class="card-img-top rounded-right rounded-left" src="./app/images/default-png.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title mb-1">My File.png</h5>
-                                        <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
-                                        <p>
+                                        <p class="card-text mb-1 d-none d-sm-block"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                        <p class="d-none d-sm-block">
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">Type/png</span>
@@ -1567,26 +1593,26 @@
                                     </div>
                                   </div>                          
                             </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="card rounded border">
                                     <img class="card-img-top rounded-right rounded-left" src="./app/images/img_avatar.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title mb-1 text-truncate">Lorem ipsum dolor sit amet</h5>
-                                        <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
-                                        <p>
+                                        <p class="card-text mb-1 d-none d-sm-block"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                        <p class="d-none d-sm-block">
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
                                         </p>
                                     </div>
                                   </div>                          
                             </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="card rounded border">
                                     <img class="card-img-top rounded-right rounded-left" src="./app/images/web-summit.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title mb-1">My File.jpg</h5>
-                                        <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
-                                        <p>
+                                        <p class="card-text mb-1 d-none d-sm-block"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                        <p class="d-none d-sm-block">
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">Type/png</span>
@@ -1595,7 +1621,7 @@
                                     </div>
                                   </div>                          
                             </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="card rounded border">
                                     <div class="card-header text-center pb-0 pt-4 rounded border-bottom-0">
                                         <h5>Basic</h5>
@@ -1605,7 +1631,7 @@
                                         <p class="text-primary mb-0">$190 / year</p>
                                         <hr>
                                     </div>
-                                    <div class="card-body pt-1">
+                                    <div class="card-body pt-1 d-none d-sm-block">
                                         <h5 class="card-title mb-2 text-muted">Includes</h5>
                                         <ul class="list-unstyled p-0">
                                             <li class="pb-1"><i class="icon icon-checkmark mr-2 text-primary"></i><strong>150k</strong> API Calls</li>
@@ -1615,13 +1641,13 @@
                                     </div>
                                   </div>                          
                             </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="card rounded border">
                                     <img class="card-img-top rounded-right rounded-left" src="./app/images/default-png.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title mb-1">My File.png</h5>
-                                        <p class="card-text mb-1"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
-                                        <p>
+                                        <p class="card-text mb-1 d-none d-sm-block"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
+                                        <p class="d-none d-sm-block">
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image/large</span>
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">Type/png</span>
@@ -1709,13 +1735,16 @@
                             <div class="col-lg-6 mt-4">
                                 <ol class="breadcrumb border-0 w-50 m-auto">
                                     <li class="breadcrumb-item">
-                                        <select class="p-1 border rounded" name="" id="">
-                                            <option value="a">My Application</option>
-                                            <option value="b">My Application 2</option>
-                                            <option value="c">My Application 3</option>
-                                        </select>
+                                        <div class="select-box">
+                                            <span class="icon icon-angle-down"></span>
+                                            <select class="px-3 py-1 border rounded" name="" id="">
+                                                <option value="a">My Application</option>
+                                                <option value="b">My Application 2</option>
+                                                <option value="c">My Application 3</option>
+                                            </select>
+                                        </div>
                                     </li>
-                                    <li class="breadcrumb-item active">Assets</li>
+                                    <li class="breadcrumb-item active d-none d-sm-block">Assets</li>
                                 </ol>
                             </div>
                         </div>
