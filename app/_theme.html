@@ -153,14 +153,14 @@
                             <!-- <img src="./app/images/profile-picture.png" /> -->
 
                             <div class="d-flex">
-                                <ol class="breadcrumb p-2 custom-breadcrumb">
+                                <ol class="breadcrumb p-0 custom-breadcrumb">
                                     <li class="breadcrumb-item custom-dropdown-item">
                                         <div class="sub-menu">
                                             <span class="text-primary"><i class="icon icon-angle-down"></i></span>
-                                            <select class="p-1" name="" id="">
-                                                <option value="a">My Application</option>
-                                                <option value="b">My Application 2</option>
-                                                <option value="c">My Application 3</option>
+                                            <select class="form-control" name="" id="">
+                                                <option value="a">My application</option>
+                                                <option value="b">My application 2</option>
+                                                <option value="c">My application 3</option>
                                             </select>
                                         </div>
                                     </li>
@@ -171,33 +171,29 @@
                                 </ol>
                             </div>
                             <div class="d-flex flex-grow-1 flex-lg-grow-0">
-                                <form class="form-inline flex-grow-1 p-2">
-                                    <input class="form-control" type="text" placeholder="Quick Nav (Press )" />
-                                    <i class="icon icon-search"></i>
-                                </form>
-                                <div class="upload-count p-2">
-                                    <i class="icon icon-upload-3 mr-1"></i>
-                                    <span>0</span>
-                                </div>
-                                <div class="dropdown border-left pl-3 p-2">
-                                    <div class="avatar rounded-circle mr-1">
-                                        <img src="./app/images/profile-picture.png" />
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text form-control"><i class="icon icon-search"></i></span>
                                     </div>
-                                    <i
-                                        class="icon icon-caret-down ml-2"
-                                        id="dropdownMenuButton"
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true"
-                                        aria-expanded="false"
-                                    ></i>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-    
-                                        <div class="dropdown-divider"></div>
-    
-                                        <a class="dropdown-item dropdown-item-delete" href="#">Separated link</a>
+                                    <input class="form-control px-3" type="text" placeholder="Quick Nav (Press )">
+                                    <div class="input-group-append">
+                                        <div class="upload-count px-2">
+                                            <i class="icon icon-upload-3 py-2"></i>
+                                            <span>0</span>
+                                        </div>
+                                        <div class="dropdown border-left px-2">
+                                            <div class="avatar rounded-circle mr-1">
+                                                <img src="./app/images/profile-picture.png">
+                                            </div>
+                                            <i class="icon icon-caret-down ml-2" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item dropdown-item-delete" href="#">Separated link</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +209,7 @@
                             <div class="d-flex mb-1">
                                 <h2>
                                     Rules
-                                    <span class="badge badge-pill badge-secondary badge-round">02</span>
+                                    <span class="badge badge-pill badge-secondary">02</span>
                                 </h2>
                             </div>
                             <div class="d-flex flex-grow-0">
@@ -400,8 +396,8 @@
                                 <nav class="navbar header-rules d-flex main-tab-bar pt-3 border-bottom pb-0">
                                     <!-- <img src="./app/images/profile-picture.png" /> -->
                                     <div class="input-group w-sm-100 w-xs-100 w-md-100 w-auto flex-grow-1 mr-1 publish">
-                                        <h2 class="nav-title pl-0"><span class="publish-icon mr-2"></span>Schema 2</h2>
-                                        <p class="border-left pl-3">Content <span class="badge badge-pill badge-secondary badge-round">5</span></p>
+                                        <h2 class="nav-title pl-0"><span class="publish-icon mr-3"></span>Schema 2</h2>
+                                        <p class="border-left pl-3 m-0">Content <span class="badge badge-pill badge-secondary badge-round">5</span></p>
                                     </div>
         
                                     <div class="mr-2 d-none d-lg-block text-muted">
@@ -813,7 +809,7 @@
                                                 <div class="form-group row">
                                                     <label for="inputName" class="col-sm-3 col-form-label text-left">Name</label>
                                                     <div class="col-sm-9">
-                                                      <input type="password" class="form-control" id="inputName" placeholder="Field name">
+                                                      <input type="text" class="form-control" id="inputName" placeholder="Field name">
                                                       <small class="text-muted form-text text-left">Field name in API response</small>
                                                     </div>
                                                   </div>
@@ -830,10 +826,10 @@
                                         <div class="col-lg-8">
                                             <div class="bs-component">
                                                 <div class="form-group row">
-                                                    <label for="inputName" class="col-sm-3 col-form-label text-left">Name</label>
+                                                    <label for="inputFName" class="col-sm-3 col-form-label text-left">Name</label>
                                                     <div class="col-sm-9">
                                                       <div class="field-with-text-action">
-                                                        <input type="password" class="form-control" id="inputName" placeholder="My transparent file.png">
+                                                        <input type="text" class="form-control" id="inputFName" placeholder="My transparent file.png">
                                                         <span class="field-action text-primary small">Generate</span>
                                                       </div>
                                                       <small class="text-muted form-text text-left">Slug text field hint</small>
@@ -1319,9 +1315,9 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="col-lg-12 row p-4">
-                                            <label for="inputName" class="col-sm-3 col-form-label text-center">Editor URL</label>
+                                            <label for="inputUrl" class="col-sm-3 col-form-label text-center">Editor URL</label>
                                             <div class="col-sm-9">
-                                                <input type="password" class="form-control" id="inputName" placeholder="Field name">
+                                                <input type="text" class="form-control" id="inputUrl" placeholder="Field name">
                                                 <small class="text-muted form-text text-left"><i class="icon-info-outline"></i> Field name in API response</small>
                                             </div>
                                         </div>
@@ -1397,7 +1393,7 @@
                                             <div class="form-group col-lg-12">
                                                 <label>List Item Field A</label>
                                                 <button class="btn p-0 custom-icons float-right"><small><i class="icon icon-refresh"></i> Reset</small></button>
-                                                <input type="password" class="form-control" id="inputName" placeholder="Field name">
+                                                <input type="text" class="form-control" id="inputPassword" placeholder="Field name">
                                                 <small class="text-muted form-text text-left">You can only use letters, numbers and dashes and not more than 40 characters.</small>
                                             </div>
                                             <div class="form-group col-lg-12">
@@ -1773,9 +1769,9 @@
                                             </div>
                                             <div class="modal-body">
                                                 <div class="form-group row mb-4">
-                                                    <label for="inputName" class="col-sm-12">Name <span class="text-muted">(Required)</span></label>
+                                                    <label for="inputFistName" class="col-sm-12">Name <span class="text-muted">(Required)</span></label>
                                                     <div class="col-sm-12">
-                                                      <input type="text" class="form-control" id="inputName" placeholder="Field name">
+                                                      <input type="text" class="form-control" id="inputFistName" placeholder="Field name">
                                                       <small class="text-muted form-text text-left">You can only use letters, numbers and dashes and not more than 40 characters.</small>
                                                     </div>
                                                 </div>

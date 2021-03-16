@@ -2,6 +2,7 @@
 @import '_vars';
 
 body {
+
     // Default body with padding for fixed navbar and sidebar.
     & {
         background: $color-background;
@@ -298,12 +299,15 @@ body {
         }
 
         @include media-breakpoint-down(sm) {
+
             .tab-expanded-list,
             .tab-list {
                 margin-top: 40px;
                 overflow: hidden;
+
                 .tab-bars {
                     overflow: hidden;
+
                     .nav {
                         flex-wrap: nowrap;
                         max-width: 470px;
@@ -323,6 +327,7 @@ body {
         li {
             &.active {
                 border-bottom: 2px solid $color-theme-blue;
+
                 a {
                     color: $color-black;
                 }
@@ -354,12 +359,13 @@ body {
                 color: $color-theme-blue;
             }
         }
+        width: 50%;
 
         button {
             border-color: $color-border;
             color: $color-border-dark;
         }
-        width: 50%;
+
     }
 }
 
@@ -406,6 +412,10 @@ body {
                 @include absolute(50%, 0, 0, 25px);
 
                 transform: translateY(-50%);
+            }
+
+            hr {
+                margin: 0;
             }
         }
 
@@ -533,7 +543,7 @@ body {
     }
 
     .upload-count {
-        & > * {
+        &>* {
             display: inline-block;
             vertical-align: middle;
         }
@@ -655,6 +665,7 @@ body {
     .badge {
         background: $color-grey;
         color: $color-black;
+
         .close {
             color: inherit;
             font-size: inherit;
@@ -723,6 +734,7 @@ body {
 //
 .field-with-text-action {
     position: relative;
+
     span {
         &.field-action {
             @include absolute(50%, 15px, auto, auto);
@@ -745,11 +757,14 @@ body {
 //
 .field-client-secret {
     position: relative;
+
     input {
         padding-right: 40px;
     }
+
     i {
         @include absolute(50%, 15px, auto, auto);
+
         @include media-breakpoint-down(sm) {
             color: $color-theme-blue;
         }
@@ -763,6 +778,7 @@ body {
 //
 .select-box {
     position: relative;
+
     span {
         @include absolute(50%, 15px, auto, auto);
 
@@ -793,25 +809,31 @@ body {
 
 .left-sidebar-item-list {
     width: 100%;
+
     &.bottom-0 {
         bottom: 0;
     }
+
     .left-sidebar-item {
         background: $color-theme-blue;
         cursor: pointer;
         transition: 0.3s;
+
         &:hover {
             background: $color-theme-blue-darker;
             transition: 0.3s;
         }
+
         &.active {
             background: $color-theme-blue-darker;
         }
+
         span {
             display: inline-block;
             margin: 0.8rem auto 0;
         }
     }
+
     .left-sidebar-icon {
         margin: 0 auto;
         width: 20px;
@@ -922,8 +944,9 @@ body {
 }
 
 .sorting {
+
     &,
-    & > * {
+    &>* {
         opacity: 0.5;
     }
 }
@@ -988,12 +1011,15 @@ i {
     .w-xs-100 {
         width: 100% !important;
     }
+
     .w-xs-75 {
         width: 75% !important;
     }
+
     .w-xs-50 {
         width: 50% !important;
     }
+
     .w-xs-25 {
         width: 25% !important;
     }
