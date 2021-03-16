@@ -69,7 +69,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="bs-section-title">Navbars</h1>
+                        <h1 class="bs-section-title">Navbar</h1>
                     </div>
                 </div>
 
@@ -218,7 +218,7 @@
                             </div>
                             <div class="d-flex flex-grow-0">
                                 <div class="text-muted mr-3 my-auto">
-                                    <i class="icon icon-reset ml-1"></i>
+                                    <button type="button" class="btn text-muted btn-default"><i class="icon icon-reset"></i></button>
                                 </div>
                                 <div class="dropdown">
                                     <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
@@ -239,20 +239,20 @@
                     <div class="col-lg-12">
                         <nav class="navbar header-rules d-flex search-content-filter">
                             <!-- <img src="./app/images/profile-picture.png" /> -->
-
-                            <div class="input-group search-input-group flex-grow-1 mr-0 mr-lg-4 mb-2">
-                                <input type="text" class="form-control" placeholder="Search for content in " aria-label="Recipient's username with two button addons">
-                                <button class="btn custom-btn-outline-secondary border-left-0 " type="button"><i class="icon icon-star-empty"></i></button>
-                                <button class="btn custom-btn-outline-secondary rounded-right border-left-0" type="button"><i class="icon icon-filter mr-1"></i></button>
-                            </div>
-
-                            <div class="mr-4 text-muted custom-icons">
-                                <i class="icon icon-bell mr-3"></i>
-                                <i class="icon icon-reset mr-1"></i>
+                            <div class="input-group search-input-group flex-grow-1">
+                                <input type="text" class="form-control" placeholder="Search for content in “Special Product Ipsum Dolor Sit Categories” or apply specific filtering queries" aria-label="Search for content in" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary" type="button"><i class="icon icon-star-empty"></i></button>
+                                  <button class="btn btn-outline-secondary" type="button"><i class="icon icon-filter mr-1"></i></button>
+                                </div>
+                              </div>
+                            <div class="custom-icons mx-3">
+                                <button type="button" class="btn btn-default"><i class="icon icon-bell"></i></button>
+                                <button type="button" class="btn btn-default text-muted"><i class="icon icon-reset"></i></button>
                             </div>
 
                             <div class="dropdown">
-                                <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
+                                <button type="button" class="btn btn-success btn-with-icon">
                                     <i class="icon icon-plus"></i>
                                     <span class="d-none d-md-inline-flex">
                                         New
@@ -282,13 +282,13 @@
                                     <input type="text" class="form-control" placeholder="Search for content in " aria-label="Recipient's username with two button addons">
                                 </div>
 
-                                <div class="mr-0 mr-lg-4 p-2 text-muted">
-                                    <i class="icon icon-list1 mr-3"></i>
-                                    <i class="icon icon-reset mr-1"></i>
+                                <div class="mr-0 mr-lg-4 p-2">
+                                    <button type="button" class="btn btn-default text-muted"><i class="icon icon-list1"></i></button>
+                                    <button type="button" class="btn btn-default text-muted"><i class="icon icon-reset"></i></button>
                                 </div>
 
                                 <div class="mr-0 p-2">
-                                    <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
+                                    <button type="button" class="btn btn-primary btn-with-icon border-0">
                                         <i class="icon icon-plus"></i>
                                         <span class="d-none d-md-inline-flex">
                                             New
@@ -739,7 +739,7 @@
                                     <div class="bs-component">
                                         <p class="d-flex justify-content-center">
                                             <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
-                                                <i class="icon icon-plus"></i> New Rule
+                                                <i class="icon icon-plus mr-1"></i> New Rule
                                                 <span class="badge text-white">N</span>
                                             </button>
                                         </p>
@@ -1334,7 +1334,7 @@
             </div>
 
             <div class="text-center bs-section-grey p-2 p-sm-5">
-                <p>Collapsible Component with Sublists</p>
+                <p>Collapsible Component with Sub lists</p>
                 <div class="row bs-component">
                     <div class="col-lg-10 text-left m-auto custom-btns">
                         <p><button type="button" class="btn btn-collapse btn-circle"><i class="icon icon-angle-down"></i></button>
@@ -1562,7 +1562,7 @@
                                 </div>
                                 <div class="flex-grow-3">
                                     <button type="button" class="btn btn-success btn-with-icon btn-with-shortcut">
-                                        <i class="icon icon-plus"></i> Add Contributor
+                                        <i class="icon icon-plus mr-1"></i> Add Contributor
                                     </button>
                                 </div>
                             </div>
@@ -1597,7 +1597,7 @@
                                 <div class="card rounded border">
                                     <img class="card-img-top rounded-right rounded-left" src="./app/images/img_avatar.png" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title mb-1 text-truncate">Lorem ipsum dolor sit amet</h5>
+                                        <h5 class="card-title mb-1 text-truncate">Lorem ipsum dolor sit</h5>
                                         <p class="card-text mb-1 d-none d-sm-block"><small><span class="text-primary">32 x 32</span> 1.3 mb</small></p>
                                         <p class="d-none d-sm-block">
                                           <span class="badge badge-secondary text-muted rounded mb-1 mr-1">image</span>
@@ -1687,9 +1687,9 @@
                             <div class="col-lg-6">
                                 <div class="contributor">
                                     <p>Contributor</p>
-                                    <nav class="navbar header-top d-flex">
+                                    <nav class="navbar header-top d-block d-sm-flex">
                                         <div class="flex-fill mb-2">
-                                            <div class="avatar rounded-circle mr-2 mr-sm-4 float-left">
+                                            <div class="avatar rounded-circle mr-2 mr-sm-2 mb-2 float-left">
                                                 <img src="./app/images/profile-picture.png" width="32" height="32">
                                             </div>
                                             <p class="mb-0">Agnes Rogahn</p>
@@ -1718,14 +1718,8 @@
                                             <span class="badge badge-primary rounded p-2">Clients: 0</span>
                                             <span class="badge badge-primary rounded p-2">Users: 0</span>
                                         </div>
-                                        <div class="form-group mb-2 pr-2">
-                                            <select id="inputState" class="form-control bg-secondary h-auto border">
-                                                <option selected="">Owner</option>
-                                                <option>...</option>
-                                            </select>
-                                        </div>
-                                        <div class="settings">
-                                            <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
+                                        <div class="settings mb-2">
+                                            <button type="button" class="btn text-primary btn-secondary mr-1">
                                                 <i class="icon-settings"></i>
                                             </button>
                                         </div>
@@ -1839,7 +1833,7 @@
                                     <div class="modal-dialog modal-lg position-relative">
                                         <div class="modal-content shadow-none border">
                                             <div class="modal-header bg-white text-dark border-bottom" *ngIf="showHeader">
-                                                <h4 class="modal-title">Customise Columns</h4>
+                                                <h4 class="modal-title">Customize Columns</h4>
                                                 <button type="button" class="close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
@@ -2276,13 +2270,13 @@
                                                     <p>Conditions are javascript expressions that define when to trigger, for example:</p>
                                                     <ul>
                                                         <li>Specific events:
-                                                            <p class="bg-light p-1 bg-with-icon">event.type ==  'Created'  || event.type  == 'Updated' <span class="icon-box"><i class="iocn icon-plus text-white"></i></span></p>
+                                                            <p class="bg-light p-1 bg-with-icon">event.type ==  'Created'  || event.type  == 'Updated' <span class="icon-box"><i class="icon icon-plus text-white"></i></span></p>
                                                         </li>
                                                         <li>Large assets:
-                                                            <p class="bg-light p-1 bg-with-icon">event.fileSize > 100000000 <span class="icon-box"><i class="iocn icon-plus text-white"></i></span></p>
+                                                            <p class="bg-light p-1 bg-with-icon">event.fileSize > 100000000 <span class="icon-box"><i class="icon icon-plus text-white"></i></span></p>
                                                         </li>
                                                         <li>Images only:
-                                                            <p class="bg-light p-1 bg-with-icon">event.isImage <span class="icon-box"><i class="iocn icon-plus text-white"></i></span></p>
+                                                            <p class="bg-light p-1 bg-with-icon">event.isImage <span class="icon-box"><i class="icon icon-plus text-white"></i></span></p>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -3339,142 +3333,6 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bs-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="bs-section-title">Panels</h1>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2>Default</h2>
-
-                        <div class="bs-component">
-                            <div class="panel panel-light">
-                                <div class="panel-header">
-                                    <div class="panel-title-row">
-                                        <div class="float-right">
-                                            <button type="button" class="btn btn-success">New</button>
-                                        </div>
-
-                                        <h3 class="panel-title">Title</h3>
-                                    </div>
-
-                                    <a class="panel-close">
-                                        <i class="icon-close"></i>
-                                    </a>
-                                </div>
-
-                                <div class="panel-main">
-                                    <div class="panel-content grid">
-                                        <div class="panel-alert panel-alert-danger">Alert</div>
-                                    </div>
-
-                                    <div class="panel-sidebar">
-                                        <a href="#" class="panel-link">
-                                            <i class="icon-help2"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h2>Light</h2>
-
-                        <div class="bs-component">
-                            <div class="panel panel-light">
-                                <div class="panel-header">
-                                    <div class="panel-title-row">
-                                        <div class="float-right">
-                                            <button type="button" class="btn btn-success">New</button>
-                                        </div>
-
-                                        <h3 class="panel-title">Title</h3>
-                                    </div>
-
-                                    <a class="panel-close">
-                                        <i class="icon-close"></i>
-                                    </a>
-                                </div>
-
-                                <div class="panel-main">
-                                    <div class="panel-content panel-content-blank">Text</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <h2>Dark</h2>
-
-                        <div class="bs-component">
-                            <div class="panel panel-dark">
-                                <div class="panel-header large">
-                                    <div class="panel-title-row">
-                                        <div class="float-right">
-                                            <button type="button" class="btn btn-success">New</button>
-                                        </div>
-
-                                        <h3 class="panel-title">Title</h3>
-                                    </div>
-
-                                    <a class="panel-close">
-                                        <i class="icon-close"></i>
-                                    </a>
-
-                                    <div class="panel-header-row">
-                                        <div class="search-form">
-                                            <input
-                                                class="form-control form-control-dark"
-                                                placeholder="Search here..."
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel-main">
-                                    <div class="panel-content">
-                                        <ul class="nav nav-panel nav-dark nav-dark-bordered flex-column">
-                                            <li class="nav-item">
-                                                <a class="nav-link d-flex justify-content-between">
-                                                    Link 1
-                                                    <i class="icon-angle-right"></i>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link d-flex justify-content-between">
-                                                    Link 2
-                                                    <i class="icon-angle-right"></i>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link d-flex justify-content-between">
-                                                    Link 3
-                                                    <i class="icon-angle-right"></i>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link d-flex justify-content-between">
-                                                    Link 4
-                                                    <i class="icon-angle-right"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

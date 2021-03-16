@@ -43,14 +43,12 @@ body {
     cursor: move;
 }
 
-
 //
 // Background Colors
 //
 .bg-light-blue {
     background: $color-theme-blue-lightest;
 }
-
 
 //
 // Rich editor icon. Must be placed here, because element is not created by angular.
@@ -131,26 +129,24 @@ body {
         position: relative;
 
         &::before {
+            @include absolute(7px, 0, 0, 0);
+            @include border-radius(100px);
+
             border: 1px solid $color-theme-blue;
-            border-radius: 100px;
             content: '';
             height: 10px;
-            left: 0;
-            position: absolute;
-            top: 7px;
             width: 10px;
         }
 
         &::after {
+            @include absolute(12px, 0, 0, auto);
+
             background: $color-grey-dark;
             content: '';
             height: 2px;
-            position: absolute;
-            right: 0;
-            top: 12px;
             width: 30px;
         }
-        
+
         &:last-child {
             &::after {
                 display: none;
@@ -170,6 +166,7 @@ body {
 
         &.active {
             color: $color-black;
+
             &::before {
                 background: $color-theme-blue;
                 border-color: $color-theme-blue;
@@ -187,20 +184,17 @@ body {
 //
 .bg-with-icon {
     position: relative;
+
     .icon-box {
+        @include absolute(0, 0, 0, auto);
+
         background: $color-grey-dark;
-        bottom: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
         width: 30px;
 
         i {
-            left: 0;
+            @include absolute(50%, 0, 0, 0);
+
             margin: 0 auto;
-            position: absolute;
-            right: 0;
-            top: 50%;
             transform: translateY(-50%);
             width: fit-content;
         }
@@ -227,7 +221,7 @@ body {
         @include media-breakpoint-down(sm) {
             margin-right: 0;
         }
-        
+
         font-size: 1rem;
         font-weight: bold;
         margin-right: 0.8rem;
@@ -274,7 +268,6 @@ body {
     }
 
     &.main-tab-bar {
-
         li {
             a {
                 color: $color-grey-dark;
@@ -291,8 +284,9 @@ body {
                 padding-left: 10px;
 
                 .publish-icon {
+                    @include border-radius(100px);
+
                     background: $color-theme-green;
-                    border-radius: 100px;
                     content: '';
                     display: inline-block;
                     height: 8px;
@@ -304,23 +298,22 @@ body {
         }
 
         @include media-breakpoint-down(sm) {
-            .tab-expanded-list, .tab-list {
+            .tab-expanded-list,
+            .tab-list {
                 margin-top: 40px;
                 overflow: hidden;
                 .tab-bars {
                     overflow: hidden;
                     .nav {
-                        flex-wrap : nowrap;
+                        flex-wrap: nowrap;
                         max-width: 470px;
                         overflow: auto;
                         white-space: nowrap;
                     }
                 }
-    
+
                 .btn-actions {
-                    position: absolute;
-                    right: 20px;
-                    top: 20px;
+                    @include absolute(20px, 20px, auto, auto);
                 }
             }
         }
@@ -342,7 +335,7 @@ body {
             li {
                 &:first-child {
                     a {
-                        padding-left: 0; 
+                        padding-left: 0;
                     }
                 }
             }
@@ -353,7 +346,6 @@ body {
 // search content and filter
 
 .search-content-filter {
-
     .search-input-group {
         @include media-breakpoint-down(md) {
             width: 100%;
@@ -363,6 +355,10 @@ body {
             }
         }
 
+        button {
+            border-color: $color-border;
+            color: $color-border-dark;
+        }
         width: 50%;
     }
 }
@@ -384,13 +380,12 @@ body {
             position: relative;
 
             .status {
+                @include absolute(50%, 0, 0, 25px);
+                @include border-radius(100px);
+
                 background: $color-grey;
-                border-radius: 100px;
                 content: '';
                 height: 10px;
-                left: 25px;
-                position: absolute;
-                top: 50%;
                 transform: translateY(-50%);
                 width: 10px;
 
@@ -408,22 +403,20 @@ body {
             }
 
             .icon {
-                left: 25px;
-                position: absolute;
-                top: 50%;
+                @include absolute(50%, 0, 0, 25px);
+
                 transform: translateY(-50%);
             }
         }
-        
+
         &.status-options {
             .status {
+                @include absolute(50%, 0, 0, 25px);
+                @include border-radius(100px);
+
                 background: $color-grey;
-                border-radius: 100px;
                 content: '';
                 height: 10px;
-                left: 25px;
-                position: absolute;
-                top: 50%;
                 transform: translateY(-50%);
                 width: 10px;
 
@@ -441,9 +434,8 @@ body {
             }
 
             .icon {
-                left: 25px;
-                position: absolute;
-                top: 50%;
+                @include absolute(50%, 0, 0, 25px);
+
                 transform: translateY(-50%);
             }
         }
@@ -452,8 +444,9 @@ body {
 
 .sub-tab-bar {
     .nav-link {
+        @include border-radius(100px);
+
         background: $color-grey;
-        border-radius: 24px;
         color: $color-black;
 
         &.active {
@@ -465,21 +458,19 @@ body {
 
 .expandable-tab {
     &::before {
+        @include absolute(auto, auto, -30px, 30px);
+
         border: 1px dashed $color-grey;
-        bottom: -30px;
         content: '';
         height: 25px;
-        left: 30px;
-        position: absolute;
     }
 
     &::after {
+        @include absolute(auto, auto, -30px, 30px);
+
         border: 1px dashed $color-grey;
-        bottom: -30px;
         content: '';
         height: 1px;
-        left: 30px;
-        position: absolute;
         width: 40px;
     }
 }
@@ -489,8 +480,9 @@ body {
     width: 100%;
 
     select {
+        @include border-radius(3px);
+
         border-color: $color-border-grey;
-        border-radius: 3px;
         color: $color-text;
     }
 
@@ -507,20 +499,20 @@ body {
 
         &.custom-breadcrumb {
             .custom-dropdown-item {
-                border-radius: 5px;
+                @include border-radius(5px);
+
                 position: relative;
 
                 i {
+                    @include absolute(50%, auto, auto, 8px);
+
                     display: block;
-                    left: 8px;
-                    position: absolute;
-                    top: 50%;
                     transform: translateY(-50%);
                 }
 
                 select {
                     appearance: none;
-                    padding-left:  25px !important;
+                    padding-left: 25px !important;
                 }
             }
         }
@@ -534,9 +526,9 @@ body {
         }
 
         i {
+            @include absolute(auto, auto, auto, 15px);
+
             color: $color-border-dark;
-            left: 15px;
-            position: absolute;
         }
     }
 
@@ -595,24 +587,25 @@ body {
 
 .custom-btns {
     font-size: 14px;
-    
+
     .btn {
         &.btn-circle {
-            border-radius: 100px;
+            @include border-radius(100px);
+
             height: 40px;
             padding: 0;
             width: 40px;
         }
-    
+
         &.btn-grey {
             background: $color-grey-dark;
             color: $color-white;
         }
-    
+
         &.btn-rounded {
-            border-radius: 50px;
+            @include border-radius(50px);
         }
-    
+
         &.btn-light-green {
             background: $color-green-lighter;
             color: $color-theme-green;
@@ -633,19 +626,19 @@ body {
     .icon-bell {
         content: $asset-icon-bell;
     }
-    
+
     .icon-filter {
         content: $asset-icon-filter;
     }
-    
+
     .icon-clone {
         content: $asset-icon-clone;
     }
-    
+
     .icon-folder-plus {
         content: $asset-icon-folder-plus;
     }
-    
+
     .icon-refresh {
         content: $asset-icon-refresh;
     }
@@ -670,7 +663,6 @@ body {
             padding-right: $badge-padding-x;
             text-shadow: none;
         }
-
     }
 }
 
@@ -680,25 +672,25 @@ body {
 .switch-toggle {
     position: relative;
     width: 160px;
-    
+
     .form-switch {
-        position: absolute;
-        right: 0;
+        @include absolute(auto, 0, auto, auto);
+
         width: 100%;
 
         .form-check-input {
+            @include absolute(auto, 8px, auto, auto);
+            @include border-radius(2em);
+
             appearance: none;
             background-image: $asset-checked-before;
             background-position: left center;
             background-repeat: no-repeat;
             background-size: contain;
-            border-radius: 2em;
             height: 1em;
             margin-left: -2.5em;
-            margin-top: .25em;
-            position: absolute;
-            right: 8px;
-            transition: background-position .15s ease-in-out;
+            margin-top: 0.25em;
+            transition: background-position 0.15s ease-in-out;
             vertical-align: top;
             width: 2em;
 
@@ -733,9 +725,8 @@ body {
     position: relative;
     span {
         &.field-action {
-            position: absolute;
-            right: 15px;
-            top: 50%;
+            @include absolute(50%, 15px, auto, auto);
+
             transform: translateY(-50%);
         }
     }
@@ -758,17 +749,14 @@ body {
         padding-right: 40px;
     }
     i {
+        @include absolute(50%, 15px, auto, auto);
         @include media-breakpoint-down(sm) {
             color: $color-theme-blue;
         }
 
-        position: absolute;
-        right: 15px;
-        top: 50%;
         transform: translateY(-50%);
     }
 }
-
 
 //
 // Select box
@@ -776,9 +764,8 @@ body {
 .select-box {
     position: relative;
     span {
-        position: absolute;
-        right: 15px;
-        top: 50%;
+        @include absolute(50%, 15px, auto, auto);
+
         transform: translateY(-50%);
     }
 
@@ -786,7 +773,6 @@ body {
         appearance: none;
     }
 }
-
 
 //
 // Profile picture in circle
@@ -998,97 +984,87 @@ i {
 //
 // Extra small devices (portrait phones, less than 576px)
 //
-
 @media (max-width: 575.98px) {
     .w-xs-100 {
         width: 100% !important;
     }
-  
     .w-xs-75 {
         width: 75% !important;
     }
-  
     .w-xs-50 {
         width: 50% !important;
     }
-  
     .w-xs-25 {
         width: 25% !important;
     }
-  }
-  
+}
+
 //
 // Small devices (landscape phones, 576px and up)
 //
-
 @media (min-width: 576px) and (max-width: 767.98px) {
     .w-sm-100 {
         width: 100% !important;
     }
-  
+
     .w-sm-75 {
         width: 75% !important;
     }
-  
+
     .w-sm-50 {
         width: 50% !important;
     }
-  
+
     .w-sm-25 {
         width: 25% !important;
     }
-  }
-  
+}
+
 //
 // Medium devices (tablets, 768px and up)
 //
-
 @media (min-width: 768px) and (max-width: 991.98px) {
-
     .w-md-100 {
         width: 100% !important;
     }
-  
+
     .w-md-75 {
         width: 75% !important;
     }
-  
+
     .w-md-50 {
         width: 50% !important;
     }
-  
+
     .w-md-25 {
         width: 25% !important;
     }
-  }
-  
+}
+
 //
 // Large devices (desktops, 992px and up)
 //
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  
     .w-lg-100 {
         width: 100% !important;
     }
-  
+
     .w-lg-75 {
         width: 75% !important;
     }
-  
+
     .w-lg-50 {
         width: 50% !important;
     }
-  
+
     .w-lg-25 {
         width: 25% !important;
     }
-  }
+}
 
 //
 // @Media min-width: 1200
 //
-
 @media (min-width: 1600px) {
     .container {
         max-width: 1450px;
