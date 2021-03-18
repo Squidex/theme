@@ -404,8 +404,8 @@
                                         <small><em>Published 1 day ago</em></small>
                                     </div>
                                     <div class="dropdown pl-3 border rounded show mr-2">
-                                        <span>Status</span>
-                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Publish</button>
+                                        <label for="status">Status</label>
+                                        <button type="button" id="status" class="btn dropdown-toggle" data-toggle="dropdown">Publish</button>
                                         <div class="dropdown-menu">
                                             <a href="#" class="dropdown-item">Action</a>
                                             <a href="#" class="dropdown-item">Another action</a>
@@ -761,7 +761,7 @@
                                                     <li class="dropdown-item active"><i class="status status-draft p-1"></i> Draft</li>
                                                     <li class="dropdown-item"><i class="status status-archive p-1"></i> Archive</li>
                                                     <li class="dropdown-item"><i class="status status-steps p-1"></i> Step 4</li>
-                                                    <li class="dropdown-item"><hr></li>
+                                                    <li class="dropdown-divider"></li>
                                                     <li class="dropdown-item"><i class="icon icon-clone small"></i> Clone</li>
                                                     <li class="dropdown-item"><i class="icon icon-delete text-danger"></i> Delete</li>
                                                  </ul>
@@ -851,13 +851,13 @@
                                                     <label for="inputTags" class="col-sm-3 col-form-label text-left">Tags</label>
                                                     <div class="col-sm-9">
                                                       <div class="field-tag-area bg-white border text-left rounded">
-                                                            <span class="badge badge-primary">
+                                                            <span class="badge badge-primary px-2">
                                                                 tag1
                                                                 <button type="button" class="close" aria-label="Dismiss">
                                                                 <span aria-hidden="true">×</span>
                                                                 </button>
                                                             </span>
-                                                            <span class="badge badge-primary">
+                                                            <span class="badge badge-primary px-2">
                                                                 tag2
                                                                 <button type="button" class="close" aria-label="Dismiss">
                                                                 <span aria-hidden="true">×</span>
@@ -882,10 +882,12 @@
                                                 <div class="form-group row">
                                                     <label for="inputSecret" class="col-sm-3 col-form-label text-left">Client Secret</label>
                                                     <div class="col-sm-9">
-                                                        <div class="field-client-secret">
-                                                            <input type="text" class="form-control" id="inputSecret" value="qcaowvypkdh3bcyg8nmtkpaagemwkf9gsbqnphvgv…ckx" readonly>
-                                                            <i class="icon icon-copy"></i>
-                                                        </div>
+                                                        <div class="input-group">
+                                                            <input type="text" id="inputSecret" class="form-control" aria-label="qcaowvypkdh3bcyg8nmtkpaagemwkf9gsbqnphvgv…ckx" placeholder="qcaowvypkdh3bcyg8nmtkpaage" readonly>
+                                                            <div class="input-group-append">
+                                                                <button type="button" class="btn border"><i class="icon icon-copy"></i></button>
+                                                            </div>
+                                                          </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -929,12 +931,12 @@
                                             <div class="bs-component">
                                                 <div class="form-group row">
                                                     <div class="col-lg-9 col-sm-12">
-                                                        <span class="badge badge-primary">
+                                                        <span class="badge badge-primary px-2">
                                                             tag2
                                                             <button type="button" class="close" aria-label="Dismiss">
-                                                              <span aria-hidden="true">&times;</span>
+                                                            <span aria-hidden="true">×</span>
                                                             </button>
-                                                          </span>
+                                                        </span>
                                                     </div>
                                                   </div>
                                             </div>
@@ -951,7 +953,7 @@
                                             <div class="bs-component">
                                                 <div class="form-group row">
                                                     <div class="col-lg-9 col-sm-12">
-                                                        <span class="badge badge-primary rounded p-2">
+                                                        <span class="badge badge-primary p-2">
                                                             Clients: 0
                                                           </span>
                                                     </div>
@@ -970,7 +972,7 @@
                                             <div class="bs-component">
                                                 <div class="form-group row">
                                                     <div class="col-lg-9 col-sm-12">
-                                                        <span class="badge badge-primary rounded">
+                                                        <span class="badge badge-primary p-2">
                                                             image/large
                                                           </span>
                                                     </div>
@@ -989,9 +991,9 @@
                                             <div class="bs-component">
                                                 <div class="form-group row">
                                                     <div class="col-lg-9 col-sm-12 custom-btns">
-                                                        <span class="btn btn-light-green btn-rounded btn-sm">
+                                                        <span class="badge-pill badge-success py-2 px-3">
                                                             Enabled
-                                                          </span>
+                                                        </span>
                                                     </div>
                                                   </div>
                                             </div>
@@ -1021,13 +1023,13 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="bs-component">
-                                                <nav class="d-flex">
-                                                    <div class="input-group w-50 flex-grow-1 mr-1">
-                                                        <input type="text" class="form-control" placeholder="Search for content in " aria-label="Recipient's username with two button addons">
-                                                        <button class="btn bg-white border-left-0 border text-muted" type="button"><i class="icon icon-star-empty"></i></button>
-                                                        <button class="btn bg-white border-left-0 border text-muted" type="button"><i class="icon icon-filter mr-1"></i></button>
+                                                <div class="input-group search-input-group flex-grow-1">
+                                                    <input type="text" class="form-control" placeholder="Search for content or apply specific filtering queries" aria-label="Search for content or apply specific filtering queries" aria-describedby="basic-addon2">
+                                                    <div class="input-group-append">
+                                                      <button class="btn border" type="button"><i class="icon icon-star-empty"></i></button>
+                                                      <button class="btn border bg-white" type="button"><i class="icon icon-filter mr-1"></i></button>
                                                     </div>
-                                                </nav>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1112,7 +1114,7 @@
                                     <div class=" mr-2">Wrist Watch</div>
                                     <div class="mr-2">Men Watch White or Black</div>
                                     <div class="mr-2">
-                                        29 minutes ago
+                                        <em>29 minutes ago</em>
                                         <span class="badge rounded ml-1">Me</span>
                                     </div>
                                     <div class="dropdown d-none d-md-flex border-left pl-3">
@@ -1497,15 +1499,15 @@
                             <div class="col-lg-12 mt-2 ml-auto">
                                 <div class="tab-bars header-rules">
                                     <nav class="navbar d-block d-md-flex header-top">
-                                        <div class="custom-btns">
-                                            <button class="btn btn-light-green btn-rounded">
+                                        <div>
+                                            <span class="badge-pill badge-success py-2 px-3">
                                                 Success
-                                            </button>
+                                            </span>
                                         </div>
                                         <div>Manual</div>
                                         <div>Ignore</div>
                                         <div>
-                                            29 minutes ago
+                                            <em>29 minutes ago</em>
                                             <span class="badge rounded ml-1">Me</span>
                                         </div>
                                         <div>

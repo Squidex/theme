@@ -665,10 +665,11 @@ body {
     .badge {
         background: $color-grey;
         color: $color-black;
+        line-height: inherit;
 
         .close {
             color: inherit;
-            font-size: inherit;
+            font-size: 20px;
             margin-right: -$badge-padding-x;
             padding-left: $badge-padding-x;
             padding-right: $badge-padding-x;
