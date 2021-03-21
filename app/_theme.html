@@ -1236,41 +1236,11 @@
                 <p>Expandable</p>
                 <div class="row bs-component">
                     <div class="col-lg-8 m-auto">
-                        <nav class="navbar header-top expandable-tab">
-                            <div class="d-flex ml-sm-0 m-auto py-2">
-                                <div class="collapse-icon">
-                                    <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-                                        <img src="./app/images/icons/collapsiable-icon.svg" />
-                                    </button>
-                                </div>
-                                <div class="px-3">
-                                    <span class="border-bottom border-3">A</span> 
-                                </div>
-                                <div>
-                                    <p class="mb-0 pl-2">Name <span class="badge badge-pill badge-secondary badge-round">3</span></p> 
-                                </div>
-                              </div>
-                              <div class="d-flex mr-sm-0 m-auto py-2 custom-btns">
-                                <div class="collapse-icon">
-                                    <button type="button" class="btn btn-grey btn-circle"><i class="icon icon-angle-down"></i></button>
-                                </div>
-                                <div class="enabled-btn mx-2">
-                                    <button class="btn btn-light-green btn-rounded">
-                                        Enabled
-                                    </button>
-                                </div>
-                                <div class="settings">
-                                    <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
-                                        <i class="icon-settings"></i>
-                                    </button>
-                                </div>
-                              </div>
-                        </nav>
-                        <div class="row">
-                            <div class="col-lg-11 mt-2 ml-auto">
-                                <div class="tab-bars header-rules">
-                                    <nav class="navbar header-top">
-                                        <div class="d-flex ml-sm-0 m-auto py-2">
+                        <div class="table-items-row table-items-row-expandable">
+                            <div class="table-items-row-summary">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <div class="d-flex ml-sm-0 m-auto">
                                             <div class="collapse-icon">
                                                 <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                                                     <img src="./app/images/icons/collapsiable-icon.svg" />
@@ -1280,10 +1250,15 @@
                                                 <span class="border-bottom border-3">A</span> 
                                             </div>
                                             <div>
-                                                <p class="mb-0 pl-2">First Name</p> 
+                                                <p class="mb-0 pl-2">Name <span class="badge badge-pill badge-secondary">3</span></p> 
                                             </div>
                                           </div>
-                                          <div class="d-flex mr-sm-0 m-auto py-2 custom-btns">
+                                    </div>
+                                    <div class="col col-auto">
+                                        <div class="d-flex mr-sm-0 m-auto custom-btns">
+                                            <div class="collapse-icon">
+                                                <button type="button" class="btn btn-grey btn-circle"><i class="icon icon-angle-down"></i></button>
+                                            </div>
                                             <div class="enabled-btn mx-2">
                                                 <button class="btn btn-light-green btn-rounded">
                                                     Enabled
@@ -1295,26 +1270,29 @@
                                                 </button>
                                             </div>
                                           </div>
-                                    </nav>
-                                    <div class="bg-light d-flex flex-column justify-content-between flex-md-row p-2">
-                                        <div class="tab-expanded-list flex-grow-1 m-auto">
-                                            <ul class="nav">
-                                                <li class="nav-item">
-                                                <a class="nav-link text-decent" href="#">Common</a>
-                                                </li>
-                                                <li class="nav-item active">
-                                                <a class="nav-link text-decent" href="#">Validation</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                <a class="nav-link text-decent" href="#">Editing</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="p-1">
-                                            <button class="btn btn btn-light">Cancel</button>
-                                            <button class="btn btn-primary">Save</button>
-                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="table-items-row-details">
+                                <div class="table-items-row-details-tabs clearfix">
+                                    <ul class="nav nav-tabs2">
+                                        <li class="nav-item">
+                                            <a class="nav-link">Common</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active">Validation</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">Editing</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="float-right">
+                                        <button type="reset" class="btn btn-text-secondary2">Cancel</button>
+                                        <button type="submit" class="btn btn-primary ml-1">Save</button>
+                                    </div>
+                                </div>
+                                <div class="table-items-row-details-tab">
                                     <div class="form-group">
                                         <div class="col-lg-12 row p-4">
                                             <label for="inputUrl" class="col-sm-3 col-form-label text-center">Editor URL</label>
@@ -1357,51 +1335,60 @@
                                     </div>
                                     <div class="p-1"><button class="btn p-0 custom-icons btn-sm"><i class="icon icon-refresh"></i> Reset</button></div>
                                 </div>
-                                <div class="tab-bars header-rules">
-                                    <nav class="navbar header-top border px-0 rounded">
-                                        <div class="d-flex justify-content-start">
-                                            <div class="collapse-icon">
-                                                <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-                                                    <img src="./app/images/icons/collapsiable-icon.svg" />
-                                                </button>
+
+                                <div class="table-items-row table-items-row-expandable border-0">
+                                    <div class="table-items-row-summary p-0 border">
+                                        <div class="row no-gutters">
+                                            <div class="col">
+                                                <div class="d-flex">
+                                                    <div class="collapse-icon">
+                                                        <button class="navbar-toggler border-0 pt-0 pb-0" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                                                            <img src="./app/images/icons/collapsiable-icon.svg" />
+                                                        </button>
+                                                    </div>
+                                                    <div class="px-3">
+                                                        <span class="border-bottom border-3">A</span> 
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-0 pl-2">My Expanded list item</p> 
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="px-3">
-                                                <span class="border-bottom border-3">A</span> 
+                                            <div class="col col-auto">
+                                                <div class="d-flex custom-btns">
+                                                    <div class="collapsible-btn mr-2">
+                                                        <button class="btn btn-light btn-circle" style="width: 25px; height: 25px;">
+                                                            <i class="icon icon-angle-down"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="enabled-btn">
+                                                        <button class="btn text-primary p-0">
+                                                            <i class="icon-copy"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="settings">
+                                                        <button type="button" class="btn text-danger table-items-edit-button p-0">
+                                                            <i class="icon-delete"></i>
+                                                        </button>
+                                                    </div>
+                                                  </div>
                                             </div>
-                                            <div>
-                                                <p class="mb-0 pl-2">My Expanded list item</p> 
-                                            </div>
-                                          </div>
-                                          <div class="d-flex justify-content-end custom-btns">
-                                            <div class="collapsible-btn mr-2">
-                                                <button class="btn btn-light btn-circle" style="width: 25px; height: 25px;">
-                                                    <i class="icon icon-angle-down"></i>
-                                                </button>
-                                            </div>
-                                            <div class="enabled-btn">
-                                                <button class="btn text-primary p-0">
-                                                    <i class="icon-copy"></i>
-                                                </button>
-                                            </div>
-                                            <div class="settings">
-                                                <button type="button" class="btn text-danger table-items-edit-button p-0">
-                                                    <i class="icon-delete"></i>
-                                                </button>
-                                            </div>
-                                          </div>
-                                    </nav>
-                                    <div class="form-group">
-                                        <div class="col-lg-12 row p-4">
-                                            <div class="form-group col-lg-12">
-                                                <label>List Item Field A</label>
-                                                <button class="btn p-0 custom-icons float-right"><small><i class="icon icon-refresh"></i> Reset</small></button>
-                                                <input type="text" class="form-control" id="inputPassword" placeholder="Field name">
-                                                <small class="text-muted form-text text-left">You can only use letters, numbers and dashes and not more than 40 characters.</small>
-                                            </div>
-                                            <div class="form-group col-lg-12">
-                                                <label>Phone <span class="text-muted">(Required)</span></label>
-                                                <button class="btn p-0 custom-icons float-right"><small><i class="icon icon-refresh"></i> Reset</small></button>
-                                                <input type="phone" class="form-control" id="inputPassword" placeholder="Field name">
+                                        </div>
+                                    </div>
+                                    <div class="table-items-row-details-tab">
+                                        <div class="form-group">
+                                            <div class="col-lg-12 row">
+                                                <div class="form-group col-lg-12">
+                                                    <label>List Item Field A</label>
+                                                    <button class="btn p-0 custom-icons float-right"><small><i class="icon icon-refresh"></i> Reset</small></button>
+                                                    <input type="text" class="form-control" id="inputPassword" placeholder="Field name">
+                                                    <small class="text-muted form-text text-left">You can only use letters, numbers and dashes and not more than 40 characters.</small>
+                                                </div>
+                                                <div class="form-group col-lg-12">
+                                                    <label>Phone <span class="text-muted">(Required)</span></label>
+                                                    <button class="btn p-0 custom-icons float-right"><small><i class="icon icon-refresh"></i> Reset</small></button>
+                                                    <input type="phone" class="form-control" id="inputPassword" placeholder="Field name">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1495,40 +1482,41 @@
                 <p>Extendable list item with text area</p>
                 <div class="row bs-component">
                     <div class="col-lg-8 col-md-12 text-left m-auto">
-                        <div class="row">
-                            <div class="col-lg-12 mt-2 ml-auto">
-                                <div class="tab-bars header-rules">
-                                    <nav class="navbar d-block d-md-flex header-top">
-                                        <div>
-                                            <span class="badge-pill badge-success py-2 px-3">
-                                                Success
-                                            </span>
-                                        </div>
-                                        <div>Manual</div>
-                                        <div>Ignore</div>
-                                        <div>
-                                            <em>29 minutes ago</em>
-                                            <span class="badge rounded ml-1">Me</span>
-                                        </div>
-                                        <div>
-                                            <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
-                                                <i class="icon-settings"></i>
-                                            </button>
-                                        </div>
-                                    </nav>
-                                    <div class="bg-light d-flex p-2 border-bottom">
-                                        <div class="tab-expanded-list flex-grow-1">
-                                            <ul class="nav">
-                                                <li class="nav-item">
-                                                <a class="nav-link text-decent" href="#">Last Invocation</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="px-2">
-                                            <button class="btn btn-success">Enqueue</button>
-                                        </div>
+                        <div class="table-items-row table-items-row-expandable">
+                            <div class="table-items-row-summary">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <span class="badge-pill badge-success py-1">
+                                            Success
+                                        </span>
                                     </div>
-                                    <div class="form-group p-3">
+                                    <div class="col">Manual</div>
+                                    <div class="col">Ignore</div>
+                                    <div class="col">
+                                        <em>29 minutes ago</em>
+                                        <span class="badge rounded ml-1">Me</span>
+                                    </div>
+                                    <div class="col col-auto">
+                                        <button type="button" class="btn btn-secondary table-items-edit-button mr-1">
+                                            <i class="icon-settings"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-items-row-details">
+                                <div class="table-items-row-details-tabs clearfix">
+                                    <ul class="nav nav-tabs2">
+                                        <li class="nav-item">
+                                            <a class="nav-link">Last Invocation</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="float-right">
+                                        <button class="btn btn-success">Enqueue</button>
+                                    </div>
+                                </div>
+                                <div class="table-items-row-details-tab">
+                                    <div class="form-group">
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <textarea type="password" class="form-control bs-section-grey" id="exampleFormControlTextarea1" rows="6">Ignored</textarea>
@@ -2243,18 +2231,12 @@
                                                 <div class="row custom-stepper">
                                                     <div class="col-lg-12 p-0">
                                                         <nav class="navbar header-rules d-flex flex-column flex-md-row align-items-stretch text-muted small px-0">
-                                                            <div class="flex-fill mr-2 step finish">
-                                                                Select Trigger
-                                                            </div>
-                                                            <div class="flex-fill mr-2 step active">
-                                                                Edit Trigger
-                                                            </div>
-                                                            <div class="flex-fill mr-2 step">
-                                                                Select Action
-                                                            </div>
-                                                            <div class="last-step step">
-                                                                Edit Action
-                                                            </div>
+                                                            <ol class="breadcrumb">
+                                                                <li class="breadcrumb-item finish">Select Trigger</li>
+                                                                <li class="breadcrumb-item active">Edit Trigger</li>
+                                                                <li class="breadcrumb-item">Select Action</li>
+                                                                <li class="breadcrumb-item">Edit Action</li>
+                                                            </ol>
                                                         </nav>
                                                     </div>
                                                 </div>
