@@ -297,7 +297,7 @@ body {
                 .publish-icon {
                     @include border-radius(100px);
 
-                    background: $color-theme-green;
+                    background: $green;
                     content: '';
                     display: inline-block;
                     height: 8px;
@@ -407,7 +407,7 @@ body {
                 width: 10px;
 
                 &.status-publish {
-                    background: $color-theme-green;
+                    background: $green;
                 }
 
                 &.status-draft {
@@ -442,7 +442,7 @@ body {
                 width: 10px;
 
                 &.status-publish {
-                    background: $color-theme-green;
+                    background: $green;
                 }
 
                 &.status-draft {
@@ -450,7 +450,7 @@ body {
                 }
 
                 &.status-steps {
-                    background: $color-theme-orange;
+                    background: $orange;
                 }
             }
 
@@ -629,7 +629,7 @@ body {
 
         &.btn-light-green {
             background: $color-green-lighter;
-            color: $color-theme-green;
+            color: $green;
         }
 
         &.btn-collapse {
@@ -871,7 +871,7 @@ body {
 .item-published {
     & {
         @include circle(0.5rem);
-        background: $color-theme-green;
+        background: $green;
         border: 0;
         margin-left: 0.4rem;
     }

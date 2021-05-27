@@ -159,7 +159,7 @@ a {
 
         .badge {
             @include absolute(-.25rem, auto, auto, -.375rem);
-            background: $color-theme-error;
+            background: $danger;
             font-size: .75rem;
             font-weight: normal;
             padding: .25rem .5rem;
@@ -183,7 +183,7 @@ a {
         // Special style for menu item to delete something.
         &.dropdown-item-delete {
             & {
-                color: $color-theme-error;
+                color: $danger;
             }
 
             &:hover {
@@ -196,7 +196,7 @@ a {
 
             &:disabled,
             &.disabled {
-                color: lighten($color-theme-error, 20%);
+                color: lighten($danger, 20%);
             }
         }
 
@@ -519,26 +519,6 @@ a {
                 background: $color-dark-foreground;
                 border: 1px solid $color-theme-secondary;
             }
-
-            &.btn-primary {
-                @include build-toggle-button($color-theme-blue, $color-badge-primary-background);
-            }
-
-            &.btn-info {
-                @include build-toggle-button($color-theme-info, $color-badge-info-background);
-            }
-
-            &.btn-danger {
-                @include build-toggle-button($color-theme-error, $color-badge-danger-background);
-            }
-
-            &.btn-success {
-                @include build-toggle-button($color-theme-green, $color-badge-success-background);
-            }
-
-            &.btn-warning {
-                @include build-toggle-button($color-theme-orange, $color-badge-warning-background);
-            }
         }
 
         .btn + .btn-toggle {
@@ -558,7 +538,7 @@ a {
         }
 
         &-danger {
-            @include build-text-button($color-theme-error);
+            @include build-text-button($danger);
         }
 
         &-success {
