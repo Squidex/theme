@@ -14,32 +14,32 @@
     }
 
     &-primary {
-        background: $color-badge-primary-background;
+        background: $blue-100;
         color: $color-badge-primary-foreground;
     }
 
     &-secondary {
-        background: $color-badge-secondary-background;
+        background: $gray-300;
         color: $color-badge-secondary-foreground;
     }
 
     &-success {
-        background: $color-badge-success-background;
+        background: $green-100;
         color: $color-badge-success-foreground;
     }
 
     &-info {
-        background: $color-badge-info-background;
+        background:  $cyan-100;
         color: $color-badge-info-foreground;
     }
 
     &-warning {
-        background: $color-badge-warning-background;
+        background: $yellow-100;
         color: $color-badge-warning-foreground;
     }
 
     &-danger {
-        background: $color-badge-danger-background;
+        background: $red-100;
         color: $color-badge-danger-foreground;
     }
 }

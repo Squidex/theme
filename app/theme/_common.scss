@@ -175,7 +175,7 @@ body {
             }
 
             &.active {
-                color: $color-black;
+                color: $black;
 
                 &::before {
                     background: $color-theme-blue;
@@ -258,7 +258,7 @@ body {
 //
 
 .header-rules {
-    background: $color-white;
+    background: $white;
     position: relative;
     width: 100%;
 
@@ -287,7 +287,7 @@ body {
 
         .active {
             border-bottom: 2px solid $color-theme-blue;
-            color: $color-black;
+            color: $black;
         }
 
         .publish {
@@ -339,7 +339,7 @@ body {
                 border-bottom: 2px solid $color-theme-blue;
 
                 a {
-                    color: $color-black;
+                    color: $black;
                 }
             }
         }
@@ -400,7 +400,7 @@ body {
                 @include absolute(50%, 0, 0, 25px);
                 @include border-radius(100px);
 
-                background: $color-grey;
+                background: $gray-200;
                 content: '';
                 height: 10px;
                 transform: translateY(-50%);
@@ -435,7 +435,7 @@ body {
                 @include absolute(50%, 0, 0, 25px);
                 @include border-radius(100px);
 
-                background: $color-grey;
+                background: $gray-200;
                 content: '';
                 height: 10px;
                 transform: translateY(-50%);
@@ -467,8 +467,8 @@ body {
     .nav-link {
         @include border-radius(100px);
 
-        background: $color-grey;
-        color: $color-black;
+        background: $gray-300;
+        color: $black;
 
         &.active {
             background-color: $color-theme-blue-lightest;
@@ -477,27 +477,8 @@ body {
     }
 }
 
-.expandable-tab {
-    &::before {
-        @include absolute(auto, auto, -30px, 30px);
-
-        border: 1px dashed $color-grey;
-        content: '';
-        height: 25px;
-    }
-
-    &::after {
-        @include absolute(auto, auto, -30px, 30px);
-
-        border: 1px dashed $color-grey;
-        content: '';
-        height: 1px;
-        width: 40px;
-    }
-}
-
 .header-top {
-    background: $color-white;
+    background: $white;
     width: 100%;
 
     select {
@@ -620,7 +601,7 @@ body {
 
         &.btn-grey {
             background: $color-grey-dark;
-            color: $color-white;
+            color: $white;
         }
 
         &.btn-rounded {
@@ -633,7 +614,7 @@ body {
         }
 
         &.btn-collapse {
-            background: $color-badge-primary-background;
+            background: $blue-100;
             color: $color-theme-blue;
         }
     }
@@ -674,8 +655,8 @@ body {
 //
 .input-field-section {
     .badge {
-        background: $color-grey;
-        color: $color-black;
+        background: $gray-300;
+        color: $black;
 
         .close {
             color: inherit;
@@ -811,7 +792,7 @@ body {
 
 .left-sidebar {
     background: $color-theme-blue;
-    color: $color-white;
+    color: $white;
     font-size: 0.81rem;
     height: 580px;
     position: relative;
