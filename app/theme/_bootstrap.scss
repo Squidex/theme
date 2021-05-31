@@ -56,7 +56,7 @@
     }
 
     .alert-link {
-        color: $color-dark-foreground !important;
+        color: $white !important;
         font-size: inherit;
         font-weight: normal;
         text-decoration: underline;
@@ -146,7 +146,7 @@ a {
         }
 
         .nav-link {
-            color: $color-dark-foreground;
+            color: $white;
             padding-bottom: 0;
             padding-top: 0;
 
@@ -174,7 +174,7 @@ a {
     // White dropdown menu without border and shadow.
     & {
         @include box-shadow-outer(0, 3px, 16px, .2);
-        background: $panel-light-background;
+        background: $white;
         border: 0;
         z-index: 1200;
     }
@@ -203,7 +203,7 @@ a {
         &.dropdown-item {
             // Make the color white on active.
             &:active {
-                color: $color-dark-foreground;
+                color: $white;
             }
         }
     }
@@ -234,7 +234,9 @@ a {
                 padding: .75rem 2rem .75rem 1rem;
 
                 a {
-                    color: $color-text-decent !important;
+                    color: #3389ff;
+                    text-decoration: none;
+                    background-color: transparent;
                 }
             }
 
@@ -335,7 +337,7 @@ a {
 
         &:hover,
         &.active {
-            color: $color-dark1-focus-foreground;
+            color: $white;
         }
 
         &.active {
@@ -440,7 +442,7 @@ a {
         @include button-variant($color-extern-twitter, $color-extern-twitter);
 
         & {
-            color: $color-dark-foreground;
+            color: $white;
         }
 
         &:hover,
@@ -516,7 +518,7 @@ a {
     &-group {
         .btn-toggle {
             & {
-                background: $color-dark-foreground;
+                background: $white;
                 border: 1px solid $color-theme-secondary;
             }
         }

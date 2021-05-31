@@ -160,7 +160,7 @@
                                         <li class="breadcrumb-item custom-dropdown-item">
                                             <div class="sub-menu">
                                                 <span class="text-primary"><i class="icon icon-angle-down"></i></span>
-                                                <select class="form-control" name="" id="">
+                                                <select class="form-control bg-transparent" name="" id="">
                                                     <option value="a">My application</option>
                                                     <option value="b">My application 2</option>
                                                     <option value="c">My application 3</option>
@@ -174,15 +174,16 @@
                                     </ol>
                                 </div>
                                 <div class="d-flex flex-grow-1 flex-lg-grow-0">
-                                    <div class="input-group">
+                                    <!-- <div class="input-group">
                                         <input class="form-control" type="text" placeholder="Quick Nav (Press )">
-                                    </div>
+                                    </div> -->
 
                                     <div class="input-group">
-                                        <!-- <div class="input-group-prepend">
-                                            <span class="input-group-text form-control"><i class="icon icon-search"></i></span>
+                                        
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text form-control"><i class="icon icon-search py-1" style="height: 27px;"></i></span>
                                         </div>
-                                        <input class="form-control px-3" type="text" placeholder="Quick Nav (Press )"> -->
+                                        <input class="form-control px-3" type="text" placeholder="Quick Nav (Press )">
                                         <!-- <div class="input-group-append"> -->
                                             <div class="upload-count px-2">
                                                 <i class="icon icon-upload-3 py-2"></i>
@@ -281,7 +282,7 @@
                                     <h2>Assets</h2>
                                 </div>
                                 <div class="flex-fill p-2 me-0 me-lg-4">
-                                    <select class="form-control">
+                                    <select class="form-control bg-transparent">
                                         <option value="" selected="" disabled=""># Search by tags</option>
                                         <option value="">A</option>
                                         <option value="">B</option>
@@ -415,7 +416,7 @@
                                         <!-- <img src="./app/images/profile-picture.png" /> -->
                                         <div class="input-group w-sm-100 w-xs-100 w-md-100 w-auto flex-grow-1 me-1 publish">
                                             <h2 class="nav-title ps-0"><span class="publish-icon me-2"></span>Schema 2</h2>
-                                            <p class="border-start ps-3 m-0">Content <span class="badge badge-pill badge-secondary badge-round">5</span></p>
+                                            <p class="border-start ps-3 m-0">Content <span class="badge badge-pill badge-secondary badge-round rounded-circle">5</span></p>
                                         </div>
             
                                         <div class="me-2 d-none d-lg-block text-muted">
@@ -930,7 +931,7 @@
                                                     <div class="col-sm-9">
                                                         <div class="select-box">
                                                             <span class="icon icon-angle-down"></span>
-                                                            <select class="form-select form-control" aria-label="Editor">
+                                                            <select class="form-select form-control bg-white" aria-label="Editor">
                                                                 <option selected>Editor</option>
                                                                 <option value="1">One</option>
                                                                 <option value="2">Two</option>
@@ -1063,7 +1064,7 @@
                                                 <div class="form-group has-search">
                                                     <div class="select-box">
                                                         <span class="icon icon-angle-down"></span>
-                                                        <select class="selectpicker form-control text-muted data-live-search="true" aria-placeholder="# Search by tags">
+                                                        <select class="selectpicker form-control text-muted bg-white" data-live-search="true" aria-placeholder="# Search by tags">
                                                             <option data-tokens="ketchup mustard"># Search by tags</option>
                                                             <option data-tokens="mustard">Burger, Shake and a Smile</option>
                                                             <option data-tokens="frosting">Sugar, Spice and all things nice</option>
@@ -1279,7 +1280,7 @@
                                                 <span class="border-bottom border-3">A</span> 
                                             </div>
                                             <div>
-                                                <p class="mb-0 ps-2">Name <span class="badge badge-pill badge-secondary">3</span></p> 
+                                                <p class="mb-0 ps-2">Name <span class="badge rounded-pill badge-secondary">3</span></p> 
                                             </div>
                                           </div>
                                     </div>
@@ -1354,7 +1355,7 @@
                                     <div class="p-2"><div class="languages custom-icons"><i class="icon icon-globe align-middle me-1"></i>All Languages</div></div>
                                     <div class="p-2">
                                         <div class="form-group">
-                                            <select class="form-select" id="sel1">
+                                            <select class="form-select p-0 h-auto" id="sel1" style="padding-right: 1.7rem !important;">
                                               <option selected>ak-GH</option>
                                               <option>2</option>
                                               <option>3</option>
@@ -1485,13 +1486,13 @@
                                     <div class="log-status d-none d-sm-flex justify-content-between p-3">
                                         <div class="d-sm-flex d-none text-start d-sm-inline justify-content-start">
                                             <div class="succeeded pe-2 pe-lg-5 border-end">
-                                                Succeeded <span class="badge rounded-pill bg-secondary rounded">02</span>
+                                                Succeeded <span class="badge badge-pill badge-secondary">02</span>
                                             </div>
                                             <div class="failed px-2 px-lg-5 border-end">
-                                                Failed <span class="badge rounded-pill bg-secondary rounded">02</span> 
+                                                Failed <span class="badge badge-pill badge-secondary">02</span> 
                                             </div>
                                             <div class="executed ps-2 ps-lg-5">
-                                                Executed <span class="badge rounded-pill bg-secondary rounded">02</span> 
+                                                Executed <span class="badge badge-pill badge-secondary">02</span> 
                                             </div>
                                         </div>
                                           <div class="d-sm-flex d-none justify-content-end">
@@ -1515,7 +1516,7 @@
                             <div class="table-items-row-summary">
                                 <div class="row no-gutters">
                                     <div class="col">
-                                        <span class="badge rounded-pill bg-success text-white">Success</span>
+                                        <span class="rounded-pill badge-success px-2 py-1">Success</span>
                                     </div>
                                     <div class="col">Manual</div>
                                     <div class="col">Ignore</div>
@@ -1690,9 +1691,9 @@
                     <div class="col-lg-12">
                         <div class="header">
                             <div class="main-directory">
-                                <h5><i class="icon icon-arrow_back text-primary me-2"></i> Main Directory <span class="badge badge-pill badge-secondary badge-round">12</span></h5>
+                                <h5><i class="icon icon-arrow_back text-primary me-2"></i> Main Directory <span class="badge badge-pill badge-secondary badge-round rounded-circle">12</span></h5>
                                 <hr>
-                                <div>Files <span class="badge badge-pill badge-secondary badge-round">10</span></div>
+                                <div>Files <span class="badge badge-pill badge-secondary badge-round rounded-circle">10</span></div>
                             </div>
                         </div>
 
@@ -1746,7 +1747,7 @@
                             <div class="col-lg-6 mt-4">
                                 <ol class="breadcrumb border-0 w-50 m-auto">
                                     <li class="breadcrumb-item">
-                                        <div class="select-box me-5">
+                                        <div class="select-box">
                                             <span class="icon icon-angle-down"></span>
                                             <select class="px-3 py-1 border rounded" name="" id="">
                                                 <option value="a">My Application</option>
@@ -1956,7 +1957,7 @@
                                                     <div class="col-lg-12 p-0">
                                                         <nav class="navbar header-rules d-flex px-0">
                                                                 <div class="flex-fill me-2 mb-2">
-                                                                    <select class="form-control">
+                                                                    <select class="form-control bg-transparent">
                                                                         <option value="" selected="" disabled=""><i class="icon icon-bell ms-1 me-1"></i> Schema 3</option>
                                                                         <option value="">A</option>
                                                                         <option value="">B</option>
@@ -2121,7 +2122,7 @@
                                                     <div class="col-lg-12 p-0">
                                                         <nav class="navbar header-rules d-flex px-0">
                                                                 <div class="flex-fill me-2 mb-2">
-                                                                    <select class="form-control">
+                                                                    <select class="form-control bg-transparent">
                                                                         <option value="" selected="" disabled=""><i class="icon icon-bell ms-1 me-1"></i> # Search by tags</option>
                                                                         <option value="">A</option>
                                                                         <option value="">B</option>
@@ -2144,13 +2145,13 @@
                                             <div class="header pt-3">
                                                 <div class="main-directory">
                                                     <div class="col-lg-12 ms-3">
-                                                        <h5>Main Directory <span class="badge badge-pill bg-secondary badge-round">12</span></h5>
+                                                        <h5>Main Directory <span class="badge badge-pill badge-secondary badge-round rounded-circle">12</span></h5>
                                                         <hr>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="modal-body py-0 px-3" style="height: 600px">
-                                                <h5 class="small">Files <span class="badge badge-pill badge-secondary badge-round">10</span></h5>
+                                                <h5 class="small">Files <span class="badge badge-pill badge-secondary badge-round rounded-circle">10</span></h5>
                                                 <div class="row">
                                                 <div class="col-lg-3 px-2">
                                                     <div class="card rounded border">
