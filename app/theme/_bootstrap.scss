@@ -234,9 +234,7 @@ a {
                 padding: .75rem 2rem .75rem 1rem;
 
                 a {
-                    color: #3389ff;
-                    text-decoration: none;
-                    background-color: transparent;
+                    color: $color-text-decent !important;
                 }
             }
 

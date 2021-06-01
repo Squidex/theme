@@ -432,11 +432,8 @@ body {
 
         &.status-options {
             .status {
-                // @include absolute(50%, 0, 0, 25px);
+                @include absolute(50%, 0, 0, 25px);
                 @include border-radius(100px);
-                position: absolute;
-                top: -7px;
-                left: 5px;
                 background: $gray-200;
                 content: '';
                 height: 10px;
