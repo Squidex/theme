@@ -649,6 +649,11 @@ body {
     }
 }
 
+.icon-multiple-content {
+    color: $blue-200;
+    font-size: 30px;
+}
+
 //
 // Input Fields section
 //
@@ -828,6 +833,11 @@ body {
     .left-sidebar-icon {
         margin: 0 auto;
         width: 20px;
+
+        .icon {
+            font-size: 20px;
+            font-weight: bold !important;
+        }
     }
 }
 
