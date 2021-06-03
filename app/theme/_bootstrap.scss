@@ -19,7 +19,7 @@
     }
 
     &-secondary {
-        background: $gray-300;
+        background: $color-badge-secondary-background;
         color: $color-badge-secondary-foreground;
     }
 
@@ -581,6 +581,17 @@ a {
             @include build-text-button($color-text);
         }
     }
+
+    &.btn-success {
+        color: $white;
+    }
+}
+
+.custom-success {
+    background: #3AB480;
+    border: 1px solid #3AAB7C;
+    border-radius: 4px;
+    opacity: 1;
 }
 
 $icon-size: 4.5rem;
