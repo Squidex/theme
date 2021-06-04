@@ -159,8 +159,8 @@
                                     <ol class="breadcrumb p-0 custom-breadcrumb">
                                         <li class="breadcrumb-item custom-dropdown-item">
                                             <div class="sub-menu">
-                                                <span class="text-primary"><i class="icon icon-angle-down"></i></span>
-                                               <select class="form-control bg-transparent" >
+                                                <!-- <span class="text-primary"><i class="icon icon-angle-down"></i></span> -->
+                                               <select class="form-control bg-transparent py-2" >
                                                     <option value="a">My application</option>
                                                     <option value="b">My application 2</option>
                                                     <option value="c">My application 3</option>
@@ -176,21 +176,12 @@
                                     </ol>
                                 </div>
                                 <div class="d-flex flex-grow-1 flex-lg-grow-0">
-                                    <!-- <div class="input-group">
-                                        <input class="form-control" type="text" placeholder="Quick Nav (Press )">
-                                    </div> -->
-
-                                    <!-- <div class="input-group"> -->
-                                        
-                                        <!-- <div class="input-group-prepend">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend d-flex">
                                             <span class="input-group-text form-control"><i class="icon icon-search py-1" style="height: 27px;"></i></span>
-                                        </div> -->
-                                        <form class="form-inline flex-grow-1 p-2">
-                                            <input class="form-control" type="text" placeholder="Quick Nav (Press )">
-                                            <i class="icon icon-search"></i>
-                                        </form>
-                                        <!-- <div class="input-group-append"> -->
-                                            <div class="upload-count px-2 py-2">
+                                        </div> 
+                                        <input class="form-control px-3" type="text" placeholder="Quick Nav (Press )">
+                                            <div class="upload-count px-2">
                                                 <i class="icon icon-upload-3 py-2"></i>
                                                 <span>0</span>
                                             </div>
@@ -207,8 +198,7 @@
                                                     <a class="dropdown-item dropdown-item-delete" href="#">Separated link</a>
                                                 </div>
                                             </div>
-                                        <!-- </div> -->
-                                    <!-- </div> -->
+                                    </div>
                                 </div>
                             </div>
                             <!-- <img src="./app/images/profile-picture.png" /> -->
@@ -312,7 +302,7 @@
                                 </div>
 
                                 <div class="me-0 p-2">
-                                    <button type="button" class="custom-success btn btn-success btn-with-icon btn-with-shortcut">
+                                    <button type="button" class="custom-success btn btn-primary btn-with-icon btn-with-shortcut">
                                         <i class="icon icon-plus "></i>
                                         <span class="d-none d-md-inline-flex">
                                             New
@@ -637,11 +627,16 @@
                                 <div class="col-lg-8">
                                     <div class="bs-component d-flex justify-content-center">
                                         <div class="switch-toggle me-2">
-                                            <div class="form-check form-switch border position-relative rounded p-2">
+                                            <!-- <div class="form-check form-switch border position-relative rounded p-2">
                                                 <span>Status</span>
                                                 <label class="form-check-label text-primary" for="flexSwitchCheckChecked">Active</label>
                                                 <input class="form-check-input border" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                            </div>
+                                            </div> -->
+                                            <div class="form-check form-switch border position-relative rounded p-2">
+                                                <span>Status</span>
+                                                <label class="form-check-label" for="flexSwitchCheckChecked">Active</label>
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                              </div>
                                         </div>
                                         <button class="btn btn-outline-secondary bg-white me-1 text-primary"><i class="icon icon-play"></i></button>
                                     </div>
@@ -891,13 +886,13 @@
                                                       <div class="field-tag-area bg-white border text-start rounded">
                                                             <span class="badge badge-primary px-2">
                                                                 tag1
-                                                                <button type="button" class="border-0 bg-transparent" aria-label="Dismiss">
+                                                                <button type="button" class="close" aria-label="Dismiss">
                                                                 <span aria-hidden="true">×</span>
                                                                 </button>
                                                             </span>
                                                             <span class="badge badge-primary px-2">
                                                                 tag2
-                                                                <button type="button" class="border-0 bg-transparent" aria-label="Dismiss">
+                                                                <button type="button" class="close" aria-label="Dismiss">
                                                                 <span aria-hidden="true">×</span>
                                                                 </button>
                                                             </span>
@@ -971,7 +966,7 @@
                                                     <div class="col-lg-9 col-sm-12">
                                                         <span class="badge badge-primary px-2">
                                                             tag2
-                                                            <button type="button" class="border-0 bg-transparent" aria-label="Dismiss">
+                                                            <button type="button" class="close" aria-label="Dismiss">
                                                             <span aria-hidden="true">×</span>
                                                             </button>
                                                         </span>

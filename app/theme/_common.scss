@@ -263,12 +263,11 @@ body {
     width: 100%;
 
     h2 {
+        color: $header-heading-color;
         font-size: 1.385rem;
         line-height: 1.692rem;
         margin: 0 0.5rem 0 0;
-        color: $header-heading-color;
         opacity: 1;
-        letter-spacing: 0px;
         text-align: left;
     }
 
@@ -301,7 +300,7 @@ body {
                 .publish-icon {
                     @include border-radius(100px);
 
-                    background: $green-300;
+                    background: $color-theme-green;
                     content: '';
                     display: inline-block;
                     height: 8px;
@@ -411,7 +410,7 @@ body {
                 width: 10px;
 
                 &.status-publish {
-                    background: $green-300;
+                    background: $color-theme-green;
                 }
 
                 &.status-draft {
@@ -445,7 +444,7 @@ body {
                 width: 10px;
 
                 &.status-publish {
-                    background: $green-300;
+                    background: $color-theme-green;
                 }
 
                 &.status-draft {
@@ -453,7 +452,7 @@ body {
                 }
 
                 &.status-steps {
-                    background: $orange-300;
+                    background: $color-theme-orange;
                 }
             }
 
@@ -470,7 +469,7 @@ body {
     .nav-link {
         @include border-radius(100px);
 
-        background: $gray-300;
+        background: $color-grey;
         color: $black;
 
         &.active {
@@ -516,8 +515,7 @@ body {
                 }
 
                 select {
-                    appearance: none;
-                    padding-left: 25px !important;
+                    appearance: auto;
                 }
             }
         }
@@ -613,7 +611,7 @@ body {
 
         &.btn-light-green {
             background: $color-green-lighter;
-            color: $green;
+            color: $color-theme-green;
         }
 
         &.btn-collapse {
@@ -673,11 +671,17 @@ body {
         color: $black;
 
         .close {
-            color: inherit;
+            background: transparent;
+            border: 0;
+            color: $black;
+            float: right;
             font-size: 20px;
-            margin-right: -$badge-padding-x;
-            padding-left: $badge-padding-x;
-            padding-right: $badge-padding-x;
+            font-weight: normal;
+            margin-right: -0.4em;
+            opacity: 0.5;
+            padding-bottom: 0;
+            padding-left: 0.4em;
+            padding-right: 0.4em;
             text-shadow: none;
         }
     }
@@ -779,6 +783,12 @@ body {
     }
 }
 
+input {
+    &.form-control {
+        box-shadow: 1px 1px 2px $input-box-shadow-color;
+    }
+}
+
 //
 // Select box
 //
@@ -872,7 +882,7 @@ body {
 .item-published {
     & {
         @include circle(0.5rem);
-        background: $green;
+        background: $color-theme-green;
         border: 0;
         margin-left: 0.4rem;
     }

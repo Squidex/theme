@@ -37,6 +37,7 @@ $color-theme-orange-dark:               #a65b00;
 $color-theme-error:                     #eb3142;
 $color-theme-error-dark:                #c00;
 
+$color-grey:                            #dedfe3;
 $color-grey-dark:                       #9da1b6;
 $color-white-lighten:                   #ffffff55;
 $color-green-lighter:                   #d6eadd;
@@ -69,14 +70,19 @@ $color-dark2-placeholder:               #757e8d;
 
 $color-dark-onboarding:                 #273039;
 
+$color-badge-success-background:        #e4f6e6;
 $color-badge-success-foreground:        #4cc159;
 
+$color-badge-warning-background:        #ffe8cc;
 $color-badge-warning-foreground:        #efa243;
 
+$color-badge-danger-background:         #fce0e3;
 $color-badge-danger-foreground:         #f56a76;
 
+$color-badge-info-background:           #d0f2fb;
 $color-badge-info-foreground:           #43ccef;
 
+$color-badge-primary-background:        #cce1ff;
 $color-badge-primary-foreground:        #438cef;
 
 $color-badge-secondary-background:      #e6e6e6;
@@ -112,4 +118,7 @@ $breadcrumb-divider:                    quote('>');
 $breadcrumb-margin-bottom:              0 !important;
 $breadcrumb-active-color:               $color-border-dark !default;
 $breadcrumb-link-color:                 $color-border-darker;
-$header-heading-color:                  #474A55;
+$header-heading-color:                  #474a55;
+$custom-success-background-color:       #3ab480;
+$custom-success-border-color:           #3aab7c;
+$input-box-shadow-color:                #0000000f;
