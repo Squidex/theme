@@ -263,7 +263,7 @@ body {
     width: 100%;
 
     h2 {
-        font-size: $lead-font-size;
+        font-size: 1.385rem;
         line-height: $headings-line-height;
         margin: 0 0.5rem 0 0;
         opacity: 1;
@@ -666,7 +666,7 @@ body {
 //
 .input-field-section {
     .badge {
-        background: $gray-300;
+        background: $color-grey;
         color: $black;
 
         .close {
@@ -845,7 +845,7 @@ input {
 
         span {
             display: inline-block;
-            margin: 0.8rem auto 0;
+            margin: 0.5rem auto 0;
         }
     }
 
