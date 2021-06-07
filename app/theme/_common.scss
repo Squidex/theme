@@ -263,9 +263,8 @@ body {
     width: 100%;
 
     h2 {
-        color: $header-heading-color;
-        font-size: 1.385rem;
-        line-height: 1.692rem;
+        font-size: $lead-font-size;
+        line-height: $headings-line-height;
         margin: 0 0.5rem 0 0;
         opacity: 1;
         text-align: left;
