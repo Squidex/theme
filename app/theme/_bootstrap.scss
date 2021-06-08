@@ -10,7 +10,7 @@
     & {
         font-size: .9rem;
         font-weight: normal;
-        padding: .25rem .6rem;
+        // padding: .25rem .6rem;
     }
 
     &-primary {
@@ -600,6 +600,7 @@ a {
 
     &.btn-success {
         color: $white;
+        background: $color-theme-green;
     }
 
     &.btn-primary {
