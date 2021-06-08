@@ -239,6 +239,12 @@ body {
     }
 }
 
+.custom-btn-secondary {
+    .btn {
+        background-color: $white;
+        margin-right: 0.25rem !important;
+    }
+}
 //
 // Badges
 //
@@ -347,17 +353,17 @@ body {
         }
     }
 
-    & .tab-bars-modal-view {
-        .tab-expanded-list {
-            li {
-                &:first-child {
-                    a {
-                        padding-left: 0;
-                    }
-                }
-            }
-        }
-    }
+    // & .tab-bars-modal-view {
+    //     .tab-expanded-list {
+    //         li {
+    //             &:first-child {
+    //                 a {
+    //                     padding-left: 0;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 // search content and filter
@@ -661,6 +667,11 @@ body {
     font-weight: bold;
 }
 
+.icon-clone {
+    color: $black;
+    font-size: 12px;
+}
+
 //
 // Input Fields section
 //
@@ -682,6 +693,11 @@ body {
             padding-left: 0.4em;
             padding-right: 0.4em;
             text-shadow: none;
+
+            &:hover,
+            &:focus {
+                opacity: 0.75;
+            }
         }
     }
 }
