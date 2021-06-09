@@ -44,6 +44,27 @@
     }
 }
 
+.custom-badge {
+    background: $color-custom-badge-primary-background !important;
+    border-radius: 5px;
+    opacity: 0.58;
+}
+
+.custom-pill {
+    background: $color-custom-badge-pill-secondary !important;
+    border-radius: 3px;
+    color: $headings-color !important;
+}
+
+.log-status {
+    .badge {
+        background: rgba($color-custom-badge-primary-background, 0.58) !important;
+        border-radius: 5px;
+        color: $headings-color !important;
+        font-size: 13px;
+    }
+}
+
 // 
 // Alert overrides.
 //
@@ -599,8 +620,8 @@ a {
     }
 
     &.btn-success {
-        color: $white;
         background: $color-theme-green;
+        color: $white;
     }
 
     &.btn-primary {
@@ -609,15 +630,12 @@ a {
 }
 
 .custom-success {
-    // background: $custom-success-background-color;
-    // border: 1px solid $custom-success-border-color;
-    // border-radius: 4px;
-    // opacity: 1;
-    // &.btn {
-    //     height: 35px;
-    // }
     span {
         align-items: center;
+
+        &.badge {
+            padding: .25rem .6rem;
+        }
     }
 }
 

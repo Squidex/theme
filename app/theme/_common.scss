@@ -593,6 +593,22 @@ body {
     }
 }
 
+button {
+    &.dropdown-toggle {
+        border: 1px solid $color-border-grey;
+        border-radius: 4px;
+        box-shadow: 1px 1px 2px $input-box-shadow-color;
+        color: $headings-color;
+        // opacity: 0.56;
+
+        &.bg-light {
+            background: $dropdown-button-background-color !important;
+
+            opacity: 1;
+        }
+    }
+}
+
 .custom-btns {
     font-size: 14px;
 
@@ -687,13 +703,13 @@ body {
             float: right;
             font-size: 20px;
             font-weight: normal;
+            line-height: 12px;
             margin-right: -0.4em;
             opacity: 0.5;
             padding-bottom: 0;
             padding-left: 0.4em;
             padding-right: 0.4em;
             text-shadow: none;
-            line-height: 12px;
 
             &:hover,
             &:focus {
@@ -802,6 +818,11 @@ body {
 input {
     &.form-control {
         box-shadow: 1px 1px 2px $input-box-shadow-color;
+
+        &:read-only {
+            background-color: $color-background !important;
+            color: $headings-color;
+        }
     }
 }
 

@@ -29,7 +29,7 @@ $color-theme-blue-light:                #9ebeea;
 $color-theme-blue-lightest:             #d9e8fc;
 $color-theme-secondary:                 #ecf2f6;
 
-$color-theme-green:                     #3AB480;
+$color-theme-green:                     #3ab480;
 $color-theme-green-dark:                #47b353;
 $color-theme-orange:                    #ffb136;
 $color-theme-orange-dark:               #a65b00;
@@ -70,7 +70,7 @@ $color-dark2-placeholder:               #757e8d;
 
 $color-dark-onboarding:                 #273039;
 
-$color-badge-success-background:        #e4f6e6;
+$color-badge-success-background:        #d6eadd;
 $color-badge-success-foreground:        #4cc159;
 
 $color-badge-warning-background:        #ffe8cc;
@@ -82,11 +82,14 @@ $color-badge-danger-foreground:         #f56a76;
 $color-badge-info-background:           #d0f2fb;
 $color-badge-info-foreground:           #43ccef;
 
+$color-custom-badge-primary-background: #e4e8ed;
 $color-badge-primary-background:        #cce1ff;
 $color-badge-primary-foreground:        #438cef;
 
 $color-badge-secondary-background:      #e6e6e6;
 $color-badge-secondary-foreground:      #999;
+
+$color-custom-badge-pill-secondary:     rgba(157, 161, 182, 0.2);
 
 $color-table-footer:                    $color-theme-secondary;
 
@@ -126,3 +129,6 @@ $dropdown-header-color:                 #8091a5;
 $dropdown-header-padding:               0.5rem 1.5rem;
 $dropdown-item-padding-y:               0.25rem;
 $dropdown-item-padding-x:               3rem;
+$dropdown-button-background-color:     #eff2f5;
+
+$headings-color:                        #474a55;
