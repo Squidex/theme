@@ -224,7 +224,6 @@ body {
     .badge {
         background: $color-white-lighten;
         font-size: 1rem;
-        line-height: 1.25rem;
         margin-left: 0.8rem;
     }
 
@@ -593,21 +592,21 @@ body {
     }
 }
 
-button {
-    &.dropdown-toggle {
-        border: 1px solid $color-border-grey;
-        border-radius: 4px;
-        box-shadow: 1px 1px 2px $input-box-shadow-color;
-        color: $headings-color;
-        // opacity: 0.56;
+// button {
+//     &.dropdown-toggle {
+//         border: 1px solid $color-border-grey;
+//         border-radius: 4px;
+//         box-shadow: 1px 1px 2px $input-box-shadow-color;
+//         color: $headings-color;
+//         // opacity: 0.56;
 
-        &.bg-light {
-            background: $dropdown-button-background-color !important;
+//         &.bg-light {
+//             background: $dropdown-button-background-color !important;
 
-            opacity: 1;
-        }
-    }
-}
+//             opacity: 1;
+//         }
+//     }
+// }
 
 .custom-btns {
     font-size: 14px;
@@ -692,9 +691,10 @@ button {
 // Input Fields section
 //
 .input-field-section {
+
     .badge {
-        background: $color-grey;
-        color: $black;
+        background: $color-custom-badge-with-button;
+        color: $headings-color;
 
         .close {
             background: transparent;

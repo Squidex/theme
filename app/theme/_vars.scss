@@ -82,14 +82,16 @@ $color-badge-danger-foreground:         #f56a76;
 $color-badge-info-background:           #d0f2fb;
 $color-badge-info-foreground:           #43ccef;
 
-$color-custom-badge-primary-background: #e4e8ed;
 $color-badge-primary-background:        #cce1ff;
 $color-badge-primary-foreground:        #438cef;
 
 $color-badge-secondary-background:      #e6e6e6;
 $color-badge-secondary-foreground:      #999;
 
+$color-custom-badge-primary-background: rgba(228, 232, 237, 0.58);
 $color-custom-badge-pill-secondary:     rgba(157, 161, 182, 0.2);
+$color-custom-badge-with-button:        rgba(157, 161, 182, 0.17);
+$color-custom-badge-with-name:          rgba(228, 232, 237, 0.32);
 
 $color-table-footer:                    $color-theme-secondary;
 
