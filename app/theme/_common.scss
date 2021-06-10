@@ -592,21 +592,22 @@ body {
     }
 }
 
-// button {
-//     &.dropdown-toggle {
-//         border: 1px solid $color-border-grey;
-//         border-radius: 4px;
-//         box-shadow: 1px 1px 2px $input-box-shadow-color;
-//         color: $headings-color;
-//         // opacity: 0.56;
+button {
+    &.btn-secondary {
+        &.dropdown-toggle {
+            border: 1px solid $color-border-grey;
+            border-radius: 4px;
+            box-shadow: 1px 1px 2px $input-box-shadow-color;
+            color: $dropdown-button-foreground-color;
 
-//         &.bg-light {
-//             background: $dropdown-button-background-color !important;
+            &.bg-light {
+                background: $dropdown-button-background-color !important;
+                opacity: 1;
+            }
+        }
+    }
 
-//             opacity: 1;
-//         }
-//     }
-// }
+}
 
 .custom-btns {
     font-size: 14px;
@@ -817,6 +818,8 @@ body {
 
 input {
     &.form-control {
+        border: 1px solid $color-border-grey !important;
+        border-radius: 4px;
         box-shadow: 1px 1px 2px $input-box-shadow-color;
 
         &:read-only {
@@ -834,12 +837,14 @@ input {
 
     span {
         @include absolute(50%, 15px, auto, auto);
-
+        // color: $color-badge-primary-foreground;
         transform: translateY(-50%);
     }
 
     select {
         appearance: none;
+        border: 1px solid $gray-400 !important;
+        border-radius: 3px !important;
     }
 }
 
