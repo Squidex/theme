@@ -818,9 +818,7 @@ button {
 
 input {
     &.form-control {
-        border: 1px solid $color-border-grey !important;
-        border-radius: 4px;
-        box-shadow: 1px 1px 2px $input-box-shadow-color;
+        border: 1px solid $color-border-grey;
 
         &:read-only {
             background-color: $color-background !important;

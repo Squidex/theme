@@ -1,3 +1,4 @@
+$enable-shadows:	                    true;
 $color-background:                      #eef1f4;
 
 $color-border:                          #e4e7e9;
@@ -134,3 +135,11 @@ $dropdown-item-padding-x:               3rem;
 $dropdown-button-background-color:     #eff2f5;
 $dropdown-button-foreground-color:     rgba(71, 74, 85, 0.56);
 $headings-color:                       #474a55;
+
+$form-select-box-shadow:               1px 1px 2px #0000000f;
+$form-select-border-radius:            4px;
+$form-select-border-color:             #dedfe3;
+
+$input-box-shadow:                     1px 1px 2px #0000000f;
+$input-border-radius:                  4px;
+$input-border-color:                   #dedfe3;

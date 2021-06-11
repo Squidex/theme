@@ -13,9 +13,10 @@
             }
 
             .bs-section-title {
-                font-size: 30px;
-                font-weight: lighter;
+                font-size: 25px;
+                /* font-weight: lighter; */
                 margin-bottom: 2rem;
+                color: #9da1b6;
             }
 
             .bs-section {
@@ -696,7 +697,7 @@
                                         
                                     </div> -->
                                     <div class = "btn-group w-50 d-block m-auto">
-                                        <button type="button" class="btn btn-success btn-sm rounded">
+                                        <button type="button" class="btn btn-success btn-with-icon d-inline-flex btn-sm rounded">
                                             <i class="icon icon-plus"></i> New
                                             <span class="badge">N</span>
                                         </button>
@@ -2293,13 +2294,13 @@
                                                     <p>Conditions are javascript expressions that define when to trigger, for example:</p>
                                                     <ul>
                                                         <li>Specific events:
-                                                            <p class="bg-light p-1 bg-with-icon">event.type ==  'Created'  || event.type  == 'Updated' <span class="icon-box"><i class="icon icon-plus text-white"></i></span></p>
+                                                            <p class="bg-light p-1 bg-with-icon">event.type ==  'Created'  || event.type  == 'Updated' <span class="icon-box"><i class="icon icon-clone text-white"></i></span></p>
                                                         </li>
                                                         <li>Large assets:
-                                                            <p class="bg-light p-1 bg-with-icon">event.fileSize > 100000000 <span class="icon-box"><i class="icon icon-plus text-white"></i></span></p>
+                                                            <p class="bg-light p-1 bg-with-icon">event.fileSize > 100000000 <span class="icon-box"><i class="icon icon-clone text-white"></i></span></p>
                                                         </li>
                                                         <li>Images only:
-                                                            <p class="bg-light p-1 bg-with-icon">event.isImage <span class="icon-box"><i class="icon icon-plus text-white"></i></span></p>
+                                                            <p class="bg-light p-1 bg-with-icon">event.isImage <span class="icon-box"><i class="icon icon-clone text-white"></i></span></p>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -2842,7 +2843,7 @@
                         <span class="badge rounded-pill badge-danger">Danger</span>
                         <span class="badge rounded-pill badge-warning">Warning</span>
                         <span class="badge rounded-pill badge-info">Info</span>
-                        <span class="badge rounded-pill badge-light text-dark">Light</span>
+                        <span class="badge rounded-pill bg-light text-dark">Light</span>
                         <span class="badge rounded-pill bg-dark">Dark</span>
                         <span class="badge rounded-pill badge-secondary badge-round">02</span>
                     </div>
