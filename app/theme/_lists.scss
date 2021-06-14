@@ -61,7 +61,7 @@
         tr {
             // Each row is white and a has a border.
             & {
-                background: $color-table-background;
+                background: $white;
                 border: 1px solid $color-table-border;
                 border-bottom: 2px solid $color-table-border;
                 margin-bottom: .5rem;
@@ -76,14 +76,14 @@
                 & {
                     background: $color-theme-blue;
                     border-color: $color-theme-blue;
-                    color: $color-dark-foreground;
+                    color: $white;
                 }
 
                 .btn-text {
                     &,
                     &:hover {
                         // Enforce white color for links.
-                        color: $color-dark-foreground;
+                        color: $white;
                     }
                 }
             }
@@ -95,7 +95,7 @@
     //
     &-row {
         & {
-            background: $color-table-background;
+            background: $white;
             border: 1px solid $color-border;
             border-bottom-width: 2px;
             border-top: 0;
@@ -175,7 +175,7 @@
         &.active {
             background: $color-theme-blue !important;
             border-color: $color-theme-blue !important;
-            color: $color-dark-foreground !important;
+            color: $white !important;
         }
     }
 

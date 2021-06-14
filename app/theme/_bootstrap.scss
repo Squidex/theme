@@ -10,7 +10,7 @@
     & {
         font-size: .9rem;
         font-weight: normal;
-        padding: .25rem .6rem;
+        // padding: .25rem .6rem;
     }
 
     &-primary {
@@ -44,6 +44,33 @@
     }
 }
 
+.custom-badge {
+    background: $color-custom-badge-primary-background !important;
+    border-radius: 5px;
+    color: $color-text !important;
+}
+
+.custom-name-badge {
+    background: $color-custom-badge-with-name !important;
+    border-radius: 3px;
+    color: $color-text !important;
+}
+
+.custom-pill {
+    background: $color-custom-badge-pill-secondary !important;
+    color: $headings-color !important;
+}
+
+.log-status {
+    .badge {
+        background: $color-custom-badge-primary-background !important;
+        border-radius: 5px;
+        color: $headings-color !important;
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
 // 
 // Alert overrides.
 //
@@ -56,7 +83,7 @@
     }
 
     .alert-link {
-        color: $color-dark-foreground !important;
+        color: $white !important;
         font-size: inherit;
         font-weight: normal;
         text-decoration: underline;
@@ -102,6 +129,10 @@
 }
 
 a {
+    & {
+        text-decoration: none !important;
+    }
+
     &:disabled,
     &.disabled {
         opacity: .8;
@@ -146,7 +177,7 @@ a {
         }
 
         .nav-link {
-            color: $color-dark-foreground;
+            color: $white;
             padding-bottom: 0;
             padding-top: 0;
 
@@ -159,10 +190,30 @@ a {
 
         .badge {
             @include absolute(-.25rem, auto, auto, -.375rem);
-            background: $color-theme-error;
+            background: $danger;
             font-size: .75rem;
             font-weight: normal;
             padding: .25rem .5rem;
+        }
+    }
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-link {
+            color: $white;
+        }
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-item {
+            &.active {
+                .nav-link {
+                    color: $black;
+                }
+            }
         }
     }
 }
@@ -174,7 +225,7 @@ a {
     // White dropdown menu without border and shadow.
     & {
         @include box-shadow-outer(0, 3px, 16px, .2);
-        background: $panel-light-background;
+        background: $white;
         border: 0;
         z-index: 1200;
     }
@@ -183,7 +234,7 @@ a {
         // Special style for menu item to delete something.
         &.dropdown-item-delete {
             & {
-                color: $color-theme-error;
+                color: $danger;
             }
 
             &:hover {
@@ -196,16 +247,32 @@ a {
 
             &:disabled,
             &.disabled {
-                color: lighten($color-theme-error, 20%);
+                color: lighten($danger, 20%);
             }
         }
 
         &.dropdown-item {
             // Make the color white on active.
             &:active {
-                color: $color-dark-foreground;
+                color: $white;
             }
         }
+    }
+}
+
+.primary-dropdown {
+    .dropdown {
+        .dropdown-item {
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+        }
+    }
+}
+
+.custom-dropdown-menu {
+    .dropdown-item {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
     }
 }
 
@@ -335,7 +402,7 @@ a {
 
         &:hover,
         &.active {
-            color: $color-dark1-focus-foreground;
+            color: $white;
         }
 
         &.active {
@@ -440,7 +507,7 @@ a {
         @include button-variant($color-extern-twitter, $color-extern-twitter);
 
         & {
-            color: $color-dark-foreground;
+            color: $white;
         }
 
         &:hover,
@@ -516,28 +583,8 @@ a {
     &-group {
         .btn-toggle {
             & {
-                background: $color-dark-foreground;
+                background: $white;
                 border: 1px solid $color-theme-secondary;
-            }
-
-            &.btn-primary {
-                @include build-toggle-button($color-theme-blue, $color-badge-primary-background);
-            }
-
-            &.btn-info {
-                @include build-toggle-button($color-theme-info, $color-badge-info-background);
-            }
-
-            &.btn-danger {
-                @include build-toggle-button($color-theme-error, $color-badge-danger-background);
-            }
-
-            &.btn-success {
-                @include build-toggle-button($color-theme-green, $color-badge-success-background);
-            }
-
-            &.btn-warning {
-                @include build-toggle-button($color-theme-orange, $color-badge-warning-background);
             }
         }
 
@@ -558,7 +605,7 @@ a {
         }
 
         &-danger {
-            @include build-text-button($color-theme-error);
+            @include build-text-button($danger);
         }
 
         &-success {
@@ -575,6 +622,26 @@ a {
 
         &-secondary2 {
             @include build-text-button($color-text);
+        }
+    }
+
+    &.btn-success {
+        background: $color-theme-green;
+        color: $white;
+    }
+
+    &.btn-primary {
+        color: $white;
+    }
+}
+
+.custom-success {
+    span {
+        align-items: center;
+
+        &.badge {
+            line-height: 1.25rem;
+            padding: .25rem .6rem;
         }
     }
 }
@@ -646,16 +713,6 @@ $icon-size: 4.5rem;
             font-size: 1rem;
             font-weight: normal;
             line-height: 2.25rem;
-        }
-
-        .btn-close {
-            & {
-                color: $color-modal-header-foreground;
-            }
-
-            &:hover {
-                color: lighten($color-modal-header-foreground, 15%);
-            }
         }
     }
 

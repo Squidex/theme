@@ -58,7 +58,7 @@
     &-header {
         & {
             @include force-height($panel-header);
-            background: $panel-light-background;
+            background: $white;
             padding: $panel-padding;
             position: relative;
         }
@@ -104,7 +104,7 @@
 
         // White content area, e.g. for history panel.
         &-blank {
-            background: $panel-light-background;
+            background: $white;
             border: 0;
             border-radius: 0;
             padding-top: 0;
@@ -144,7 +144,7 @@
     // Error or alert on top of the panel content.
     &-alert {
         & {
-            color: $color-dark-foreground;
+            color: $white;
             font-size: .9rem;
             font-weight: normal;
             padding: .5 * $panel-padding $panel-padding;
@@ -152,7 +152,7 @@
 
         a {
             & {
-                color: $color-dark-foreground !important;
+                color: $white !important;
             }
 
             &,
@@ -174,7 +174,7 @@
     &-sidebar {
         & {
             @include force-width($panel-sidebar);
-            background: $panel-light-background;
+            background: $white;
             border-left: 1px solid $color-border;
         }
 
@@ -210,7 +210,7 @@
 
                 &::before {
                     @include absolute(0, -1px, 0, auto);
-                    background: $panel-light-background;
+                    background: $white;
                     color: transparent;
                     content: '';
                     width: 2px;
@@ -320,7 +320,7 @@
 
             &:hover,
             &.active {
-                color: $color-dark1-focus-foreground;
+                color: $white;
 
                 .nav-icon {
                     color: $color-theme-blue;

@@ -16,7 +16,6 @@ $body-bg:                   $color-background;
 
 $border-color:              $color-border;
 
-$danger:                    $color-theme-error;
 $primary:                   $color-theme-blue;
 $secondary:                 $color-theme-secondary;
 $success:                   $color-theme-green;
@@ -34,12 +33,13 @@ $input-disabled-bg:         $color-input-disabled;
 $input-placeholder-color:   $color-input-placeholder;
 
 $badge-bg-level: 2;
+$badge-padding-y:                   0.5rem;
+$badge-padding-x:                   0.5rem;
 
 $dropdown-border-color:     $color-border;
 
 $card-border-color:         $color-border;
 $card-border-radius:        0;
-$card-cap-bg:               $panel-light-background;
 
 $paragraph-margin-bottom:   .5rem;
 
@@ -50,8 +50,6 @@ $modal-header-padding:      1rem 1.75rem;
 $modal-inner-padding:       1.75rem;
 $modal-md:                  560px;
 $modal-title-line-height:   1.8rem;
-
-$navbar-dark-color:         $color-dark-foreground;
 
 $close-font-size:           1rem;
 $close-font-weight:         normal;
