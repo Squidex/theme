@@ -40,8 +40,8 @@ $color-theme-info:          #5bc0de;
 
 $color-asset-bg:            #f7f8fa;
 
-$color-input:               #e0e1e5;
-$color-input-shadow:          0 0 2px rgba(0, 0, 0, .2);
+$color-input:               #cfd0d3;
+$color-input-shadow:          0 1px 1px rgba(0, 0, 0, .1);
 $color-input-background:    #fff;
 $color-input-disabled:      #eff1f4;
 $color-input-placeholder:   lighten($color-text-decent, 20%);
@@ -65,7 +65,7 @@ $color-badge-primary-foreground:    #438cef;
 $color-badge-secondary-background:  #e6e6e6;
 $color-badge-secondary-foreground:  #999;
 
-$border-radius:             .25rem;
+$border-radius:             .375rem;
 
 $size-navbar-height:        3.25rem;
 
