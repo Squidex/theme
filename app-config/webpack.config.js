@@ -137,7 +137,7 @@ module.exports = function (env) {
              */
             path: root('/build/'),
 
-            publicPath: './build/',
+            publicPath: '',
 
             /**
              * Specifies the name of each output file on disk.
@@ -160,7 +160,7 @@ module.exports = function (env) {
             /**
              * Set the public path, because we are running the website from another port (5000).
              */
-            publicPath: 'http://localhost:3000/'
+            publicPath: 'http://localhost:2500/'
         };
     }
 
@@ -205,7 +205,10 @@ module.exports = function (env) {
             }, {
                 loader: 'postcss-loader'
             }, {
-                loader: 'sass-loader?sourceMap'
+                loader: 'sass-loader',
+                options: {
+                    sourceMap: true
+                }
             }],
             /*
              * Do not include component styles.

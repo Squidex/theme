@@ -97,25 +97,25 @@
     min-height: $height;
 }
 
-@mixin caret-top($color, $size: .6rem) {
+@mixin caret-top($color, $size: .5rem) {
     @include caret;
     border: $size solid transparent;
     border-bottom-color: $color;
 }
 
-@mixin caret-left($color, $size: .6rem) {
+@mixin caret-left($color, $size: .5rem) {
     @include caret;
     border: $size solid transparent;
     border-right-color: $color;
 }
 
-@mixin caret-right($color, $size: .6rem) {
+@mixin caret-right($color, $size: .5rem) {
     @include caret;
     border: $size solid transparent;
     border-left-color: $color;
 }
 
-@mixin caret-bottom($color, $size: .6rem) {
+@mixin caret-bottom($color, $size: .5rem) {
     @include caret;
     border: $size solid transparent;
     border-top-color: $color;

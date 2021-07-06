@@ -11,7 +11,7 @@ body {
 
     // White body for login and profile page.
     &.white {
-        background: $color-dark-foreground;
+        background: $color-white;
     }
 }
 
@@ -55,7 +55,7 @@ body {
     opacity: .7;
 
     &.table-drag {
-        background: $color-dark-foreground;
+        background: $color-white;
         border: 2px dashed darken($color-border, 5%);
         display: table;
 
@@ -204,7 +204,7 @@ body {
     }
 
     .drop-text {
-        background: $color-dark-foreground;
+        background: $color-white;
     }
 }
 
