@@ -1,6 +1,8 @@
 @import '_mixins';
 @import '_vars';
 
+/* stylelint-disable */
+
 //
 // Custom list that can either be used with a table or divs.
 //
@@ -59,10 +61,10 @@
         tr {
             // Each row is white and a has a border.
             & {
-                @include box-shadow-outer(0, 0, 2px, .1);
                 background: $color-white;
                 border: 1px solid $color-border;
-                border-radius: 2px;
+                border-radius: 0;
+                box-shadow: $color-input-shadow;
             }
 
             &:focus {
@@ -83,8 +85,8 @@
         & {
             background: $color-white;
             border: 1px solid $color-border;
-            border-bottom-width: 2px;
-            border-top: 0;
+            border-radius: 0;
+            box-shadow: $color-input-shadow;
             margin-bottom: .25rem;
         }
 

@@ -1,6 +1,8 @@
 @import '_mixins';
 @import '_vars';
 
+/* stylelint-disable */
+
 //
 // Support for Angular validation states.
 // 
@@ -128,6 +130,15 @@
     }
 }
 
+
+.preview {
+    background-color: $color-input;
+    border: 0;
+    border-radius: $border-radius;
+    opacity: .4;
+    pointer-events: none;
+}
+
 //
 // Control Dropdown item
 //
@@ -192,17 +203,23 @@
     }
 }
 
+.btn-block {
+    width: 100%;
+}
+
 //
 // Form group error.
 //
 .form-group {
+    margin-bottom: 1rem;
+
     // Remove the margin after the last form group.
     &:last-child {
         margin-bottom: 0;
     }
 
     // Remove the margin if the next element is hidden.
-    &~.hidden {
+    & ~ .hidden {
         margin-bottom: 0;
     }
 }
@@ -233,6 +250,29 @@ label {
 
     .text-muted {
         font-weight: normal;
+    }
+}
+
+//
+// Custom search form.
+//
+.search-form {
+    & {
+        flex-grow: 1;
+        position: relative;
+    }
+
+    // Keep some additional space for the search icon.
+    .form-control {
+        padding-right: 3rem;
+    }
+
+    // Search icon that is placed within the form control.
+    .icon-search {
+        @include absolute(.75rem, .75rem, auto, auto);
+        color: $color-input;
+        font-size: 1.1rem;
+        font-weight: lighter;
     }
 }
 

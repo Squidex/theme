@@ -14,8 +14,8 @@ const plugins = {
     MiniCssExtractPlugin: require('mini-css-extract-plugin'),
     // https://github.com/jantimon/html-webpack-plugin
     HtmlWebpackPlugin: require('html-webpack-plugin'),
-    // https://www.npmjs.com/package/sass-lint-webpack
-    SassLintPlugin: require('sass-lint-webpack')
+    // https://github.com/webpack-contrib/stylelint-webpack-plugin
+    StylelintPlugin: require('stylelint-webpack-plugin'),
 };
 
 module.exports = function (env) {
@@ -108,7 +108,7 @@ module.exports = function (env) {
                 }
             }),
 
-            new plugins.SassLintPlugin(),
+            new plugins.StylelintPlugin(),
         ],
 
         devServer: {

@@ -1,10 +1,27 @@
-// sass-lint:disable no-vendor-prefixes, one-declaration-per-line, no-misspelled-properties, no-color-keywords, no-color-literals
+/* stylelint-disable */
+
+@mixin text-small {
+    font-size: 90%;
+}
+
+@mixin text-small-bold {
+    font-size: 90%;
+    font-weight: 500;
+}
+
+@mixin text-smallest {
+    font-size: 80%;
+}
+
+@mixin text-code {
+    font-family: monospace;
+    font-size: 80%;
+    font-weight: normal;
+}
 
 @mixin build-icon($color) {
-    & {
-        color: $color;
-        transition: color .3s ease;
-    }
+    color: $color;
+    transition: color .3s ease;
 
     &:hover,
     &:focus {
@@ -13,20 +30,16 @@
 }
 
 @mixin build-toggle-button($color, $background) {
-    & {
-        background: $background;
-        border-color: $color;
-        color: $color;
-        z-index: 1000;
-    }
+    background: $background;
+    border-color: $color;
+    color: $color;
+    z-index: 1000;
 }
 
 @mixin build-text-button($color) {
-    & {
-        color: $color;
-    }
+    color: $color;
 
-    &:disabled
+    &:disabled,
     &.disabled {
         opacity: .4;
     }
@@ -57,12 +70,10 @@
         background: $background-color;
     }
 
-    & {
-        scrollbar-color: $foreground-color $background-color;
-        scrollbar-face-color: $foreground-color;
-        scrollbar-track-color: $background-color;
-        scrollbar-width: thin;
-    }
+    scrollbar-color: $foreground-color $background-color;
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+    scrollbar-width: thin;
 }
 
 @mixin clearfix {
@@ -86,36 +97,36 @@
     max-width: $width;
     min-width: $width;
     // Normal width definition.
-    width:  $width;
+    width: $width;
 }
 
 @mixin force-height($height) {
     // Normal height definition.
-    height:  $height;
+    height: $height;
     // Ensure that we use the minimum height in flex scenarios.
     max-height: $height;
     min-height: $height;
 }
 
-@mixin caret-top($color, $size: .5rem) {
+@mixin caret-top($color, $size: .6rem) {
     @include caret;
     border: $size solid transparent;
     border-bottom-color: $color;
 }
 
-@mixin caret-left($color, $size: .5rem) {
+@mixin caret-left($color, $size: .6rem) {
     @include caret;
     border: $size solid transparent;
     border-right-color: $color;
 }
 
-@mixin caret-right($color, $size: .5rem) {
+@mixin caret-right($color, $size: .6rem) {
     @include caret;
     border: $size solid transparent;
     border-left-color: $color;
 }
 
-@mixin caret-bottom($color, $size: .5rem) {
+@mixin caret-bottom($color, $size: .6rem) {
     @include caret;
     border: $size solid transparent;
     border-top-color: $color;

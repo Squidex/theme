@@ -3,6 +3,8 @@
 
 @import './../../node_modules/bootstrap/scss/mixins/_buttons';
 
+/* stylelint-disable */
+
 //
 // Bade colors
 //
@@ -124,7 +126,7 @@ a {
         }
 
         .nav-link {
-            color: $color-white;
+            color: $color-text;
             padding-bottom: 0;
             padding-top: 0;
 
@@ -525,7 +527,10 @@ $icon-size: 4.5rem;
     }
 
     &-header {
-        padding-bottom: 0;
+        &.with-tabs {
+            border: 0;
+            padding-bottom: 0;
+        }
 
         h4 {
             font-size: 1.1rem;
@@ -583,8 +588,7 @@ $icon-size: 4.5rem;
 // Cards
 //
 .card {
-    border-bottom-width: 2px;
-    border-top-width: 0;
+    box-shadow: $color-input-shadow;
 }
 
 // 
