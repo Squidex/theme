@@ -111,6 +111,10 @@ a {
     }
 }
 
+.navbar {
+    @include box-shadow-outer(0, 2px, 4px, .2);
+}
+
 .navbar-nav {
     .nav-link {
         cursor: pointer;
@@ -345,9 +349,9 @@ a {
     // Special radio button.
     &-radio {
         & {
-            @include border-radius;
             background: transparent;
             border: 1px solid $color-border;
+            border-radius: $border-radius;
             color: $color-text-decent;
             cursor: pointer;
             font-size: 1.5rem;

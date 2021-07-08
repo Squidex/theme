@@ -7,6 +7,11 @@
 // Custom list that can either be used with a table or divs.
 //
 .table-items {
+    & {
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
     th,
     td {
         // Unified padding for all table cells.
@@ -53,20 +58,25 @@
     //
     tbody {
         td {
+            background: $color-white;
+            border-bottom: 1px solid $color-border;
+            border-top: 1px solid $color-border;
             margin: 0;
             margin-bottom: 10px;
             vertical-align: middle;
+
+            &:first-child {
+                @include border-radius-left($border-radius);
+                border-left: 1px solid $color-border;
+            }
+
+            &:last-child {
+                @include border-radius-right($border-radius);
+                border-right: 1px solid $color-border;
+            }
         }
 
         tr {
-            // Each row is white and a has a border.
-            & {
-                background: $color-white;
-                border: 1px solid $color-border;
-                border-radius: 0;
-                box-shadow: $color-input-shadow;
-            }
-
             &:focus {
                 outline: none;
             }
@@ -85,8 +95,7 @@
         & {
             background: $color-white;
             border: 1px solid $color-border;
-            border-radius: 0;
-            box-shadow: $color-input-shadow;
+            border-radius: $border-radius;
             margin-bottom: .25rem;
         }
 

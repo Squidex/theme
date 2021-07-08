@@ -1,10 +1,15 @@
 @import '_mixins.scss';
 @import '_vars.scss';
 
+//
+// GENERAL
+//
 $enable-shadows:                true;
 $enable-rounded:                true;
 
-// Typography
+//
+// TYPOGRAPHY
+//
 $font-size-base:                1rem; // .875rem;
 
 $h1-font-size:                  $font-size-base * 1.4;
@@ -14,10 +19,13 @@ $h4-font-size:                  $font-size-base * 1.1;
 $h5-font-size:                  $font-size-base;
 $h6-font-size:                  $font-size-base;
 
-$small-font-size:               90%;
+$small-font-size:               85%;
 
 $text-muted:                    $color-text-decent;
 
+//
+// COLORS
+//
 // General colors, reduce ratio to enforce white buttons for all colors.
 $min-contrast-ratio:            1.5;
 
@@ -35,6 +43,10 @@ $body-bg:                       $color-background;
 
 // Borders.
 $border-color:                  $color-border;
+
+//
+// COMPONENTS
+//
 
 // Buttons
 $btn-border-width:              1px;
@@ -71,7 +83,7 @@ $hr-opacity:                    1;
 
 // cards
 $card-border-color:             $color-border;
-$card-border-radius:            0;
+$card-border-radius:            $border-radius;
 $card-cap-bg:                   $color-white;
 
 // Paragraphs
@@ -90,3 +102,6 @@ $navbar-dark-color:             $color-white;
 
 // Close button
 $btn-close-width:               .5rem;
+
+// Blockquote
+$blockquote-margin-y:           0;

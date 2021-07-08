@@ -199,10 +199,6 @@
     box-shadow: inset $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
 }
 
-@mixin border-radius ($radius: 4px) {
-    border-radius: $radius;
-}
-
 @mixin border-radius-left ($radius: 4px) {
     border-radius: $radius 0 0 $radius;
 }
