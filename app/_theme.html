@@ -53,6 +53,11 @@
             max-height: 100px;
             min-height: 100px;
         }
+
+        .sidebar {
+            position: relative !important;
+            height: 700px;
+        }
     </style>
 </head>
 
@@ -1007,7 +1012,118 @@
 
                             <li><a class="dropdown-item dropdown-item-delete" href="#">Separated link</a></li>
                           </div>
-                    </ul >
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Side Menu</h2>
+
+                    <ul class="nav nav-light flex-column">
+                        <li class="nav-item nav-heading">
+                            Security
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">
+                                <i class="icon-clients"></i> Clients
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="icon-contributors"></i> Contributors
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="icon-roles"></i> Roles
+                            </a>
+                        </li>
+            
+                        <li class="nav-item nav-heading">
+                            Editing
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="icon-patterns"></i> Patterns 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="icon-languages"></i> Languages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="icon-workflows"></i> Workflows
+                            </a>
+                        </li>
+            
+                        <li class="nav-item nav-heading">
+                            More
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="icon-backups"></i> Backups
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="icon-subscription"></i> Subscriptions
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h2>Sidedbar</h2>
+
+                    <div class="sidebar">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active">
+                                    <i class="nav-icon icon-dashboard"></i> <div class="nav-text">Dashboard</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <i class="nav-icon icon-schemas"></i> <div class="nav-text">Schemas</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <i class="nav-icon icon-contents"></i> <div class="nav-text">Content</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <i class="nav-icon icon-assets"></i> <div class="nav-text">Assets</div> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <i class="nav-icon icon-rules"></i> <div class="nav-text">Rules</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <i class="nav-icon icon-api"></i> <div class="nav-text">Api</div>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="nav flex-column bottom">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://squidex.io/help" target="_blank">
+                                    <i class="nav-icon icon-help2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item" *ngIf="!isSettingsHidden(app)">
+                                <a class="nav-link">
+                                    <i class="nav-icon icon-settings"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

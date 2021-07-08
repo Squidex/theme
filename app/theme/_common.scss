@@ -223,9 +223,10 @@ hr {
 
 .sidebar {
     @include absolute($size-navbar-height, null, 0, 0);
-    @include text-small;
     background: $color-theme-blue;
     color: $color-white;
+    font-size: $font-small;
+    font-weight: default;
     overflow: hidden;
     width: $size-sidebar-width;
 
@@ -242,8 +243,9 @@ hr {
         color: $color-white !important;
         cursor: pointer;
         padding: 1rem 0;
-        transition: background-color .3s ease;
+        transition: background-color .4s ease;
         text-align: center;
+        text-decoration: none;
 
         &:hover {
             background: $color-theme-blue-darker;
