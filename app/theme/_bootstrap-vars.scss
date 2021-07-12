@@ -43,7 +43,7 @@ $body-bg:                       $color-background;
 
 // Borders.
 $border-color:                  $color-border;
-
+$border-radius:                 .25rem;
 //
 // COMPONENTS
 //
@@ -62,7 +62,6 @@ $label-margin-bottom:           .25rem;
 
 // Imputs
 $input-border-color:            $color-input;
-$input-box-shadow:              $color-input-shadow;
 $input-disabled-bg:             $color-input-disabled;
 $input-group-addon-bg:          $color-white;
 $input-placeholder-color:       $color-input-placeholder;
@@ -98,7 +97,7 @@ $modal-header-padding-y:        .75rem;
 $modal-inner-padding:           1.75rem;
 
 // Navbar
-$navbar-dark-color:             $color-white;
+$navbar-padding-y:              .375rem;
 
 // Close button
 $btn-close-width:               .5rem;

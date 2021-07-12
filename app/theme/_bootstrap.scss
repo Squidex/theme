@@ -72,10 +72,13 @@
     color: $color-text;
     font-size: 90%;
     font-weight: normal;
+    padding-left: 3rem;
+    position: relative;
 
     i {
+        @include absolute(1rem, null, null, 1rem);
         color: $color-theme-blue;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: normal;
         vertical-align: text-bottom;
     }
@@ -122,31 +125,15 @@ a {
 
     .nav-icon {
         & {
-            line-height: 2rem;
             margin-left: .5rem;
-            margin-right: 0;
-            position: relative;
-            vertical-align: middle;
         }
 
         .nav-link {
-            color: $color-text;
-            padding-bottom: 0;
-            padding-top: 0;
-
             i {
                 font-size: 1.5rem;
                 font-weight: lighter;
                 vertical-align: middle;
             }
-        }
-
-        .badge {
-            @include absolute(-.25rem, auto, auto, -.375rem);
-            background: $color-theme-error;
-            font-size: .75rem;
-            font-weight: normal;
-            padding: .25rem .5rem;
         }
     }
 }
@@ -168,6 +155,18 @@ a {
     .dropdown-divider {
         margin-left: 1rem;
         margin-right: 1rem;
+
+        &:first-child {
+            display: none;
+        }
+        
+        &:last-child {
+            display: none;
+        }
+
+        & + .dropdown-divider {
+            display: none;
+        }
     }
 
     a {
@@ -310,7 +309,7 @@ a {
 //
 .btn {
     &-outline-secondary {
-        color: $color-text;
+        color: $color-text-decent;
 
         &:hover {
             color: $color-text;
@@ -543,6 +542,11 @@ $icon-size: 4.5rem;
         }
     }
 
+    &-tabs {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
     &-content {
         @include box-shadow-outer(0, 8px, 16px, .3);
         border: 0;
@@ -588,11 +592,12 @@ $icon-size: 4.5rem;
     }
 }
 
-//
-// Cards
-//
-.card {
-    box-shadow: $color-input-shadow;
+.card-title {
+    margin-bottom: 1rem;
+}
+
+.card-footer {
+    padding: .75rem 1.25rem;
 }
 
 // 

@@ -66,12 +66,12 @@
             vertical-align: middle;
 
             &:first-child {
-                @include border-radius-left($border-radius);
                 border-left: 1px solid $color-border;
+                border-radius: $border-radius 0 0 $border-radius;
             }
 
             &:last-child {
-                @include border-radius-right($border-radius);
+                border-radius: 0 $border-radius $border-radius 0;
                 border-right: 1px solid $color-border;
             }
         }
@@ -83,7 +83,9 @@
 
             // Blue background and white text when active.
             &.active {
-                border-color: $color-theme-blue;
+                td {
+                    border-color: $color-theme-blue;
+                }
             }
         }
     }
@@ -101,10 +103,7 @@
 
         // Summary row for expandable rows.
         &-summary {
-            line-height: 2.5rem;
-            list-style: none;
             padding: .75rem 1.25rem;
-            position: relative;
         }
 
         &-empty {
